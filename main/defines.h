@@ -14,7 +14,4 @@
 #define BUF_SIZE (128)
 #define RD_BUF_SIZE (BUF_SIZE)
 
-
-
-
 #endif

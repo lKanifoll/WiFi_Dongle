@@ -7,7 +7,9 @@ const char *TAG = "SC";
 esp_err_t event_handler(void *ctx, system_event_t *event)
 {
 	/* For accessing reason codes in case of disconnection */
-	system_event_info_t *info = &event->event_info;
+	//system_event_info_t *info = &event->event_info;
+	
+	
     
 	switch (event->event_id) {
 	case SYSTEM_EVENT_STA_START:
@@ -33,8 +35,13 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 		wifi_active_flag = false;
 		esp_wifi_connect();
 		xEventGroupClearBits(wifi_event_group, IPV4_GOTIP_BIT);
-		
 		break;
+		
+//	case SYSTEM_EVENT_STA_CONNECTED:
+//		wifi_active_flag = true;
+//		wait_for_ip();
+		
+//		break;
 	default:
 		break;
 	}
@@ -66,8 +73,8 @@ void initialise_wifi()
 		{
 			.sta = { .ssid = "", .password = "", },
 		};
-		//printf("first_link %s\n", SSID);
-		//printf("first_link %s\n", PASS);
+		printf("SSID %s\n", SSID);
+		printf("PASS %s\n", PASS);
 		strcpy((char*) &wifi_config.sta.ssid[0], (const char*) &SSID[0]);
 		strcpy((char*) &wifi_config.sta.password[0], (const char*) &PASS[0]);
 
@@ -162,6 +169,13 @@ void set_wifi_ap()
 	
 }
 
+void get_mac_buf()
+{
+	while (ESP_OK != esp_wifi_get_mac(ESP_IF_WIFI_STA, temp_mac)) ;
+	sprintf(&MAC_esp[0], "+ok=%02X%02X%02X%02X%02X%02X", temp_mac[0], temp_mac[1], temp_mac[2], temp_mac[3], temp_mac[4], temp_mac[5]);
+	printf("%s\n", MAC_esp);
+}
+
 
 void wait_for_ip()
 {
@@ -169,6 +183,7 @@ void wait_for_ip()
 	ESP_LOGI(TAG_WIFI, "Waiting for AP connection...");
 	xEventGroupWaitBits(wifi_event_group, bits, false, true, portMAX_DELAY);
 	ESP_LOGI(TAG_WIFI, "Connected to AP");
+	xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
 }
 
 
@@ -228,26 +243,48 @@ void tcp_client_task(void *pvParameters)
 			{
 				rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
 				//ESP_LOGI(TAG, "Received %d bytes from %d:", len, res->ai_family);
-				ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
+				
+
 	            
-				for (uint8_t i = 0; i < len; i++)
+				//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
+	            
+				if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
 				{
-					//ESP_LOGI(TAG, "[DATA EVT]: %02X ", dtmp[i]);
-					printf("%02X ", rx_buffer[i]);
+					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+					ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
+					ESP_LOGI(TAG_WIFI, "%s", "+ok=3.0.1-V.1.0.0");
+					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+					int err = send(sock, "+ok=3.0.1-V.1.0.0", 17, 0);
+					if (err < 0) {
+					ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+					break;
+					}
 				}
-				printf("\n");
-	            
-				uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
-	            
-				//	            if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
-				//	            {
-				//		            int err = send(sock, "+ok=3.0.1-V.1.0.0", 17, 0);
-				//					if (err < 0) {
-				//					ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
-				//					break;
-				//					}
-				//	            }
+				else if (!(strncmp(rx_buffer, "AT+WSMAC", 8)))
+				{
+					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+					ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
+					ESP_LOGI(TAG_WIFI, "%s", MAC_esp);
+					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+					int err = send(sock, MAC_esp, 17, 0);
+					if (err < 0) {
+						ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+						break;
+					}
+				}
+				else
+				{
+					printf("Request: ");
+					for (uint8_t i = 0; i < len; i++)
+					{
+						//ESP_LOGI(TAG, "[DATA EVT]: %02X ", dtmp[i]);
+						printf("%02X ", rx_buffer[i]);
+					}
+					printf("\n");
+					uart_write_bytes(EX_UART_NUM, (const char *) rx_buffer, len);
+				}
 			}
+
 
 			vTaskDelay(1000 / portTICK_PERIOD_MS);
 		}
@@ -269,30 +306,28 @@ void tcp_server_task(void *pvParameters)
 	int addr_family;
 	int ip_protocol;
 
-	
-
-		struct sockaddr_in destAddr;
-		destAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-		destAddr.sin_family = AF_INET;
-		destAddr.sin_port = htons(2228);
-		addr_family = AF_INET;
-		ip_protocol = IPPROTO_IP;
-		inet_ntoa_r(destAddr.sin_addr, addr_str, sizeof(addr_str) - 1);
+	struct sockaddr_in destAddr;
+	destAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+	destAddr.sin_family = AF_INET;
+	destAddr.sin_port = htons(2228);
+	addr_family = AF_INET;
+	ip_protocol = IPPROTO_IP;
+	inet_ntoa_r(destAddr.sin_addr, addr_str, sizeof(addr_str) - 1);
 
 
-		int listen_sock = socket(addr_family, SOCK_STREAM, ip_protocol);
-		if (listen_sock < 0) {
-			ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
-			//break;
-		}
-		ESP_LOGI(TAG, "Socket created");
+	int listen_sock = socket(addr_family, SOCK_STREAM, ip_protocol);
+	if (listen_sock < 0) {
+		ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+		//break;
+	}
+	ESP_LOGI(TAG, "Socket created");
 
-		int err = bind(listen_sock, (struct sockaddr *)&destAddr, sizeof(destAddr));
-		if (err != 0) {
-			ESP_LOGE(TAG, "Socket unable to bind: errno %d", errno);
-			//break;
-		}
-		ESP_LOGI(TAG, "Socket binded");
+	int err = bind(listen_sock, (struct sockaddr *)&destAddr, sizeof(destAddr));
+	if (err != 0) {
+		ESP_LOGE(TAG, "Socket unable to bind: errno %d", errno);
+		//break;
+	}
+	ESP_LOGI(TAG, "Socket binded");
 	while (1) {
 		err = listen(listen_sock, 1);
 		if (err != 0) {
@@ -366,6 +401,14 @@ void sc_callback(smartconfig_status_t status, void *pdata)
 		wifi_config_t *wifi_config = pdata;
 		ESP_LOGI(TAG, "SSID:%s", wifi_config->sta.ssid);
 		ESP_LOGI(TAG, "PASSWORD:%s", wifi_config->sta.password);
+		first_link = true;
+		nvs_open("storage", NVS_READWRITE, &storage_handle);
+		nvs_set_str(storage_handle, "SSID", (const char *)wifi_config->sta.ssid);
+		nvs_set_str(storage_handle, "PASS", (const char *)wifi_config->sta.password);
+		nvs_set_u8(storage_handle, "first_link", first_link);
+		nvs_commit(storage_handle);
+		nvs_close(storage_handle);
+		
 		ESP_ERROR_CHECK(esp_wifi_disconnect());
 		ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, wifi_config));
 		ESP_ERROR_CHECK(esp_wifi_connect());

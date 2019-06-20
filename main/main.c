@@ -20,16 +20,25 @@ void uart_event_task(void *pvParameters)
 			{
 				set_wifi_sta();
 			}
-			if (dtmp[0] == 0xB1)
+			else if (dtmp[0] == 0xB1)
 			{
 				set_wifi_ap();
 			}
-//			for (uint8_t i = 0; i < event.size; i++)
-//			{
-//				//ESP_LOGI(TAG, "[DATA EVT]: %02X ", dtmp[i]);
-//				printf("%02X ", dtmp[i]);
-//			}
-			//printf("\n");
+			else
+			{
+				printf("Response: ");
+				for (uint8_t i = 0; i < event.size; i++)
+				{
+					printf("%02X ", dtmp[i]);
+				}
+				printf("\n");
+				int err = send(sock, dtmp, event.size, 0);
+				if (err < 0) {
+					ESP_LOGE(TAG_UART, "Error occured during sending: errno %d", errno);
+					//break;
+				}
+			}
+
 			//uart_write_bytes(EX_UART_NUM, (const char *) dtmp, event.size);
 //			int err = send(sock, dtmp, event.size, 0);
 //			if (err < 0) {
@@ -53,18 +62,18 @@ void app_main()
 		err = nvs_flash_init();
 	}
 	
-//	nvs_open("storage", NVS_READWRITE, &storage_handle);
+	nvs_open("storage", NVS_READWRITE, &storage_handle);
 	
-//	size_t ssid_len = 0;
-//	nvs_get_str(storage_handle, "SSID", NULL, &ssid_len);
-//	nvs_get_str(storage_handle, "SSID", (char *)&SSID[0], &ssid_len);
-//	
-//	size_t pass_len = 0;
-//	nvs_get_str(storage_handle, "PASS", NULL, &pass_len);
-//	nvs_get_str(storage_handle, "PASS", (char *)&PASS[0], &pass_len);
-//	
-//	nvs_commit(storage_handle);
-//	nvs_close(storage_handle);
+	size_t ssid_len = 0;
+	nvs_get_str(storage_handle, "SSID", NULL, &ssid_len);
+	nvs_get_str(storage_handle, "SSID", (char *)&SSID[0], &ssid_len);
+	
+	size_t pass_len = 0;
+	nvs_get_str(storage_handle, "PASS", NULL, &pass_len);
+	nvs_get_str(storage_handle, "PASS", (char *)&PASS[0], &pass_len);
+	
+	nvs_commit(storage_handle);
+	nvs_close(storage_handle);
 //	
 //	printf("ssid_len: %d\n", ssid_len);
 //	printf("pass_len: %d\n", pass_len);
@@ -84,7 +93,7 @@ void app_main()
 	//xTaskCreate(tcp_client_task, "tcp_client",		4096, NULL, 5, NULL);
 	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, NULL);
 	
-	
-	
+	get_mac_buf();
 	initialise_wifi();
+	wait_for_ip();
 }

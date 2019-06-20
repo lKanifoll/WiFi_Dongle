@@ -407,62 +407,62 @@ C:\SysGCC\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha1-inte
 C:\SysGCC\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha1-pbkdf2.c
 C:\SysGCC\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha256.c
 C:\SysGCC\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha256-internal.c
-C:\Workspace\WiFi_Dongle_2\components\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle_2\components\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle_2\components\folder1\file1.c
-C:\Workspace\WiFi_Dongle_2\components\folder2\file2.c
-C:\Workspace\WiFi_Dongle_2\main\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle_2\main\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle_2\main\main.c
-C:\Workspace\WiFi_Dongle_2\main\wifi_tcp.c
-C:\Workspace\WiFi_Dongle_2\Makefile: 132052366630289943
-C:\Workspace\WiFi_Dongle_2\sdkconfig-debug: 132054895582045123
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\app_update\component_project_vars.mk: 132054899441466216
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\aws_iot\component_project_vars.mk: 132054899438002593
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\bootloader_support\component_project_vars.mk: 132054899484295621
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\component_project_vars.mk: 132054899434608127
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esp8266\component_project_vars.mk: 132054899473587613
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esptool_py\component_project_vars.mk: 132054899488838580
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\log\component_project_vars.mk: 132054899477083368
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\main\component_project_vars.mk: 132054899487854937
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\spi_flash\component_project_vars.mk: 132054899480594973
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\util\component_project_vars.mk: 132054899470046307
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader_support\component_project_vars.mk: 132054899433612734
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\cjson\component_project_vars.mk: 132054899430340365
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\coap\component_project_vars.mk: 132054899426740460
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\components\component_project_vars.mk: 132054899423179472
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\console\component_project_vars.mk: 132054899419598095
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_client\component_project_vars.mk: 132054899408804990
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_server\component_project_vars.mk: 132054899405275918
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_https_ota\component_project_vars.mk: 132054899401665378
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_ringbuf\component_project_vars.mk: 132054899398158229
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp8266\component_project_vars.mk: 132054899412485591
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp-tls\component_project_vars.mk: 132054899416105561
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esptool_py\component_project_vars.mk: 132054899394695071
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\freertos\component_project_vars.mk: 132054899393687765
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\heap\component_project_vars.mk: 132054899389970451
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\http_parser\component_project_vars.mk: 132054899386399621
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\jsmn\component_project_vars.mk: 132054899382709032
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\libsodium\component_project_vars.mk: 132054899379087467
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\log\component_project_vars.mk: 132054899374597341
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\lwip\component_project_vars.mk: 132054899370964235
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\main\component_project_vars.mk: 132054899367069247
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mdns\component_project_vars.mk: 132054899363485085
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mqtt\component_project_vars.mk: 132054899360160414
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\newlib\component_project_vars.mk: 132054899356587062
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\nvs_flash\component_project_vars.mk: 132054899353024709
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\partition_table\component_project_vars.mk: 132054899349370811
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protobuf-c\component_project_vars.mk: 132054899348348452
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protocomm\component_project_vars.mk: 132054899344698621
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\pthread\component_project_vars.mk: 132054899341085385
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\smartconfig_ack\component_project_vars.mk: 132054899337509881
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_flash\component_project_vars.mk: 132054899333971399
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_ram\component_project_vars.mk: 132054899330403576
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spiffs\component_project_vars.mk: 132054899326794766
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\ssl\component_project_vars.mk: 132054899323390032
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcp_transport\component_project_vars.mk: 132054899319230262
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcpip_adapter\component_project_vars.mk: 132054899315725141
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\util\component_project_vars.mk: 132054899311950803
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\vfs\component_project_vars.mk: 132054899308550578
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wifi_provisioning\component_project_vars.mk: 132054899305229458
-C:\Workspace\WiFi_Dongle_2\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wpa_supplicant\component_project_vars.mk: 132054899302028027
+C:\Workspace\WiFi_Dongle\components\component.mk: 132052366631695572
+C:\Workspace\WiFi_Dongle\components\component.mk: 132052366631695572
+C:\Workspace\WiFi_Dongle\components\folder1\file1.c
+C:\Workspace\WiFi_Dongle\components\folder2\file2.c
+C:\Workspace\WiFi_Dongle\main\component.mk: 132052366631695572
+C:\Workspace\WiFi_Dongle\main\component.mk: 132052366631695572
+C:\Workspace\WiFi_Dongle\main\main.c
+C:\Workspace\WiFi_Dongle\main\wifi_tcp.c
+C:\Workspace\WiFi_Dongle\Makefile: 132052366630289943
+C:\Workspace\WiFi_Dongle\sdkconfig-debug: 132054895582045123
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\app_update\component_project_vars.mk: 132054899441466216
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\aws_iot\component_project_vars.mk: 132054899438002593
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\bootloader_support\component_project_vars.mk: 132054899484295621
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\component_project_vars.mk: 132054899434608127
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esp8266\component_project_vars.mk: 132054899473587613
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esptool_py\component_project_vars.mk: 132054899488838580
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\log\component_project_vars.mk: 132054899477083368
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\main\component_project_vars.mk: 132054899487854937
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\spi_flash\component_project_vars.mk: 132054899480594973
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\util\component_project_vars.mk: 132054899470046307
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader_support\component_project_vars.mk: 132054899433612734
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\cjson\component_project_vars.mk: 132054899430340365
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\coap\component_project_vars.mk: 132054899426740460
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\components\component_project_vars.mk: 132054899423179472
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\console\component_project_vars.mk: 132054899419598095
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_client\component_project_vars.mk: 132054899408804990
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_server\component_project_vars.mk: 132054899405275918
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_https_ota\component_project_vars.mk: 132054899401665378
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_ringbuf\component_project_vars.mk: 132054899398158229
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp8266\component_project_vars.mk: 132054899412485591
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp-tls\component_project_vars.mk: 132054899416105561
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esptool_py\component_project_vars.mk: 132054899394695071
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\freertos\component_project_vars.mk: 132054899393687765
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\heap\component_project_vars.mk: 132054899389970451
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\http_parser\component_project_vars.mk: 132054899386399621
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\jsmn\component_project_vars.mk: 132054899382709032
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\libsodium\component_project_vars.mk: 132054899379087467
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\log\component_project_vars.mk: 132054899374597341
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\lwip\component_project_vars.mk: 132054899370964235
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\main\component_project_vars.mk: 132054899367069247
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mdns\component_project_vars.mk: 132054899363485085
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mqtt\component_project_vars.mk: 132054899360160414
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\newlib\component_project_vars.mk: 132054899356587062
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\nvs_flash\component_project_vars.mk: 132054899353024709
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\partition_table\component_project_vars.mk: 132054899349370811
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protobuf-c\component_project_vars.mk: 132054899348348452
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protocomm\component_project_vars.mk: 132054899344698621
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\pthread\component_project_vars.mk: 132054899341085385
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\smartconfig_ack\component_project_vars.mk: 132054899337509881
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_flash\component_project_vars.mk: 132054899333971399
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_ram\component_project_vars.mk: 132054899330403576
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spiffs\component_project_vars.mk: 132054899326794766
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\ssl\component_project_vars.mk: 132054899323390032
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcp_transport\component_project_vars.mk: 132054899319230262
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcpip_adapter\component_project_vars.mk: 132054899315725141
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\util\component_project_vars.mk: 132054899311950803
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\vfs\component_project_vars.mk: 132054899308550578
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wifi_provisioning\component_project_vars.mk: 132054899305229458
+C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wpa_supplicant\component_project_vars.mk: 132054899302028027
