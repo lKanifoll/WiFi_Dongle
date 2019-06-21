@@ -226,14 +226,10 @@ void tcp_client_task(void *pvParameters)
 		ESP_LOGI(TAG_WIFI, "Successfully connected");
 
 		while (1) {
-			//int err = send(sock, payload, strlen(payload), 0);
-			//if (err < 0) {
-			//    ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
-			//    break;
-			//}
-
+			ESP_LOGI(TAG_WIFI, "Receiving TCP...");
 			int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
 			// Error occured during receiving
+			ESP_LOGI(TAG_WIFI, "len: %d", len);
 			if(len < 0) {
 				ESP_LOGE(TAG_WIFI, "recv failed: errno %d", errno);
 				break;
@@ -242,10 +238,7 @@ void tcp_client_task(void *pvParameters)
 			else if(len > 0)
 			{
 				rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
-				//ESP_LOGI(TAG, "Received %d bytes from %d:", len, res->ai_family);
-				
 
-	            
 				//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
 	            
 				if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
