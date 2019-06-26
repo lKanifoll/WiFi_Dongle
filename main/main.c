@@ -15,12 +15,12 @@ void uart_event_task(void *pvParameters)
 
 			uart_read_bytes(EX_UART_NUM, dtmp, event.size, portMAX_DELAY);
 			ESP_LOGI(TAG_UART, "[DATA EVT]: %s", dtmp);
-			
-			if (dtmp[0] == 0xA1)
+
+			if (!(strncmp((const char *)dtmp, "SC", 2)))
 			{
 				set_wifi_sta();
 			}
-			else if (dtmp[0] == 0xB1)
+			else if (!(strncmp((const char *)dtmp, "AP", 2)))
 			{
 				set_wifi_ap();
 			}

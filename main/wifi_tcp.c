@@ -226,59 +226,60 @@ void tcp_client_task(void *pvParameters)
 		ESP_LOGI(TAG_WIFI, "Successfully connected");
 
 		while (1) {
-			ESP_LOGI(TAG_WIFI, "Receiving TCP...");
-			int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
-			// Error occured during receiving
-			ESP_LOGI(TAG_WIFI, "len: %d", len);
-			if(len < 0) {
-				ESP_LOGE(TAG_WIFI, "recv failed: errno %d", errno);
-				break;
-			}
-			// Data received
-			else if(len > 0)
-			{
-				rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
-
-				//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
-	            
-				if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
-				{
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
-					ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
-					ESP_LOGI(TAG_WIFI, "%s", "+ok=3.0.1-V.1.0.0");
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
-					int err = send(sock, "+ok=3.0.1-V.1.0.0", 17, 0);
-					if (err < 0) {
-					ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
-					break;
-					}
-				}
-				else if (!(strncmp(rx_buffer, "AT+WSMAC", 8)))
-				{
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
-					ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
-					ESP_LOGI(TAG_WIFI, "%s", MAC_esp);
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
-					int err = send(sock, MAC_esp, 17, 0);
-					if (err < 0) {
-						ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
-						break;
-					}
-				}
-				else
-				{
-					printf("Request: ");
-					for (uint8_t i = 0; i < len; i++)
-					{
-						//ESP_LOGI(TAG, "[DATA EVT]: %02X ", dtmp[i]);
-						printf("%02X ", rx_buffer[i]);
-					}
-					printf("\n");
-					uart_write_bytes(EX_UART_NUM, (const char *) rx_buffer, len);
-				}
-			}
-
-
+						ESP_LOGI(TAG_WIFI, "Receiving TCP...");
+						int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
+						// Error occured during receiving
+						ESP_LOGI(TAG_WIFI, "len: %d", len);
+						if(len <= 0) {
+							ESP_LOGE(TAG_WIFI, "recv failed: errno %d", errno);
+							break;
+						}
+						// Data received
+						else if(len > 0)
+						{
+							rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
+			
+							//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
+				            
+							if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
+							{
+								ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+								ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
+								ESP_LOGI(TAG_WIFI, "%s", "+ok=3.0.1-V.1.0.0");
+								ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+								int err = send(sock, "+ok=3.0.1-V.1.0.0", 17, 0);
+								if (err < 0) {
+								ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+								break;
+								}
+							}
+							else if (!(strncmp(rx_buffer, "AT+WSMAC", 8)))
+							{
+								ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+								ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
+								ESP_LOGI(TAG_WIFI, "%s", MAC_esp);
+								ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+								int err = send(sock, MAC_esp, 17, 0);
+								if (err < 0) {
+									ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+									break;
+								}
+							}
+							else
+							{
+								printf("Request: ");
+								for (uint8_t i = 0; i < len; i++)
+								{
+									//ESP_LOGI(TAG, "[DATA EVT]: %02X ", dtmp[i]);
+									printf("%02X ", rx_buffer[i]);
+								}
+								printf("\n");
+								uart_write_bytes(EX_UART_NUM, (const char *) rx_buffer, len);
+							}
+						}
+			//			rx_buffer[4] = {0xAA, 0x01, 0x07, 0xB2};
+			//uart_write_bytes(EX_UART_NUM, (const char *) rx_buffer, 4);
+			//ESP_LOGE(TAG_WIFI, "Send");
 			vTaskDelay(1000 / portTICK_PERIOD_MS);
 		}
 
