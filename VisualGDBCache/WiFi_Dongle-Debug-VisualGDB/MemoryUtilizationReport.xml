@@ -3,7 +3,7 @@
   <Memories>
     <MemoryUtilization>
       <MemoryName>SPIFLASH</MemoryName>
-      <Used>300376</Used>
+      <Used>300712</Used>
       <Total>16777216</Total>
     </MemoryUtilization>
     <MemoryUtilization>
@@ -13,7 +13,7 @@
     </MemoryUtilization>
     <MemoryUtilization>
       <MemoryName>DATA_RAM</MemoryName>
-      <Used>26530</Used>
+      <Used>26570</Used>
       <Total>81920</Total>
     </MemoryUtilization>
   </Memories>

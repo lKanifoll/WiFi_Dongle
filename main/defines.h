@@ -2,10 +2,6 @@
 #define _DEFINES_H_
 
 
-#define EXAMPLE_WIFI_SSID "OIR"
-#define EXAMPLE_WIFI_PASS "12345678"
-
-
 #define HOST_IP_ADDR "dongle.rusklimat.ru"
 #define PORT "10001"
 

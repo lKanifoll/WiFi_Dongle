@@ -3,6 +3,25 @@
 
 const char *TAG_UART = "UART";
 
+
+bool check_crc8(char *pcBlock, int len)
+{
+	int i;
+	char pec;
+	pec = 0;
+	for (i = 0; i < len; i++)
+	{
+		pec ^= pcBlock[i];
+		pec = pec ^ (pec << 1) ^ (pec << 2) ^ ((pec & 128) ? 9 : 0) ^ ((pec & 64) ? 7 : 0);
+	}
+	if (pcBlock[len] == pec)
+	{
+		return true;
+	}
+	return false;
+}
+
+
 void uart_event_task(void *pvParameters)
 {
 	uart_event_t event;
@@ -16,13 +35,28 @@ void uart_event_task(void *pvParameters)
 			uart_read_bytes(EX_UART_NUM, dtmp, event.size, portMAX_DELAY);
 			ESP_LOGI(TAG_UART, "[DATA EVT]: %s", dtmp);
 
-			if (!(strncmp((const char *)dtmp, "SC", 2)))
+			if ((dtmp[0] == 0xAB) && (dtmp[1] == 0xCD))
 			{
-				set_wifi_sta();
-			}
-			else if (!(strncmp((const char *)dtmp, "AP", 2)))
-			{
-				set_wifi_ap();
+				if (check_crc8((char*)dtmp, 5))
+				{
+					if (dtmp[4] == 0xA1)
+					{
+						set_wifi_sta();
+					}
+					else if (dtmp[4] == 0xB1)
+					{
+						set_wifi_ap();
+					}
+					dtmp[2] = 0x01;
+					dtmp[3] = 0x01;
+					uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
+				}
+				else
+				{
+					dtmp[2] = 0x01;
+					dtmp[3] = 0x00;
+					uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
+				}
 			}
 			else
 			{
@@ -63,6 +97,27 @@ void app_main()
 	}
 	
 	nvs_open("storage", NVS_READWRITE, &storage_handle);
+	
+	nvs_get_u8(storage_handle, "first_start", &first_start);
+	if (!first_start)
+	{
+		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
+		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		
+		strcpy((char*)&HOST_PORT[0], "10001");
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		
+		first_start = true;
+		nvs_set_u8(storage_handle, "first_start", first_start);
+	}
+	
+	size_t host_len = 0;
+	nvs_get_str(storage_handle, "HOST_ADDR", NULL, &host_len);
+	nvs_get_str(storage_handle, "HOST_ADDR", (char *)&HOST_ADDR[0], &host_len);
+	
+	size_t port_len = 0;
+	nvs_get_str(storage_handle, "HOST_PORT", NULL, &port_len);
+	nvs_get_str(storage_handle, "HOST_PORT", (char *)&HOST_PORT[0], &port_len);
 	
 	size_t ssid_len = 0;
 	nvs_get_str(storage_handle, "SSID", NULL, &ssid_len);

@@ -24,17 +24,19 @@
 #include "smartconfig_ack.h"
 #include "defines.h"
 #include "wifi_tcp.h"
-
+#include "esp_ping.h"
 
 nvs_handle storage_handle;
-uint8_t SSID[32];
-uint8_t PASS[32];
+char SSID[32];
+char PASS[32];
+char HOST_ADDR[32];
+char HOST_PORT[6];
 uint8_t first_link;
-
+uint8_t first_start;
 EventGroupHandle_t wifi_event_group;
 
 QueueHandle_t uart0_queue;
-
+bool check_crc8(char *pcBlock, int len);
 int sock;
 
 
