@@ -101,10 +101,16 @@ void app_main()
 	nvs_get_u8(storage_handle, "first_start", &first_start);
 	if (!first_start)
 	{
-		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
+		/*strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		strcpy((char*)&HOST_PORT[0], "10001");
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);*/
+		
+		strcpy((char*)&HOST_ADDR[0], "192.168.1.71");
+		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		
+		strcpy((char*)&HOST_PORT[0], "3333");
 		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
 		first_start = true;
@@ -146,9 +152,10 @@ void app_main()
 	uart_driver_install(EX_UART_NUM, BUF_SIZE * 2, BUF_SIZE * 2, 3, &uart0_queue);
 	
 	//xTaskCreate(tcp_client_task, "tcp_client",		4096, NULL, 5, NULL);
-	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, NULL);
+	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, &uart_handle);
 	
 	get_mac_buf();
 	initialise_wifi();
-	wait_for_ip();
+	//wait_for_ip();
+
 }

@@ -2,7 +2,8 @@
 const int ESPTOUCH_DONE_BIT = BIT1;
 const int IPV4_GOTIP_BIT = BIT0;
 const char *TAG_WIFI = "WIFI";
-const char *TAG = "SC";
+const char *TAG_SC = "SC";
+const char *TAG_TCP = "TCP";
 
 esp_err_t event_handler(void *ctx, system_event_t *event)
 {
@@ -10,27 +11,42 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 	//system_event_info_t *info = &event->event_info;
 
 	switch (event->event_id) {
-	case SYSTEM_EVENT_STA_START:
+	case SYSTEM_EVENT_STA_CONNECTED:
 		wifi_active_flag = true;
+
 		break;
 	case SYSTEM_EVENT_STA_GOT_IP:
 		xEventGroupSetBits(wifi_event_group, IPV4_GOTIP_BIT);
+		wifi_active_flag = true;
+		if (!disconnect)
+		{
+			delete_tcp_rask = 0;
+			xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, &tcp_client_handle);
+		}
 		break;
 	case SYSTEM_EVENT_AP_STACONNECTED:
-		ESP_LOGI(TAG_WIFI,
-			"station:"MACSTR" join, AID=%d",
-			MAC2STR(event->event_info.sta_connected.mac),
-			event->event_info.sta_connected.aid);
+		ESP_LOGI(TAG_WIFI, "station:"MACSTR" join, AID=%d", MAC2STR(event->event_info.sta_connected.mac), event->event_info.sta_connected.aid);
+		
+		wifi_active_flag = true;
+		
 		break;
 	case SYSTEM_EVENT_AP_START:
 		wifi_active_flag = true;
 		ESP_LOGI(TAG_WIFI, "Access point is active: Dongle_Rusklimat");
-		xTaskCreate(tcp_server_task, "tcp_server", 4096, NULL, 5, NULL);
+
 		break;
 	case SYSTEM_EVENT_STA_DISCONNECTED:
 		//ESP_LOGE(TAG_WIFI, "Disconnect reason : %d", info->disconnected.reason);
-		ESP_LOGW(TAG_WIFI, "RECONNECT...");
-		wifi_active_flag = false;
+		ESP_LOGW(TAG_WIFI, "RECONNECT...%d", wifi_active_flag);
+		if (wifi_active_flag)
+		{
+			//vTaskSuspend(tcp_client_handle);
+			//ESP_LOGW(TAG_WIFI, "SUSPEND TCP TASK...");
+			delete_tcp_rask = 1;
+			wifi_active_flag = false;
+			disconnect = 1;
+		}
+
 		esp_wifi_connect();
 		xEventGroupClearBits(wifi_event_group, IPV4_GOTIP_BIT);
 		break;
@@ -116,7 +132,7 @@ void set_wifi_sta()
 	//curr_interface = ESP_IF_WIFI_STA;
 	ESP_ERROR_CHECK(esp_wifi_start());
 	//esp_wifi_set_country(&info_country);
-	xTaskCreate(smartconfig_example_task, "smartconfig_example_task", 4096, NULL, 5, NULL);
+	xTaskCreate(smartconfig_example_task, "smartconfig_example_task", 4096, NULL, 10, NULL);
 	
 }
 
@@ -165,7 +181,17 @@ void wait_for_ip()
 	ESP_LOGI(TAG_WIFI, "Waiting for AP connection...");
 	xEventGroupWaitBits(wifi_event_group, bits, false, true, portMAX_DELAY);
 	ESP_LOGI(TAG_WIFI, "Connected to AP");
-	xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
+	xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, &tcp_client_handle);
+}
+
+void wifi_rssi()
+{
+	esp_wifi_sta_get_ap_info(&ap_info);
+//	if (ap_info.rssi > (-60))  							  {WIFI_Level = 0x04; }
+//	if ((ap_info.rssi <= (-60))&&(ap_info.rssi >= (-70)))  {WIFI_Level = 0x03; }
+//	if ((ap_info.rssi <= (-70))&&(ap_info.rssi >= (-80)))  {WIFI_Level = 0x02; }
+//	if (ap_info.rssi < (-80))  							  {WIFI_Level = 0x01; }
+	printf("RSSI %d\n",ap_info.rssi);
 }
 
 
@@ -194,67 +220,82 @@ void tcp_client_task(void *pvParameters)
 		}
 		//printf("%s", (char *) hints.ai_addr);
 
-		int sock =  socket(res->ai_family, res->ai_socktype, 0);
+		sock =  socket(res->ai_family, res->ai_socktype, 0);
 		if (sock < 0) {
-			ESP_LOGE(TAG_WIFI, "Unable to create socket: errno %d", errno);
+			ESP_LOGE(TAG_TCP, "Unable to create socket: errno %d", errno);
 			break;
 		}
-		ESP_LOGI(TAG_WIFI, "Socket created");
+		ESP_LOGI(TAG_TCP, "Socket created");
 
 		int err = connect(sock, res->ai_addr, res->ai_addrlen);
 		if (err != 0) {
-			ESP_LOGE(TAG_WIFI, "Socket unable to connect: errno %d", errno);
+			ESP_LOGE(TAG_TCP, "Socket unable to connect: errno %d", errno);
 		}
-		ESP_LOGI(TAG_WIFI, "Successfully connected");
+		else
+		{
+			ESP_LOGI(TAG_TCP, "Successfully connected");
+		}
 
 		while (1) {
-			ESP_LOGI(TAG_WIFI, "Receiving TCP...");
+			
+			if (delete_tcp_rask)
+			{
+				ESP_LOGI(TAG_TCP, "DELETE...");
+				disconnect = 0;
+				vTaskDelete(NULL);
+			}
+			wifi_rssi();
 			int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
 			// Error occured during receiving
-			ESP_LOGI(TAG_WIFI, "len: %d", len);
+			ESP_LOGI(TAG_TCP, "len: %d", len);
 			if(len <= 0) 
 			{
-				ESP_LOGE(TAG_WIFI, "recv failed: errno %d", errno);
+				ESP_LOGE(TAG_TCP, "recv failed: errno %d", errno);
 				break;
 			}
 			// Data received
-			else if(len > 0)
+			else //if(len > 0)
 			{
+				ESP_LOGI(TAG_TCP, "Receiving TCP...");
 				rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
 			
 				//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
 				            
 				if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
 				{
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
-					ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
-					ESP_LOGI(TAG_WIFI, "%s", "+ok=3.0.1-V.1.0.0");
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+					ESP_LOGI(TAG_TCP, "%s", rx_buffer);
+					ESP_LOGI(TAG_TCP, "%s", "+ok=3.0.1-V.1.0.0");
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
 					int err = send(sock, "+ok=3.0.1-V.1.0.0", 17, 0);
 					if (err < 0) {
-					ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 					break;
 					}
 				}
 				else if (!(strncmp(rx_buffer, "AT+WSMAC", 8)))
 				{
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
-					ESP_LOGI(TAG_WIFI, "%s", rx_buffer);
-					ESP_LOGI(TAG_WIFI, "%s", MAC_esp);
-					ESP_LOGI(TAG_WIFI, "-----------------------------------------------------");
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+					ESP_LOGI(TAG_TCP, "%s", rx_buffer);
+					ESP_LOGI(TAG_TCP, "%s", MAC_esp);
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
 					int err = send(sock, MAC_esp, 17, 0);
 					if (err < 0) 
 					{
-						ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 						break;
 					}
+				}
+				else if(!(strncmp(rx_buffer, "AT+UPDATE", 9)))
+				{
+					xTaskCreate(&ota_example_task, "ota_example_task", 8192, NULL, 5, NULL);
 				}
 				else
 				{
 					printf("Request: ");
 					for (uint8_t i = 0; i < len; i++)
 					{
-						//ESP_LOGI(TAG, "[DATA EVT]: %02X ", dtmp[i]);
+						//ESP_LOGI(TAG_TCP, "[DATA EVT]: %02X ", dtmp[i]);
 						printf("%02X ", rx_buffer[i]);
 					}
 					printf("\n");
@@ -262,17 +303,18 @@ void tcp_client_task(void *pvParameters)
 				}
 			}
 
-			//ESP_LOGE(TAG_WIFI, "Send");
+			//ESP_LOGE(TAG_TCP, "Send");
 			//vTaskDelay(1000 / portTICK_PERIOD_MS);
 		}
 
 		if (sock != -1) {
-			ESP_LOGE(TAG_WIFI, "Shutting down socket and restarting...");
+			ESP_LOGE(TAG_TCP, "Shutting down socket and restarting...");
 			shutdown(sock, 0);
 			close(sock);
 		}
+		vTaskDelay(30000 / portTICK_PERIOD_MS);
 	}
-	ESP_LOGE(TAG_WIFI, "TCP DELETE TASK");
+	ESP_LOGE(TAG_TCP, "TCP DELETE TASK");
 	vTaskDelete(NULL);
 }
 
@@ -294,45 +336,45 @@ void tcp_server_task(void *pvParameters)
 
 	int listen_sock = socket(addr_family, SOCK_STREAM, ip_protocol);
 	if (listen_sock < 0) {
-		ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+		ESP_LOGE(TAG_TCP, "Unable to create socket: errno %d", errno);
 		//break;
 	}
-	ESP_LOGI(TAG, "Socket created");
+	ESP_LOGI(TAG_TCP, "Socket created");
 
 	int err = bind(listen_sock, (struct sockaddr *)&destAddr, sizeof(destAddr));
 	if (err != 0) {
-		ESP_LOGE(TAG, "Socket unable to bind: errno %d", errno);
+		ESP_LOGE(TAG_TCP, "Socket unable to bind: errno %d", errno);
 		//break;
 	}
-	ESP_LOGI(TAG, "Socket binded");
+	ESP_LOGI(TAG_TCP, "Socket binded");
 	while (1) {
 		err = listen(listen_sock, 1);
 		if (err != 0) {
-			ESP_LOGE(TAG, "Error occured during listen: errno %d", errno);
+			ESP_LOGE(TAG_TCP, "Error occured during listen: errno %d", errno);
 			break;
 		}
-		ESP_LOGI(TAG, "Socket listening");
+		ESP_LOGI(TAG_TCP, "Socket listening");
 
 		struct sockaddr_in sourceAddr;
 
 		uint addrLen = sizeof(sourceAddr);
 		int sock = accept(listen_sock, (struct sockaddr *)&sourceAddr, &addrLen);
 		if (sock < 0) {
-			ESP_LOGE(TAG, "Unable to accept connection: errno %d", errno);
+			ESP_LOGE(TAG_TCP, "Unable to accept connection: errno %d", errno);
 			break;
 		}
-		ESP_LOGI(TAG, "Socket accepted");
+		ESP_LOGI(TAG_TCP, "Socket accepted");
 
 		while (1) {
 			int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
 			// Error occured during receiving
 			if(len < 0) {
-				ESP_LOGE(TAG, "recv failed: errno %d", errno);
+				ESP_LOGE(TAG_TCP, "recv failed: errno %d", errno);
 				break;
 			}
 			// Connection closed
 			else if(len == 0) {
-				ESP_LOGI(TAG, "Connection closed");
+				ESP_LOGI(TAG_TCP, "Connection closed");
 				break;
 			}
 			// Data received
@@ -341,23 +383,24 @@ void tcp_server_task(void *pvParameters)
 				inet_ntoa_r(((struct sockaddr_in *)&sourceAddr)->sin_addr.s_addr, addr_str, sizeof(addr_str) - 1);
 
 				rx_buffer[len] = 0;  // Null-terminate whatever we received and treat like a string
-				ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
-				ESP_LOGI(TAG, "%s", rx_buffer);
+				ESP_LOGI(TAG_TCP, "Received %d bytes from %s:", len, addr_str);
+				ESP_LOGI(TAG_TCP, "%s", rx_buffer);
 
 				int err = send(sock, rx_buffer, len, 0);
 				if (err < 0) {
-					ESP_LOGE(TAG, "Error occured during sending: errno %d", errno);
+					ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 					break;
 				}
 			}
 		}
 
 		if (sock != -1) {
-			ESP_LOGE(TAG, "Shutting down socket and restarting...");
+			ESP_LOGE(TAG_TCP, "Shutting down socket and restarting...");
 			shutdown(sock, 0);
 			close(sock);
 		}
 	}
+	ESP_LOGE(TAG_TCP, "DELETE TCP TASK");
 	vTaskDelete(NULL);
 }
 
@@ -365,19 +408,19 @@ void sc_callback(smartconfig_status_t status, void *pdata)
 {
 	switch (status) {
 	case SC_STATUS_WAIT:
-		ESP_LOGI(TAG, "SC_STATUS_WAIT");
+		ESP_LOGI(TAG_SC, "SC_STATUS_WAIT");
 		break;
 	case SC_STATUS_FIND_CHANNEL:
-		ESP_LOGI(TAG, "SC_STATUS_FINDING_CHANNEL");
+		ESP_LOGI(TAG_SC, "SC_STATUS_FINDING_CHANNEL");
 		break;
 	case SC_STATUS_GETTING_SSID_PSWD:
-		ESP_LOGI(TAG, "SC_STATUS_GETTING_SSID_PSWD");
+		ESP_LOGI(TAG_SC, "SC_STATUS_GETTING_SSID_PSWD");
 		break;
 	case SC_STATUS_LINK:
-		ESP_LOGI(TAG, "SC_STATUS_LINK");
+		ESP_LOGI(TAG_SC, "SC_STATUS_LINK");
 		wifi_config_t *wifi_config = pdata;
-		ESP_LOGI(TAG, "SSID:%s", wifi_config->sta.ssid);
-		ESP_LOGI(TAG, "PASSWORD:%s", wifi_config->sta.password);
+		ESP_LOGI(TAG_SC, "SSID:%s", wifi_config->sta.ssid);
+		ESP_LOGI(TAG_SC, "PASSWORD:%s", wifi_config->sta.password);
 		first_link = true;
 		nvs_open("storage", NVS_READWRITE, &storage_handle);
 		nvs_set_str(storage_handle, "SSID", (const char *)wifi_config->sta.ssid);
@@ -391,19 +434,19 @@ void sc_callback(smartconfig_status_t status, void *pdata)
 		ESP_ERROR_CHECK(esp_wifi_connect());
 		break;
 	case SC_STATUS_LINK_OVER:
-		ESP_LOGI(TAG, "SC_STATUS_LINK_OVER");
+		ESP_LOGI(TAG_SC, "SC_STATUS_LINK_OVER");
 		if (pdata != NULL) {
 			sc_callback_data_t *sc_callback_data = (sc_callback_data_t *)pdata;
 			switch (sc_callback_data->type) {
 			case SC_ACK_TYPE_ESPTOUCH:
-				ESP_LOGI(TAG, "Phone ip: %d.%d.%d.%d", sc_callback_data->ip[0], sc_callback_data->ip[1], sc_callback_data->ip[2], sc_callback_data->ip[3]);
-				ESP_LOGI(TAG, "TYPE: ESPTOUCH");
+				ESP_LOGI(TAG_SC, "Phone ip: %d.%d.%d.%d", sc_callback_data->ip[0], sc_callback_data->ip[1], sc_callback_data->ip[2], sc_callback_data->ip[3]);
+				ESP_LOGI(TAG_SC, "TYPE: ESPTOUCH");
 				break;
 			case SC_ACK_TYPE_AIRKISS:
-				ESP_LOGI(TAG, "TYPE: AIRKISS");
+				ESP_LOGI(TAG_SC, "TYPE: AIRKISS");
 				break;
 			default:
-				ESP_LOGE(TAG, "TYPE: ERROR");
+				ESP_LOGE(TAG_SC, "TYPE: ERROR");
 				break;
 			}
 		}
@@ -422,10 +465,10 @@ void smartconfig_example_task(void * parm)
 	while (1) {
 		uxBits = xEventGroupWaitBits(wifi_event_group, IPV4_GOTIP_BIT | ESPTOUCH_DONE_BIT, true, false, portMAX_DELAY);
 		if (uxBits & IPV4_GOTIP_BIT) {
-			ESP_LOGI(TAG, "WiFi Connected to ap");
+			ESP_LOGI(TAG_SC, "WiFi Connected to ap");
 		}
 		if (uxBits & ESPTOUCH_DONE_BIT) {
-			ESP_LOGI(TAG, "smartconfig over");
+			ESP_LOGI(TAG_SC, "smartconfig over");
 			esp_smartconfig_stop();
 			vTaskDelete(NULL);
 		}

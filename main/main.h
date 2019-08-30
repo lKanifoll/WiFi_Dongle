@@ -21,10 +21,15 @@
 #include "driver/uart.h"
 #include "tcpip_adapter.h"
 #include "esp_smartconfig.h"
+#include "esp_ota_ops.h"
 #include "smartconfig_ack.h"
 #include "defines.h"
 #include "wifi_tcp.h"
 #include "esp_ping.h"
+#include "OTA.h"
+#include "esp_ping.h"
+
+
 
 nvs_handle storage_handle;
 char SSID[32];
@@ -39,6 +44,6 @@ QueueHandle_t uart0_queue;
 bool check_crc8(char *pcBlock, int len);
 int sock;
 
-
+xTaskHandle uart_handle;
 
 #endif
