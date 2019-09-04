@@ -1,11 +1,3 @@
-/* OTA example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
 #include "main.h"
 
 static const char *TAG_OTA = "OTA";
@@ -95,8 +87,8 @@ bool _esp_ota_firm_parse_http(esp_ota_firm_t *ota_firm, const char *text, size_t
 			memset(length_str, 0, sizeof(length_str));
 			memcpy(length_str, ptr, ptr2 - ptr);
 			ota_firm->content_len = atoi(length_str);
-			ota_firm->ota_size = ota_firm->content_len;
-			ota_firm->ota_offset = 0;
+			ota_firm->ota_size = ota_firm->content_len / ota_firm->ota_num;
+			ota_firm->ota_offset = ota_firm->ota_size * ota_firm->update_ota_num;
 			ESP_LOGI(TAG_OTA, "parse Content-Length:%d, ota_size %d", ota_firm->content_len, ota_firm->ota_size);
 		}
 
@@ -252,12 +244,7 @@ void ota_example_task(void *pvParameter)
 	/* Wait for the callback to set the CONNECTED_BIT in the
 	   event group.
 	*/
-	xEventGroupWaitBits(wifi_event_group,
-		IPV4_GOTIP_BIT,
-		false,
-		true,
-		portMAX_DELAY);
-	ESP_LOGI(TAG_OTA, "Connect to Wifi ! Start to Connect to Server....");
+
 
 	/*connect to http server*/
 	if (connect_to_http_server()) {

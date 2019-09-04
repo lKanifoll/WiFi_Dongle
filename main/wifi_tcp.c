@@ -312,7 +312,7 @@ void tcp_client_task(void *pvParameters)
 			shutdown(sock, 0);
 			close(sock);
 		}
-		vTaskDelay(30000 / portTICK_PERIOD_MS);
+		vTaskDelay(5000 / portTICK_PERIOD_MS);
 	}
 	ESP_LOGE(TAG_TCP, "TCP DELETE TASK");
 	vTaskDelete(NULL);

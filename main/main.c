@@ -107,7 +107,7 @@ void app_main()
 		strcpy((char*)&HOST_PORT[0], "10001");
 		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);*/
 		
-		strcpy((char*)&HOST_ADDR[0], "192.168.1.71");
+		strcpy((char*)&HOST_ADDR[0], "192.168.0.8");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		strcpy((char*)&HOST_PORT[0], "3333");
