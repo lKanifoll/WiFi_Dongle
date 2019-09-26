@@ -2,6 +2,10 @@
 <VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ConfigurationName>Debug</ConfigurationName>
   <Project xsi:type="com.visualgdb.project.external.esp-idf">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>Unknown</PathStyle>
+    </CustomSourceDirectories>
     <ProjectModeSettings>
       <ProjectGUID>35c8ef79-383e-4541-a910-e92637d93980</ProjectGUID>
       <GroupSourcesByTypes>true</GroupSourcesByTypes>
@@ -48,9 +52,9 @@
   </CustomDebug>
   <DeviceTerminalSettings>
     <Connection xsi:type="com.sysprogs.terminal.connection.serial">
-      <ComPortName>COM5</ComPortName>
+      <ComPortName>COM23</ComPortName>
       <AdvancedSettings>
-        <BaudRate>74880</BaudRate>
+        <BaudRate>115200</BaudRate>
         <DataBits>8</DataBits>
         <Parity>None</Parity>
         <StopBits>One</StopBits>

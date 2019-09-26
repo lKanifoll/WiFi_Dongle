@@ -20,7 +20,7 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 		wifi_active_flag = true;
 		if (!disconnect)
 		{
-			delete_tcp_rask = 0;
+			delete_tcp_task = 0;
 			xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, &tcp_client_handle);
 		}
 		break;
@@ -42,7 +42,7 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 		{
 			//vTaskSuspend(tcp_client_handle);
 			//ESP_LOGW(TAG_WIFI, "SUSPEND TCP TASK...");
-			delete_tcp_rask = 1;
+			delete_tcp_task = 1;
 			wifi_active_flag = false;
 			disconnect = 1;
 		}
@@ -81,8 +81,9 @@ void initialise_wifi()
 		{
 			.sta = { .ssid = "", .password = "", },
 		};
-		printf("SSID %s\n", SSID);
-		printf("PASS %s\n", PASS);
+		printf("SSID: %s\n", SSID);
+		printf("PASS: %s\n", PASS);
+		printf("HOST: %s:%s\n", HOST_ADDR, HOST_PORT);
 		strcpy((char*) &wifi_config.sta.ssid[0], (const char*) &SSID[0]);
 		strcpy((char*) &wifi_config.sta.password[0], (const char*) &PASS[0]);
 
@@ -238,7 +239,7 @@ void tcp_client_task(void *pvParameters)
 
 		while (1) {
 			
-			if (delete_tcp_rask)
+			if (delete_tcp_task)
 			{
 				ESP_LOGI(TAG_TCP, "DELETE...");
 				disconnect = 0;
@@ -265,9 +266,9 @@ void tcp_client_task(void *pvParameters)
 				{
 					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
 					ESP_LOGI(TAG_TCP, "%s", rx_buffer);
-					ESP_LOGI(TAG_TCP, "%s", "+ok=3.0.1-V.1.0.0");
+					ESP_LOGI(TAG_TCP, "%s", "+ok=ESP-IN-YAN-1.0.0");
 					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-					int err = send(sock, "+ok=3.0.1-V.1.0.0", 17, 0);
+					int err = send(sock, "+ok=ESP-IN-YAN-1.0.0", 20, 0);
 					if (err < 0) {
 						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 					break;
@@ -289,6 +290,36 @@ void tcp_client_task(void *pvParameters)
 				else if(!(strncmp(rx_buffer, "AT+UPDATE", 9)))
 				{
 					xTaskCreate(&ota_example_task, "ota_example_task", 8192, NULL, 5, NULL);
+				}
+				else if(!(strncmp(rx_buffer, "AT+HOST+", 8)))
+				{
+					uint8_t y = 0;
+					uint8_t i = 0;
+					//uint8_t j = 0;
+					for (i = 8; i < len; i++)
+					{
+						if (rx_buffer[i] == 0x3A)
+						{
+							i++;
+							break;
+						}
+						HOST_ADDR[y] = rx_buffer[i];
+						y++;
+					}
+					y = 0;
+					
+					for (; i < len; i++)
+					{
+						HOST_PORT[y] = rx_buffer[i];
+						y++;
+					}
+					
+					nvs_open("storage", NVS_READWRITE, &storage_handle);
+					nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+					nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+					nvs_commit(storage_handle);
+					nvs_close(storage_handle);
+					esp_restart();
 				}
 				else
 				{

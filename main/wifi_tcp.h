@@ -2,12 +2,12 @@
 #define _WIFI_TCP_H_
 extern const int IPV4_GOTIP_BIT;
 
-char MAC_esp[13];
+char MAC_esp[16];
 uint8_t temp_mac[6];
 uint8_t wifi_active_flag;
 uint8_t disconnect;
 
-uint8_t delete_tcp_rask;
+uint8_t delete_tcp_task;
 
 wifi_ap_record_t ap_info;
 

@@ -47,15 +47,15 @@ void uart_event_task(void *pvParameters)
 					{
 						set_wifi_ap();
 					}
-					dtmp[2] = 0x01;
-					dtmp[3] = 0x01;
-					uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
+					//dtmp[2] = 0x01;
+					//dtmp[3] = 0x01;
+					//uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
 				}
 				else
 				{
-					dtmp[2] = 0x01;
-					dtmp[3] = 0x00;
-					uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
+					//dtmp[2] = 0x01;
+					//dtmp[3] = 0x00;
+					//uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
 				}
 			}
 			else
@@ -101,17 +101,17 @@ void app_main()
 	nvs_get_u8(storage_handle, "first_start", &first_start);
 	if (!first_start)
 	{
-		/*strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
+		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		strcpy((char*)&HOST_PORT[0], "10001");
-		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);*/
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
-		strcpy((char*)&HOST_ADDR[0], "192.168.0.8");
+		/*strcpy((char*)&HOST_ADDR[0], "192.168.1.71");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		strcpy((char*)&HOST_PORT[0], "3333");
-		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);*/
 		
 		first_start = true;
 		nvs_set_u8(storage_handle, "first_start", first_start);
