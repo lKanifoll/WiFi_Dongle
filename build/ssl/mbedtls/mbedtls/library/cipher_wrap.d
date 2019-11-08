@@ -1,7 +1,7 @@
 mbedtls/mbedtls/library/cipher_wrap.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/library/cipher_wrap.c \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -16,6 +16,7 @@ mbedtls/mbedtls/library/cipher_wrap.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_aes.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/config.h \
@@ -39,7 +40,7 @@ mbedtls/mbedtls/library/cipher_wrap.o: \
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
@@ -68,6 +69,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_aes.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 

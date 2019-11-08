@@ -1,6 +1,6 @@
 port/fcntl.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/vfs/port/fcntl.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/fcntl.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/fcntl.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_default_fcntl.h \
@@ -19,6 +19,7 @@ port/fcntl.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/types.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stat.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/reent.h \
@@ -39,6 +40,7 @@ port/fcntl.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/udp_sync.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/debug.h \
@@ -56,7 +58,7 @@ port/fcntl.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/errno.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/fcntl.h:
 
@@ -93,6 +95,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/types
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stat.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 
@@ -133,6 +137,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h:
 

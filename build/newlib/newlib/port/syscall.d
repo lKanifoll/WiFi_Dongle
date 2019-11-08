@@ -1,6 +1,6 @@
 newlib/port/syscall.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/syscall.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -22,6 +22,7 @@ newlib/port/syscall.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stat.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h \
@@ -62,7 +63,7 @@ newlib/port/syscall.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h:
 
@@ -105,6 +106,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stat.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 

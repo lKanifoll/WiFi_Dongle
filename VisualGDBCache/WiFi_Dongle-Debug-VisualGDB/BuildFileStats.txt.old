@@ -1,10 +1,10 @@
-c:\sysgcc\esp8266\rtos-sdk\master\components\app_update\component.mk: 132103489043793328
+c:\sysgcc\esp8266\rtos-sdk\master\components\app_update\component.mk: 132151699360127159
 c:\sysgcc\esp8266\rtos-sdk\master\components\app_update\esp_ota_ops.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\app_update\Makefile.projbuild: 132103489043753430
+c:\sysgcc\esp8266\rtos-sdk\master\components\app_update\Makefile.projbuild: 132151699360117176
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader\subproject\main\bootloader_start.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader\subproject\main\component.mk: 132103489050740783
-c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\component.mk: 132103489051000457
-c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\Makefile.projbuild: 132103489050910329
+c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader\subproject\main\component.mk: 132151699360895469
+c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\component.mk: 132151699360935358
+c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\Makefile.projbuild: 132151699360925675
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\bootloader_clock.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\bootloader_common.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\bootloader_flash.c
@@ -19,12 +19,7 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\flash_partit
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\flash_qio_mode.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\secure_boot.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\bootloader_support\src\secure_boot_signatures.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\cjson\cJSON\cJSON.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\cjson\cJSON\cJSON_Utils.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\cjson\cJSON\Makefile: 132103489053719805
-c:\sysgcc\esp8266\rtos-sdk\master\components\cjson\cJSON\test.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\cjson\component.mk: 132103489063417436
-c:\sysgcc\esp8266\rtos-sdk\master\components\coap\component.mk: 132103489063546868
+c:\sysgcc\esp8266\rtos-sdk\master\components\coap\component.mk: 132151699361085224
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\address.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\async.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\block.c
@@ -42,36 +37,43 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\resource.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\str.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\subscribe.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\libcoap\src\uri.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\coap\Makefile.projbuild: 132103489063506976
+c:\sysgcc\esp8266\rtos-sdk\master\components\coap\Makefile.projbuild: 132151699361085224
 c:\sysgcc\esp8266\rtos-sdk\master\components\coap\port\coap_io_socket.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_client\component.mk: 132103489076344965
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp_common\component.mk: 132151699362820847
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp_common\src\stack_check.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_client\component.mk: 132151699362850766
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_client\esp_http_client.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_client\lib\http_auth.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_client\lib\http_header.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_client\lib\http_utils.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\component.mk: 132103489076873751
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\component.mk: 132151699362920803
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\src\httpd_main.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\src\httpd_parse.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\src\httpd_sess.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\src\httpd_txrx.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\src\httpd_uri.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_http_server\src\util\ctrl_sock.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp_https_ota\component.mk: 132103489079307047
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp_https_ota\component.mk: 132151699363010340
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_https_ota\src\esp_https_ota.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp_ringbuf\component.mk: 132103489079486563
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp_ringbuf\component.mk: 132151699363040260
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp_ringbuf\ringbuf.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\component.mk: 132103489069292473
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\component.mk: 132151699361723876
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\adc.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\gpio.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\hw_timer.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\i2c.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\i2s.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\ir_rx.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\ir_tx.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\pwm.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\spi.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\driver\uart.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\Makefile.projbuild: 132103489069212705
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\Makefile.projbuild: 132151699361713900
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\backtrace.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\chip_boot.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\esp_err_to_name.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\esp_fsleep.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\esp_sleep.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\esp_timer.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\esp_wifi.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\esp_wifi_os_adapter.c
@@ -80,12 +82,13 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\event_default_handle
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\event_loop.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\phy_init.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\reset_reason.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\rom.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\startup.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\system_api.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp8266\source\task_wdt.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\esp-tls\component.mk: 132103489068973626
+c:\sysgcc\esp8266\rtos-sdk\master\components\esp-tls\component.mk: 132151699361683979
 c:\sysgcc\esp8266\rtos-sdk\master\components\esp-tls\esp_tls.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\component.mk: 132103489084270950
+c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\component.mk: 132151699363849118
 c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\freertos\event_groups.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\freertos\list.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\freertos\queue.c
@@ -99,15 +102,20 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\port\esp8266\panic.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\port\esp8266\port.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\port\esp8266\xtensa_context.S
 c:\sysgcc\esp8266\rtos-sdk\master\components\freertos\port\esp8266\xtensa_vectors.S
-c:\sysgcc\esp8266\rtos-sdk\master\components\heap\component.mk: 132103489086143551
+c:\sysgcc\esp8266\rtos-sdk\master\components\heap\component.mk: 132151699364098404
 c:\sysgcc\esp8266\rtos-sdk\master\components\heap\port\esp8266\esp_heap_init.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\heap\src\esp_heap_caps.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\heap\src\esp_heap_trace.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\http_parser\component.mk: 132103489086642516
+c:\sysgcc\esp8266\rtos-sdk\master\components\http_parser\component.mk: 132151699364168195
 c:\sysgcc\esp8266\rtos-sdk\master\components\http_parser\src\http_parser.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\jsmn\component.mk: 132103489086861641
+c:\sysgcc\esp8266\rtos-sdk\master\components\jsmn\component.mk: 132151699364198114
 c:\sysgcc\esp8266\rtos-sdk\master\components\jsmn\src\jsmn.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\component.mk: 132103489087081041
+c:\sysgcc\esp8266\rtos-sdk\master\components\json\cJSON\cJSON.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\json\cJSON\cJSON_Utils.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\json\cJSON\Makefile: 132151699549362922
+c:\sysgcc\esp8266\rtos-sdk\master\components\json\cJSON\test.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\json\component.mk: 132151699364218072
+c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\component.mk: 132151699364237779
 c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\libsodium\src\libsodium\crypto_aead\chacha20poly1305\sodium\aead_chacha20poly1305.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\libsodium\src\libsodium\crypto_aead\xchacha20poly1305\sodium\aead_xchacha20poly1305.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\libsodium\src\libsodium\crypto_auth\crypto_auth.c
@@ -185,13 +193,13 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\libsodium\src\libsodium\s
 c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\libsodium\src\libsodium\sodium\utils.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\libsodium\src\libsodium\sodium\version.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\libsodium\port\randombytes_esp8266.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\log\component.mk: 132103489110336356
+c:\sysgcc\esp8266\rtos-sdk\master\components\log\component.mk: 132151699367090706
 c:\sysgcc\esp8266\rtos-sdk\master\components\log\log.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\apps\dhcpserver\dhcpserver.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\apps\multi-threads\sockets_mt.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\apps\ping\esp_ping.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\apps\ping\ping.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\component.mk: 132103489110925102
+c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\component.mk: 132151699367170793
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\lwip\src\api\api_lib.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\lwip\src\api\api_msg.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\lwip\src\api\err.c
@@ -242,7 +250,7 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\lwip\src\netif\slipif.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\port\esp8266\freertos\sys_arch.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\port\esp8266\freertos\udp_sync.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\lwip\port\esp8266\netif\ethernetif.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\component.mk: 132103489127547048
+c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\component.mk: 132151699369035810
 c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTClient-C\src\FreeRTOS\MQTTFreeRTOS.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTClient-C\src\MQTTClient.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTPacket\src\MQTTConnectClient.c
@@ -255,9 +263,9 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTPacket\src\MQTTSu
 c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTPacket\src\MQTTSubscribeServer.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTPacket\src\MQTTUnsubscribeClient.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\ibm-mqtt\MQTTPacket\src\MQTTUnsubscribeServer.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\Makefile.projbuild: 132103489127506883
-c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\component.mk: 132103489129860765
-c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\Makefile.projbuild: 132103489129781078
+c:\sysgcc\esp8266\rtos-sdk\master\components\mqtt\Makefile.projbuild: 132151699369035810
+c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\component.mk: 132151699369305004
+c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\Makefile.projbuild: 132151699369295027
 c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\esp_malloc.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\esp_newlib.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\locks.c
@@ -265,27 +273,27 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\select.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\syscall.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\termios.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\newlib\newlib\port\time.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\component.mk: 132103489136070858
+c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\component.mk: 132151699370811269
 c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\src\nvs_api.cpp
 c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\src\nvs_item_hash_list.cpp
 c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\src\nvs_page.cpp
 c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\src\nvs_pagemanager.cpp
 c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\src\nvs_storage.cpp
 c:\sysgcc\esp8266\rtos-sdk\master\components\nvs_flash\src\nvs_types.cpp
-c:\sysgcc\esp8266\rtos-sdk\master\components\protobuf-c\component.mk: 132103489138584149
+c:\sysgcc\esp8266\rtos-sdk\master\components\protobuf-c\component.mk: 132151699371067209
 c:\sysgcc\esp8266\rtos-sdk\master\components\protobuf-c\protobuf-c\protobuf-c\protobuf-c.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\smartconfig_ack\component.mk: 132103489143500981
+c:\sysgcc\esp8266\rtos-sdk\master\components\smartconfig_ack\component.mk: 132151699371692339
 c:\sysgcc\esp8266\rtos-sdk\master\components\smartconfig_ack\smartconfig_ack.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\spi_flash\component.mk: 132103489143670257
+c:\sysgcc\esp8266\rtos-sdk\master\components\spi_flash\component.mk: 132151699371692339
 c:\sysgcc\esp8266\rtos-sdk\master\components\spi_flash\port\port.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\spi_flash\src\partition.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\spi_flash\src\spi_flash.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\spi_flash\src\spi_flash_raw.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\spi_ram\component.mk: 132103489144219098
+c:\sysgcc\esp8266\rtos-sdk\master\components\spi_ram\component.mk: 132151699371692339
 c:\sysgcc\esp8266\rtos-sdk\master\components\spi_ram\spi_ram.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\spi_ram\spi_ram_fifo.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\component.mk: 132103489146688445
-c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\Makefile.projbuild: 132103489146658523
+c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\component.mk: 132151699372004763
+c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\Makefile.projbuild: 132151699372004763
 c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\mbedtls\library\aes.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\mbedtls\library\aesni.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\mbedtls\library\arc4.c
@@ -369,25 +377,25 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\port\openssl\source\lib
 c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\port\openssl\source\library\ssl_x509.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\port\openssl\source\platform\ssl_pm.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\ssl\mbedtls\port\openssl\source\platform\ssl_pm_extend.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\component.mk: 132103489157184576
+c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\component.mk: 132151699373254473
 c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\transport.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\transport_ssl.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\transport_tcp.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\transport_utils.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\tcp_transport\transport_ws.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\util\component.mk: 132103489157978601
+c:\sysgcc\esp8266\rtos-sdk\master\components\util\component.mk: 132151699373410688
 c:\sysgcc\esp8266\rtos-sdk\master\components\util\src\aes.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\util\src\arc4.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\util\src\base64.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\util\src\crc.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\util\src\md5.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\util\src\sha.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\vfs\component.mk: 132103489159155739
+c:\sysgcc\esp8266\rtos-sdk\master\components\vfs\component.mk: 132151699373566896
 c:\sysgcc\esp8266\rtos-sdk\master\components\vfs\port\fcntl.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\vfs\port\ioctl.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\vfs\vfs.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\vfs\vfs_uart.c
-c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\component.mk: 132103489161050386
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\component.mk: 132151699373566896
 c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\port\os_xtensa.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\aes-cbc.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\aes-internal.c
@@ -407,163 +415,188 @@ c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha1-inte
 c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha1-pbkdf2.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha256.c
 c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\crypto\sha256-internal.c
-C:\Workspace\WiFi_Dongle\build\app_update\component_project_vars.mk: 132120760072840338
-C:\Workspace\WiFi_Dongle\build\aws_iot\component_project_vars.mk: 132120760072441396
-C:\Workspace\WiFi_Dongle\build\bootloader\bootloader_support\component_project_vars.mk: 132120760114439109
-C:\Workspace\WiFi_Dongle\build\bootloader\component_project_vars.mk: 132120760058259323
-C:\Workspace\WiFi_Dongle\build\bootloader\esp8266\component_project_vars.mk: 132120760112364657
-C:\Workspace\WiFi_Dongle\build\bootloader\esptool_py\component_project_vars.mk: 132120760108634626
-C:\Workspace\WiFi_Dongle\build\bootloader\log\component_project_vars.mk: 132120760112504285
-C:\Workspace\WiFi_Dongle\build\bootloader\main\component_project_vars.mk: 132120760114359319
-C:\Workspace\WiFi_Dongle\build\bootloader\spi_flash\component_project_vars.mk: 132120760113481669
-C:\Workspace\WiFi_Dongle\build\bootloader\util\component_project_vars.mk: 132120760113012919
-C:\Workspace\WiFi_Dongle\build\bootloader_support\component_project_vars.mk: 132120760072311747
-C:\Workspace\WiFi_Dongle\build\cjson\component_project_vars.mk: 132120760072311747
-C:\Workspace\WiFi_Dongle\build\coap\component_project_vars.mk: 132120760072401506
-C:\Workspace\WiFi_Dongle\build\components\component_project_vars.mk: 132120760072800439
-C:\Workspace\WiFi_Dongle\build\console\component_project_vars.mk: 132120760071234633
-C:\Workspace\WiFi_Dongle\build\esp_http_client\component_project_vars.mk: 132120760068192762
-C:\Workspace\WiFi_Dongle\build\esp_http_server\component_project_vars.mk: 132120760070117616
-C:\Workspace\WiFi_Dongle\build\esp_https_ota\component_project_vars.mk: 132120760071603639
-C:\Workspace\WiFi_Dongle\build\esp_ringbuf\component_project_vars.mk: 132120760072630892
-C:\Workspace\WiFi_Dongle\build\esp8266\component_project_vars.mk: 132120760071922788
-C:\Workspace\WiFi_Dongle\build\esp-tls\component_project_vars.mk: 132120760071434089
-C:\Workspace\WiFi_Dongle\build\esptool_py\component_project_vars.mk: 132120760051527314
-C:\Workspace\WiFi_Dongle\build\freertos\component_project_vars.mk: 132120760070526518
-C:\Workspace\WiFi_Dongle\build\heap\component_project_vars.mk: 132120760071613610
-C:\Workspace\WiFi_Dongle\build\http_parser\component_project_vars.mk: 132120760068711372
-C:\Workspace\WiFi_Dongle\build\jsmn\component_project_vars.mk: 132120760068392225
-C:\Workspace\WiFi_Dongle\build\libsodium\component_project_vars.mk: 132120760069708706
-C:\Workspace\WiFi_Dongle\build\log\component_project_vars.mk: 132120760066527218
-C:\Workspace\WiFi_Dongle\build\lwip\component_project_vars.mk: 132120760062178837
-C:\Workspace\WiFi_Dongle\build\main\component_project_vars.mk: 132120760065071105
-C:\Workspace\WiFi_Dongle\build\mdns\component_project_vars.mk: 132120760066347701
-C:\Workspace\WiFi_Dongle\build\mqtt\component_project_vars.mk: 132120760060832438
-C:\Workspace\WiFi_Dongle\build\newlib\component_project_vars.mk: 132120760061710095
-C:\Workspace\WiFi_Dongle\build\nvs_flash\component_project_vars.mk: 132120760057142299
-C:\Workspace\WiFi_Dongle\build\partition_table\component_project_vars.mk: 132120760039180334
-C:\Workspace\WiFi_Dongle\build\protobuf-c\component_project_vars.mk: 132120760057132330
-C:\Workspace\WiFi_Dongle\build\protocomm\component_project_vars.mk: 132120760052714145
-C:\Workspace\WiFi_Dongle\build\pthread\component_project_vars.mk: 132120760050280652
-C:\Workspace\WiFi_Dongle\build\smartconfig_ack\component_project_vars.mk: 132120760050500064
-C:\Workspace\WiFi_Dongle\build\spi_flash\component_project_vars.mk: 132120760054818516
-C:\Workspace\WiFi_Dongle\build\spi_ram\component_project_vars.mk: 132120760047657667
-C:\Workspace\WiFi_Dongle\build\spiffs\component_project_vars.mk: 132120760048824538
-C:\Workspace\WiFi_Dongle\build\ssl\component_project_vars.mk: 132120760049712173
-C:\Workspace\WiFi_Dongle\build\tcp_transport\component_project_vars.mk: 132120760049712173
-C:\Workspace\WiFi_Dongle\build\tcpip_adapter\component_project_vars.mk: 132120760047458194
-C:\Workspace\WiFi_Dongle\build\util\component_project_vars.mk: 132120760048086520
-C:\Workspace\WiFi_Dongle\build\vfs\component_project_vars.mk: 132120760047697555
-C:\Workspace\WiFi_Dongle\build\wifi_provisioning\component_project_vars.mk: 132120760040915694
-C:\Workspace\WiFi_Dongle\build\wpa_supplicant\component_project_vars.mk: 132120760042800651
-C:\Workspace\WiFi_Dongle\components\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle\components\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle\components\folder1\file1.c
-C:\Workspace\WiFi_Dongle\components\folder2\file2.c
-C:\Workspace\WiFi_Dongle\Debug\app_update\component_project_vars.mk: 132113083259764258
-C:\Workspace\WiFi_Dongle\Debug\aws_iot\component_project_vars.mk: 132113083259504945
-C:\Workspace\WiFi_Dongle\Debug\bootloader\bootloader_support\component_project_vars.mk: 132113083305440127
-C:\Workspace\WiFi_Dongle\Debug\bootloader\component_project_vars.mk: 132113083255349901
-C:\Workspace\WiFi_Dongle\Debug\bootloader\esp8266\component_project_vars.mk: 132113083300543221
-C:\Workspace\WiFi_Dongle\Debug\bootloader\esptool_py\component_project_vars.mk: 132113083302009302
-C:\Workspace\WiFi_Dongle\Debug\bootloader\log\component_project_vars.mk: 132113083300573137
-C:\Workspace\WiFi_Dongle\Debug\bootloader\main\component_project_vars.mk: 132113083305380288
-C:\Workspace\WiFi_Dongle\Debug\bootloader\spi_flash\component_project_vars.mk: 132113083300872342
-C:\Workspace\WiFi_Dongle\Debug\bootloader\util\component_project_vars.mk: 132113083300453457
-C:\Workspace\WiFi_Dongle\Debug\bootloader_support\component_project_vars.mk: 132113083257379564
-C:\Workspace\WiFi_Dongle\Debug\cjson\component_project_vars.mk: 132113083255688993
-C:\Workspace\WiFi_Dongle\Debug\coap\component_project_vars.mk: 132113083255459609
-C:\Workspace\WiFi_Dongle\Debug\components\component_project_vars.mk: 132113083254467170
-C:\Workspace\WiFi_Dongle\Debug\console\component_project_vars.mk: 132113083252382388
-C:\Workspace\WiFi_Dongle\Debug\esp_http_client\component_project_vars.mk: 132113083248951561
-C:\Workspace\WiFi_Dongle\Debug\esp_http_server\component_project_vars.mk: 132113083247056632
-C:\Workspace\WiFi_Dongle\Debug\esp_https_ota\component_project_vars.mk: 132113083245071934
-C:\Workspace\WiFi_Dongle\Debug\esp_ringbuf\component_project_vars.mk: 132113083244583237
-C:\Workspace\WiFi_Dongle\Debug\esp8266\component_project_vars.mk: 132113083249879079
-C:\Workspace\WiFi_Dongle\Debug\espos\component_project_vars.mk: 132103493152161630
-C:\Workspace\WiFi_Dongle\Debug\esp-tls\component_project_vars.mk: 132113083250208194
-C:\Workspace\WiFi_Dongle\Debug\esptool_py\component_project_vars.mk: 132113083240125163
-C:\Workspace\WiFi_Dongle\Debug\freertos\component_project_vars.mk: 132113083243805315
-C:\Workspace\WiFi_Dongle\Debug\heap\component_project_vars.mk: 132113083241740838
-C:\Workspace\WiFi_Dongle\Debug\http_parser\component_project_vars.mk: 132113083239227557
-C:\Workspace\WiFi_Dongle\Debug\jsmn\component_project_vars.mk: 132113083238978221
-C:\Workspace\WiFi_Dongle\Debug\libsodium\component_project_vars.mk: 132113083238589264
-C:\Workspace\WiFi_Dongle\Debug\log\component_project_vars.mk: 132113083236604569
-C:\Workspace\WiFi_Dongle\Debug\lwip\component_project_vars.mk: 132113083234031505
-C:\Workspace\WiFi_Dongle\Debug\main\component_project_vars.mk: 132113083233812040
-C:\Workspace\WiFi_Dongle\Debug\mdns\component_project_vars.mk: 132113083232445692
-C:\Workspace\WiFi_Dongle\Debug\mqtt\component_project_vars.mk: 132113083231807399
-C:\Workspace\WiFi_Dongle\Debug\newlib\component_project_vars.mk: 132113083228576037
-C:\Workspace\WiFi_Dongle\Debug\nvs_flash\component_project_vars.mk: 132113083228576037
-C:\Workspace\WiFi_Dongle\Debug\partition_table\component_project_vars.mk: 132113083223090701
-C:\Workspace\WiFi_Dongle\Debug\protobuf-c\component_project_vars.mk: 132113083227459018
-C:\Workspace\WiFi_Dongle\Debug\protocomm\component_project_vars.mk: 132113083226830707
-C:\Workspace\WiFi_Dongle\Debug\pthread\component_project_vars.mk: 132113083222911181
-C:\Workspace\WiFi_Dongle\Debug\smartconfig_ack\component_project_vars.mk: 132113083222023556
-C:\Workspace\WiFi_Dongle\Debug\spi_flash\component_project_vars.mk: 132113083221554814
-C:\Workspace\WiFi_Dongle\Debug\spi_ram\component_project_vars.mk: 132113083221883936
-C:\Workspace\WiFi_Dongle\Debug\spiffs\component_project_vars.mk: 132113083217031819
-C:\Workspace\WiFi_Dongle\Debug\ssl\component_project_vars.mk: 132113083217690057
-C:\Workspace\WiFi_Dongle\Debug\tcp_transport\component_project_vars.mk: 132113083216722644
-C:\Workspace\WiFi_Dongle\Debug\tcpip_adapter\component_project_vars.mk: 132113083216373577
-C:\Workspace\WiFi_Dongle\Debug\util\component_project_vars.mk: 132113083211576412
-C:\Workspace\WiFi_Dongle\Debug\vfs\component_project_vars.mk: 132113083211067768
-C:\Workspace\WiFi_Dongle\Debug\wifi_provisioning\component_project_vars.mk: 132113083211576412
-C:\Workspace\WiFi_Dongle\Debug\wpa_supplicant\component_project_vars.mk: 132113083210399555
-C:\Workspace\WiFi_Dongle\main\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle\main\component.mk: 132052366631695572
-C:\Workspace\WiFi_Dongle\main\main.c
-C:\Workspace\WiFi_Dongle\main\OTA.c
-C:\Workspace\WiFi_Dongle\main\wifi_tcp.c
-C:\Workspace\WiFi_Dongle\Makefile: 132052366630289943
-C:\Workspace\WiFi_Dongle\sdkconfig-debug: 132118847770771207
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\app_update\component_project_vars.mk: 132118848026023289
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\aws_iot\component_project_vars.mk: 132118848022125012
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\bootloader_support\component_project_vars.mk: 132118848122324546
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\component_project_vars.mk: 132118848018454828
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esp8266\component_project_vars.mk: 132118848110781526
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esptool_py\component_project_vars.mk: 132118848126640667
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\log\component_project_vars.mk: 132118848114621726
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\main\component_project_vars.mk: 132118848125972451
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\spi_flash\component_project_vars.mk: 132118848118355955
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\util\component_project_vars.mk: 132118848106882983
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader_support\component_project_vars.mk: 132118848017656332
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\cjson\component_project_vars.mk: 132118848014071493
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\coap\component_project_vars.mk: 132118848010226492
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\components\component_project_vars.mk: 132118848006253117
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\console\component_project_vars.mk: 132118848002403750
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_client\component_project_vars.mk: 132118847991161712
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_server\component_project_vars.mk: 132118847987223383
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_https_ota\component_project_vars.mk: 132118847983563164
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_ringbuf\component_project_vars.mk: 132118847979682322
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp8266\component_project_vars.mk: 132118847994888453
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\espos\component_project_vars.mk: 132103511645491683
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp-tls\component_project_vars.mk: 132118847998732407
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esptool_py\component_project_vars.mk: 132118847975877394
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\freertos\component_project_vars.mk: 132118847975068293
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\heap\component_project_vars.mk: 132118847971149360
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\http_parser\component_project_vars.mk: 132118847967197161
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\jsmn\component_project_vars.mk: 132118847963316213
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\libsodium\component_project_vars.mk: 132118847959476965
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\log\component_project_vars.mk: 132118847954389453
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\lwip\component_project_vars.mk: 132118847950515473
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\main\component_project_vars.mk: 132118847946408602
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mdns\component_project_vars.mk: 132118847942458663
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mqtt\component_project_vars.mk: 132118847938546667
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\newlib\component_project_vars.mk: 132118847934689607
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\nvs_flash\component_project_vars.mk: 132118847931048322
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\partition_table\component_project_vars.mk: 132118847927179454
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protobuf-c\component_project_vars.mk: 132118847926491292
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protocomm\component_project_vars.mk: 132118847922776357
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\pthread\component_project_vars.mk: 132118847918976204
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\smartconfig_ack\component_project_vars.mk: 132118847915120644
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_flash\component_project_vars.mk: 132118847911491347
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_ram\component_project_vars.mk: 132118847907488777
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spiffs\component_project_vars.mk: 132118847903781999
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\ssl\component_project_vars.mk: 132118847899863860
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcp_transport\component_project_vars.mk: 132118847895108706
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcpip_adapter\component_project_vars.mk: 132118847891274142
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\util\component_project_vars.mk: 132118847887365687
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\vfs\component_project_vars.mk: 132118847883514032
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wifi_provisioning\component_project_vars.mk: 132118847879743131
-C:\Workspace\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wpa_supplicant\component_project_vars.mk: 132118847876045344
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_aes-cbc.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_aes-unwrap.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_aes-wrap.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_crypto_internal.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_crypto_internal-cipher.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_crypto_internal-modexp.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_sha256.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto\fast_sha256-internal.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\fast_crypto_ops.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\eap_common.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\uuid.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_attr_build.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_attr_parse.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_attr_process.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_common.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_dev_attr.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_enrollee.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_registrar.c
+c:\sysgcc\esp8266\rtos-sdk\master\components\wpa_supplicant\src\wps\wps_validate.c
+C:\Workspace\Repos\WiFi_Dongle\build\app_update\component_project_vars.mk: 132170007928772215
+C:\Workspace\Repos\WiFi_Dongle\build\aws_iot\component_project_vars.mk: 132170007928303471
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\bootloader_support\component_project_vars.mk: 132170007996910529
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\component_project_vars.mk: 132170007920733730
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\esp8266\component_project_vars.mk: 132170007993120668
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\esptool_py\component_project_vars.mk: 132170007993350058
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\log\component_project_vars.mk: 132170007992821468
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\main\component_project_vars.mk: 132170008003612604
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\spi_flash\component_project_vars.mk: 132170007994566799
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader\util\component_project_vars.mk: 132170007989071504
+C:\Workspace\Repos\WiFi_Dongle\build\bootloader_support\component_project_vars.mk: 132170007928772215
+C:\Workspace\Repos\WiFi_Dongle\build\cjson\component_project_vars.mk: 132151770598864344
+C:\Workspace\Repos\WiFi_Dongle\build\coap\component_project_vars.mk: 132170007928622617
+C:\Workspace\Repos\WiFi_Dongle\build\components\component_project_vars.mk: 132170007927834727
+C:\Workspace\Repos\WiFi_Dongle\build\console\component_project_vars.mk: 132170007928243633
+C:\Workspace\Repos\WiFi_Dongle\build\esp_common\component_project_vars.mk: 132170007927525557
+C:\Workspace\Repos\WiFi_Dongle\build\esp_http_client\component_project_vars.mk: 132170007924782897
+C:\Workspace\Repos\WiFi_Dongle\build\esp_http_server\component_project_vars.mk: 132170007926647900
+C:\Workspace\Repos\WiFi_Dongle\build\esp_https_ota\component_project_vars.mk: 132170007926837395
+C:\Workspace\Repos\WiFi_Dongle\build\esp_ringbuf\component_project_vars.mk: 132170007926717714
+C:\Workspace\Repos\WiFi_Dongle\build\esp8266\component_project_vars.mk: 132170007928403210
+C:\Workspace\Repos\WiFi_Dongle\build\espos\component_project_vars.mk: 132151770586210476
+C:\Workspace\Repos\WiFi_Dongle\build\esp-tls\component_project_vars.mk: 132170007927844702
+C:\Workspace\Repos\WiFi_Dongle\build\esptool_py\component_project_vars.mk: 132170007915258377
+C:\Workspace\Repos\WiFi_Dongle\build\freertos\component_project_vars.mk: 132170007924922521
+C:\Workspace\Repos\WiFi_Dongle\build\heap\component_project_vars.mk: 132170007927166514
+C:\Workspace\Repos\WiFi_Dongle\build\http_parser\component_project_vars.mk: 132170007925301506
+C:\Workspace\Repos\WiFi_Dongle\build\jsmn\component_project_vars.mk: 132170007926209074
+C:\Workspace\Repos\WiFi_Dongle\build\json\component_project_vars.mk: 132170007926328756
+C:\Workspace\Repos\WiFi_Dongle\build\libsodium\component_project_vars.mk: 132170007924872650
+C:\Workspace\Repos\WiFi_Dongle\build\log\component_project_vars.mk: 132170007923835438
+C:\Workspace\Repos\WiFi_Dongle\build\lwip\component_project_vars.mk: 132170007924204438
+C:\Workspace\Repos\WiFi_Dongle\build\main\component_project_vars.mk: 132170007921491696
+C:\Workspace\Repos\WiFi_Dongle\build\mdns\component_project_vars.mk: 132170007920025621
+C:\Workspace\Repos\WiFi_Dongle\build\mqtt\component_project_vars.mk: 132170007918689198
+C:\Workspace\Repos\WiFi_Dongle\build\newlib\component_project_vars.mk: 132170007920953137
+C:\Workspace\Repos\WiFi_Dongle\build\nvs_flash\component_project_vars.mk: 132170007918948498
+C:\Workspace\Repos\WiFi_Dongle\build\partition_table\component_project_vars.mk: 132170007907838226
+C:\Workspace\Repos\WiFi_Dongle\build\protobuf-c\component_project_vars.mk: 132170007916903973
+C:\Workspace\Repos\WiFi_Dongle\build\protocomm\component_project_vars.mk: 132170007918310210
+C:\Workspace\Repos\WiFi_Dongle\build\pthread\component_project_vars.mk: 132170007916155973
+C:\Workspace\Repos\WiFi_Dongle\build\smartconfig_ack\component_project_vars.mk: 132170007913852134
+C:\Workspace\Repos\WiFi_Dongle\build\spi_flash\component_project_vars.mk: 132170007914370751
+C:\Workspace\Repos\WiFi_Dongle\build\spi_ram\component_project_vars.mk: 132170007913523018
+C:\Workspace\Repos\WiFi_Dongle\build\spiffs\component_project_vars.mk: 132170007912645365
+C:\Workspace\Repos\WiFi_Dongle\build\ssl\component_project_vars.mk: 132170007913772349
+C:\Workspace\Repos\WiFi_Dongle\build\tcp_transport\component_project_vars.mk: 132170007911667981
+C:\Workspace\Repos\WiFi_Dongle\build\tcpip_adapter\component_project_vars.mk: 132170007911907335
+C:\Workspace\Repos\WiFi_Dongle\build\util\component_project_vars.mk: 132170007909902705
+C:\Workspace\Repos\WiFi_Dongle\build\vfs\component_project_vars.mk: 132170007908675982
+C:\Workspace\Repos\WiFi_Dongle\build\wifi_provisioning\component_project_vars.mk: 132170007911029685
+C:\Workspace\Repos\WiFi_Dongle\build\wpa_supplicant\component_project_vars.mk: 132170007909822918
+C:\Workspace\Repos\WiFi_Dongle\components\component.mk: 132151680012968758
+C:\Workspace\Repos\WiFi_Dongle\components\component.mk: 132151680012968758
+C:\Workspace\Repos\WiFi_Dongle\components\folder1\file1.c
+C:\Workspace\Repos\WiFi_Dongle\components\folder2\file2.c
+C:\Workspace\Repos\WiFi_Dongle\Debug\app_update\component_project_vars.mk: 132162232453094918
+C:\Workspace\Repos\WiFi_Dongle\Debug\aws_iot\component_project_vars.mk: 132162232452695992
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\bootloader_support\component_project_vars.mk: 132162232526664838
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\component_project_vars.mk: 132162232450791081
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\esp8266\component_project_vars.mk: 132162232518556512
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\esptool_py\component_project_vars.mk: 132162232529916148
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\log\component_project_vars.mk: 132162232521119657
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\main\component_project_vars.mk: 132162232529377584
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\spi_flash\component_project_vars.mk: 132162232523832408
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader\util\component_project_vars.mk: 132162232515474749
+C:\Workspace\Repos\WiFi_Dongle\Debug\bootloader_support\component_project_vars.mk: 132162232452875511
+C:\Workspace\Repos\WiFi_Dongle\Debug\cjson\component_project_vars.mk: 132162231024521263
+C:\Workspace\Repos\WiFi_Dongle\Debug\coap\component_project_vars.mk: 132162232450711291
+C:\Workspace\Repos\WiFi_Dongle\Debug\components\component_project_vars.mk: 132162232450392150
+C:\Workspace\Repos\WiFi_Dongle\Debug\console\component_project_vars.mk: 132162232477963685
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp_common\component_project_vars.mk: 132162232474956224
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp_http_client\component_project_vars.mk: 132162232472441404
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp_http_server\component_project_vars.mk: 132162232472501244
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp_https_ota\component_project_vars.mk: 132162232472441404
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp_ringbuf\component_project_vars.mk: 132162232472202048
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp8266\component_project_vars.mk: 132162232450302389
+C:\Workspace\Repos\WiFi_Dongle\Debug\espos\component_project_vars.mk: 132162231022157583
+C:\Workspace\Repos\WiFi_Dongle\Debug\esp-tls\component_project_vars.mk: 132162232450112893
+C:\Workspace\Repos\WiFi_Dongle\Debug\esptool_py\component_project_vars.mk: 132162232447061053
+C:\Workspace\Repos\WiFi_Dongle\Debug\freertos\component_project_vars.mk: 132162232447509861
+C:\Workspace\Repos\WiFi_Dongle\Debug\heap\component_project_vars.mk: 132162232446961320
+C:\Workspace\Repos\WiFi_Dongle\Debug\http_parser\component_project_vars.mk: 132162232469354777
+C:\Workspace\Repos\WiFi_Dongle\Debug\jsmn\component_project_vars.mk: 132162232447120893
+C:\Workspace\Repos\WiFi_Dongle\Debug\json\component_project_vars.mk: 132162232466606667
+C:\Workspace\Repos\WiFi_Dongle\Debug\libsodium\component_project_vars.mk: 132162232446512531
+C:\Workspace\Repos\WiFi_Dongle\Debug\log\component_project_vars.mk: 132162232444049102
+C:\Workspace\Repos\WiFi_Dongle\Debug\lwip\component_project_vars.mk: 132162232444198708
+C:\Workspace\Repos\WiFi_Dongle\Debug\main\component_project_vars.mk: 132162232443739933
+C:\Workspace\Repos\WiFi_Dongle\Debug\mdns\component_project_vars.mk: 132162232443081696
+C:\Workspace\Repos\WiFi_Dongle\Debug\mqtt\component_project_vars.mk: 132162232441416149
+C:\Workspace\Repos\WiFi_Dongle\Debug\newlib\component_project_vars.mk: 132162232441475991
+C:\Workspace\Repos\WiFi_Dongle\Debug\nvs_flash\component_project_vars.mk: 132162232440927452
+C:\Workspace\Repos\WiFi_Dongle\Debug\partition_table\component_project_vars.mk: 132162232438573739
+C:\Workspace\Repos\WiFi_Dongle\Debug\protobuf-c\component_project_vars.mk: 132162232463730029
+C:\Workspace\Repos\WiFi_Dongle\Debug\protocomm\component_project_vars.mk: 132162232463530563
+C:\Workspace\Repos\WiFi_Dongle\Debug\pthread\component_project_vars.mk: 132162232440059776
+C:\Workspace\Repos\WiFi_Dongle\Debug\smartconfig_ack\component_project_vars.mk: 132162232438114971
+C:\Workspace\Repos\WiFi_Dongle\Debug\spi_flash\component_project_vars.mk: 132162232437945423
+C:\Workspace\Repos\WiFi_Dongle\Debug\spi_ram\component_project_vars.mk: 132162232460706530
+C:\Workspace\Repos\WiFi_Dongle\Debug\spiffs\component_project_vars.mk: 132162232437496620
+C:\Workspace\Repos\WiFi_Dongle\Debug\ssl\component_project_vars.mk: 132162232437775875
+C:\Workspace\Repos\WiFi_Dongle\Debug\tcp_transport\component_project_vars.mk: 132162232457604320
+C:\Workspace\Repos\WiFi_Dongle\Debug\tcpip_adapter\component_project_vars.mk: 132162232434833744
+C:\Workspace\Repos\WiFi_Dongle\Debug\util\component_project_vars.mk: 132162232434644248
+C:\Workspace\Repos\WiFi_Dongle\Debug\vfs\component_project_vars.mk: 132162232434484678
+C:\Workspace\Repos\WiFi_Dongle\Debug\wifi_provisioning\component_project_vars.mk: 132162232455029998
+C:\Workspace\Repos\WiFi_Dongle\Debug\wpa_supplicant\component_project_vars.mk: 132162232434524568
+C:\Workspace\Repos\WiFi_Dongle\main\component.mk: 132151680012968758
+C:\Workspace\Repos\WiFi_Dongle\main\component.mk: 132151680012968758
+C:\Workspace\Repos\WiFi_Dongle\main\main.c
+C:\Workspace\Repos\WiFi_Dongle\main\OTA.c
+C:\Workspace\Repos\WiFi_Dongle\main\wifi_tcp.c
+C:\Workspace\Repos\WiFi_Dongle\Makefile: 132151680008037966
+C:\Workspace\Repos\WiFi_Dongle\sdkconfig-debug: 132162232408625887
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\app_update\component_project_vars.mk: 132162232233132071
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\aws_iot\component_project_vars.mk: 132162232230289667
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\bootloader_support\component_project_vars.mk: 132162232322541644
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\component_project_vars.mk: 132162232227356224
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esp8266\component_project_vars.mk: 132162232313705577
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\esptool_py\component_project_vars.mk: 132162232326266192
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\log\component_project_vars.mk: 132162232316760405
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\main\component_project_vars.mk: 132162232325524494
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\spi_flash\component_project_vars.mk: 132162232319787989
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader\util\component_project_vars.mk: 132162232310781654
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\bootloader_support\component_project_vars.mk: 132162232226487349
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\coap\component_project_vars.mk: 132162232223139335
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\components\component_project_vars.mk: 132162232220021431
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\console\component_project_vars.mk: 132162232217009482
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_common\component_project_vars.mk: 132162232207606973
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_client\component_project_vars.mk: 132162232204813506
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_http_server\component_project_vars.mk: 132162232201750455
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_https_ota\component_project_vars.mk: 132162232198612026
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp_ringbuf\component_project_vars.mk: 132162232195380531
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp8266\component_project_vars.mk: 132162232210731441
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esp-tls\component_project_vars.mk: 132162232213873046
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\esptool_py\component_project_vars.mk: 132162232192458340
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\freertos\component_project_vars.mk: 132162232191710337
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\heap\component_project_vars.mk: 132162232188675198
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\http_parser\component_project_vars.mk: 132162232185690747
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\jsmn\component_project_vars.mk: 132162232182646209
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\json\component_project_vars.mk: 132162232179589632
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\libsodium\component_project_vars.mk: 132162232176504854
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\log\component_project_vars.mk: 132162232172636437
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\lwip\component_project_vars.mk: 132162232169445536
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\main\component_project_vars.mk: 132162232166183979
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mdns\component_project_vars.mk: 132162232162983661
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\mqtt\component_project_vars.mk: 132162232159897231
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\newlib\component_project_vars.mk: 132162232156627847
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\nvs_flash\component_project_vars.mk: 132162232153663654
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\partition_table\component_project_vars.mk: 132162232150602779
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protobuf-c\component_project_vars.mk: 132162232149741375
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\protocomm\component_project_vars.mk: 132162232146772740
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\pthread\component_project_vars.mk: 132162232143593830
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\smartconfig_ack\component_project_vars.mk: 132162232140591586
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_flash\component_project_vars.mk: 132162232137545707
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spi_ram\component_project_vars.mk: 132162232134284164
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\spiffs\component_project_vars.mk: 132162232131351746
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\ssl\component_project_vars.mk: 132162232128418687
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcp_transport\component_project_vars.mk: 132162232124775271
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\tcpip_adapter\component_project_vars.mk: 132162232121699518
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\util\component_project_vars.mk: 132162232118586324
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\vfs\component_project_vars.mk: 132162232115548655
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wifi_provisioning\component_project_vars.mk: 132162232112285356
+C:\Workspace\Repos\WiFi_Dongle\VisualGDBCache\WiFi_Dongle-Debug-VisualGDB\CodeSenseDir\wpa_supplicant\component_project_vars.mk: 132162232109166552

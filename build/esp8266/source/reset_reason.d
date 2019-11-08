@@ -1,6 +1,6 @@
 source/reset_reason.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/source/reset_reason.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -26,6 +26,7 @@ source/reset_reason.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/internal/esp_system_internal.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rtc_register.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h \
@@ -39,7 +40,7 @@ source/reset_reason.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 
@@ -90,6 +91,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/internal/esp_system_internal.h:
 

@@ -20,7 +20,7 @@ src/sha.o: C:/sysgcc/esp8266/rtos-sdk/master/components/util/src/sha.c \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/util_assert.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_sha.h \
@@ -74,7 +74,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/util_assert.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 

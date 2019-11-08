@@ -27,7 +27,8 @@ port/randombytes_esp8266.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/reent.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/libsodium/port/randombytes_default.h:
 
@@ -83,5 +84,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 /rtos-sdk/master/components/libsodium/port/randombytes_esp8266.c:

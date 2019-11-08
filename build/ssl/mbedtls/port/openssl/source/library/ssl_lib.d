@@ -38,7 +38,8 @@ mbedtls/port/openssl/source/library/ssl_lib.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/openssl/include/platform/ssl_port.h
@@ -119,7 +120,9 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 

@@ -33,7 +33,8 @@ lib/http_auth.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/ip_addr.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h \
@@ -43,6 +44,7 @@ lib/http_auth.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/udp_sync.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/debug.h \
@@ -136,7 +138,9 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 
@@ -155,6 +159,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h:
 

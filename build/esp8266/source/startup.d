@@ -17,7 +17,7 @@ source/startup.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs_flash.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
@@ -33,6 +33,7 @@ source/startup.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/ip_addr.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h \
@@ -42,6 +43,7 @@ source/startup.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/udp_sync.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/debug.h \
@@ -90,7 +92,9 @@ source/startup.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/task.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h
+ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/esp_newlib.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/reent.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
 
@@ -126,7 +130,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs_flash.h:
 
@@ -158,6 +162,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h:
 
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h:
@@ -175,6 +181,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h:
 
@@ -273,4 +281,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/m
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/task.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/esp_newlib.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/reent.h:
 /rtos-sdk/master/components/esp8266/source/startup.c:

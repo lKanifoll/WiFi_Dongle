@@ -28,7 +28,7 @@ driver/i2c.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
@@ -119,7 +119,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 

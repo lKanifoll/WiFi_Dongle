@@ -25,13 +25,14 @@ source/esp_wifi_os_adapter.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi_osi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
@@ -117,11 +118,11 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
-
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
 
@@ -130,6 +131,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h:
 

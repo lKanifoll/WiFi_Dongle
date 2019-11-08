@@ -10,7 +10,7 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 	/* For accessing reason codes in case of disconnection */
 	//system_event_info_t *info = &event->event_info;
 
-	switch (event->event_id) {
+	switch(event->event_id) {
 	case SYSTEM_EVENT_STA_CONNECTED:
 		wifi_active_flag = true;
 
@@ -18,6 +18,7 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 	case SYSTEM_EVENT_STA_GOT_IP:
 		xEventGroupSetBits(wifi_event_group, IPV4_GOTIP_BIT);
 		wifi_active_flag = true;
+		wifi_status = 1;
 		if (!disconnect)
 		{
 			delete_tcp_task = 0;
@@ -26,14 +27,17 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 		break;
 	case SYSTEM_EVENT_AP_STACONNECTED:
 		ESP_LOGI(TAG_WIFI, "station:"MACSTR" join, AID=%d", MAC2STR(event->event_info.sta_connected.mac), event->event_info.sta_connected.aid);
-		
-		wifi_active_flag = true;
-		
+		wifi_status = 5;
+		wifi_active_flag = true;		
 		break;
 	case SYSTEM_EVENT_AP_START:
-		wifi_active_flag = true;
 		ESP_LOGI(TAG_WIFI, "Access point is active: Dongle_Rusklimat");
-
+		wifi_status = 5;
+		if (!disconnect)
+		{
+			delete_tcp_task = 0;
+			xTaskCreate(tcp_server_task, "tcp_server", 4096, NULL, 5, &tcp_server_handle);
+		}
 		break;
 	case SYSTEM_EVENT_STA_DISCONNECTED:
 		//ESP_LOGE(TAG_WIFI, "Disconnect reason : %d", info->disconnected.reason);
@@ -45,8 +49,17 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 			delete_tcp_task = 1;
 			wifi_active_flag = false;
 			disconnect = 1;
+			wifi_status = 0;
 		}
-
+		
+		if (wifi_status == 3)
+		{
+			xEventGroupSetBits(wifi_event_group, ESPTOUCH_DONE_BIT);
+			wifi_status = 0;
+			//ESP_ERROR_CHECK(esp_wifi_disconnect());
+			ESP_ERROR_CHECK(esp_wifi_stop());
+		}	
+			
 		esp_wifi_connect();
 		xEventGroupClearBits(wifi_event_group, IPV4_GOTIP_BIT);
 		break;
@@ -95,17 +108,22 @@ void initialise_wifi()
 	}
 	else
 	{	
-		wifi_config_t wifi_config =
-		{
-			.sta = { 
-				.ssid = "Dongle_Rusklimat", 
-				.password = "12345678", 
-			},
+		wifi_config_t wifi_config = {
+			.ap = {
+			.ssid="Yin-Yang",
+			.ssid_len = 16,
+			.password = "",
+			.channel = 6,
+			.authmode = WIFI_AUTH_OPEN,
+			.ssid_hidden = 0,
+			.max_connection = 1,
+			.beacon_interval = 100
+		},
 		};
-		ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-		ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+		ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+		ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config));
 		ESP_ERROR_CHECK(esp_wifi_start());
-		ESP_ERROR_CHECK(esp_wifi_connect());
+		//ESP_ERROR_CHECK(esp_wifi_connect());
 	}
 }
 
@@ -133,7 +151,7 @@ void set_wifi_sta()
 	//curr_interface = ESP_IF_WIFI_STA;
 	ESP_ERROR_CHECK(esp_wifi_start());
 	//esp_wifi_set_country(&info_country);
-	xTaskCreate(smartconfig_example_task, "smartconfig_example_task", 4096, NULL, 10, NULL);
+	xTaskCreate(smartconfig_example_task, "smartconfig_example_task", 4096, NULL, 10, &smartconfig_handle);
 	
 }
 
@@ -150,11 +168,11 @@ void set_wifi_ap()
 	}
 	 wifi_config_t wifi_config1 = {
 		.ap = {
-		.ssid="Dongle_Rusklimat",
+		.ssid="Yin-Yang",
 		.ssid_len = 16,
-		.password = "12345678",
+		.password = "",
 		.channel = 6,
-		.authmode = WIFI_AUTH_WPA_WPA2_PSK,
+		.authmode = WIFI_AUTH_OPEN,
 		.ssid_hidden = 0,
 		.max_connection = 1,
 		.beacon_interval = 100
@@ -235,6 +253,7 @@ void tcp_client_task(void *pvParameters)
 		else
 		{
 			ESP_LOGI(TAG_TCP, "Successfully connected");
+			wifi_status = 2;
 		}
 
 		while (1) {
@@ -252,6 +271,7 @@ void tcp_client_task(void *pvParameters)
 			if(len <= 0) 
 			{
 				ESP_LOGE(TAG_TCP, "recv failed: errno %d", errno);
+				wifi_status = 1;
 				break;
 			}
 			// Data received
@@ -343,6 +363,8 @@ void tcp_client_task(void *pvParameters)
 			shutdown(sock, 0);
 			close(sock);
 		}
+		
+		// reconnect treshhold
 		vTaskDelay(5000 / portTICK_PERIOD_MS);
 	}
 	ESP_LOGE(TAG_TCP, "TCP DELETE TASK");
@@ -417,11 +439,44 @@ void tcp_server_task(void *pvParameters)
 				ESP_LOGI(TAG_TCP, "Received %d bytes from %s:", len, addr_str);
 				ESP_LOGI(TAG_TCP, "%s", rx_buffer);
 
+				
+				if(!(strncmp(rx_buffer, "AT+HOST+", 8)))
+				{
+					uint8_t y = 0;
+					uint8_t i = 0;
+					//uint8_t j = 0;
+					for(i = 8 ; i < len ; i++)
+					{
+						if (rx_buffer[i] == 0x3A)
+						{
+							i++;
+							break;
+						}
+						HOST_ADDR[y] = rx_buffer[i];
+						y++;
+					}
+					y = 0;
+					
+					for (; i < len; i++)
+					{
+						HOST_PORT[y] = rx_buffer[i];
+						y++;
+					}
+					
+					nvs_open("storage", NVS_READWRITE, &storage_handle);
+					nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+					nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+					nvs_commit(storage_handle);
+					nvs_close(storage_handle);
+					esp_restart();
+				}
+				/*
 				int err = send(sock, rx_buffer, len, 0);
-				if (err < 0) {
+				if (err < 0) 
+				{
 					ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 					break;
-				}
+				}*/
 			}
 		}
 
@@ -459,11 +514,11 @@ void sc_callback(smartconfig_status_t status, void *pdata)
 		nvs_set_u8(storage_handle, "first_link", first_link);
 		nvs_commit(storage_handle);
 		nvs_close(storage_handle);
-		
+
 		ESP_ERROR_CHECK(esp_wifi_disconnect());
 		ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, wifi_config));
-		ESP_ERROR_CHECK(esp_wifi_connect());
-		break;
+		ESP_ERROR_CHECK(esp_wifi_connect()) ;
+	break;
 	case SC_STATUS_LINK_OVER:
 		ESP_LOGI(TAG_SC, "SC_STATUS_LINK_OVER");
 		if (pdata != NULL) {
@@ -490,7 +545,9 @@ void sc_callback(smartconfig_status_t status, void *pdata)
 
 void smartconfig_example_task(void * parm)
 {
+	
 	EventBits_t uxBits;
+	wifi_status = 3;
 	ESP_ERROR_CHECK(esp_smartconfig_set_type(SC_TYPE_ESPTOUCH_AIRKISS));
 	ESP_ERROR_CHECK(esp_smartconfig_start(sc_callback));
 	while (1) {
@@ -500,7 +557,7 @@ void smartconfig_example_task(void * parm)
 		}
 		if (uxBits & ESPTOUCH_DONE_BIT) {
 			ESP_LOGI(TAG_SC, "smartconfig over");
-			esp_smartconfig_stop();
+			esp_smartconfig_stop();			
 			vTaskDelete(NULL);
 		}
 	}

@@ -16,7 +16,7 @@ port/esp8266/xtensa_vectors.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/coreasm.h:
@@ -51,7 +51,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freer
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h:
 /rtos-sdk/master/components/freertos/port/esp8266/xtensa_vectors.S:

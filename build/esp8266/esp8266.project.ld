@@ -52,7 +52,7 @@ SECTIONS
     _iram_start = ABSOLUTE(.);
     /* Vectors go to IRAM */
     _init_start = ABSOLUTE(.);
-    LONG(_iram_start)
+    KEEP(*(.SystemInfoVector.text));
     . = 0x10;
     KEEP(*(.DebugExceptionVector.text));
     . = 0x20;
@@ -83,15 +83,36 @@ SECTIONS
     _iram_text_start = ABSOLUTE(.);
 
     *( .iram1  .iram1.*)
-    *libspi_flash.a:spi_flash_raw.*( .literal  .literal.*  .text  .text.*)
     *libphy.a:( .literal  .literal.*  .text  .text.*)
+    *libspi_flash.a:spi_flash_raw.*( .literal  .literal.*  .text  .text.*)
     *libpp.a:( .literal  .literal.*  .text  .text.*)
 
     _iram_text_end = ABSOLUTE(.);
+  } > iram0_0_seg
+
+  .iram0.bss :
+  {
+    . = ALIGN (4);
+    /* Code marked as runnning out of IRAM */
+    _iram_bss_start = ABSOLUTE(.);
+
+    *libcore.a:( .bss  .bss.*  COMMON)
+    *libfreertos.a:impure.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:event_groups.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:timers.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:stream_buffer.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:tasks.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:queue.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:list.*( .bss  .bss.*  COMMON)
+    *libfreertos.a:freertos_hooks.*( .bss  .bss.*  COMMON)
+    *liblwip.a:( .bss  .bss.*  COMMON)
+
+    . = ALIGN (4);
+    _iram_bss_end = ABSOLUTE(.);
     _iram_end = ABSOLUTE(.);
   } > iram0_0_seg
 
-  ASSERT(((_iram_text_end - ORIGIN(iram0_0_seg)) <= LENGTH(iram0_0_seg)),
+  ASSERT(((_iram_end - ORIGIN(iram0_0_seg)) <= LENGTH(iram0_0_seg)),
           "IRAM0 segment data does not fit.")
 
   .dram0.data :
@@ -109,8 +130,8 @@ SECTIONS
     *(.dram0 .dram0.*)
 
     *( .data  .data.*  .dram1  .dram1.*)
-    *liblog.a:( .rodata  .rodata.*)
     *libspi_flash.a:spi_flash_raw.*( .rodata  .rodata.*)
+    *liblog.a:( .rodata  .rodata.*)
 
     _data_end = ABSOLUTE(.);
     . = ALIGN(4);
@@ -136,7 +157,7 @@ SECTIONS
     . = ALIGN (8);
     _bss_start = ABSOLUTE(.);
 
-    *( .bss  .bss.*  COMMON)
+    *(EXCLUDE_FILE(*libcore.a *libfreertos.a:freertos_hooks.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:impure.* *liblwip.a) .bss EXCLUDE_FILE(*libcore.a *libfreertos.a:freertos_hooks.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:impure.* *liblwip.a) .bss.* EXCLUDE_FILE(*libcore.a *libfreertos.a:freertos_hooks.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:tasks.* *libfreertos.a:stream_buffer.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:impure.* *liblwip.a) COMMON)
 
     *(.dynsbss)
     *(.sbss)
@@ -162,7 +183,7 @@ SECTIONS
     _stext = .;
     _text_start = ABSOLUTE(.);
 
-    *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libphy.a *libpp.a) .literal.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libphy.a *libpp.a) .text EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libphy.a *libpp.a) .text.*  .wifi0iram  .wifi0iram.*)
+    *(EXCLUDE_FILE(*libphy.a *libspi_flash.a:spi_flash_raw.* *libpp.a) .literal EXCLUDE_FILE(*libphy.a *libspi_flash.a:spi_flash_raw.* *libpp.a) .literal.* EXCLUDE_FILE(*libphy.a *libspi_flash.a:spi_flash_raw.* *libpp.a) .text EXCLUDE_FILE(*libphy.a *libspi_flash.a:spi_flash_raw.* *libpp.a) .text.*  .wifi0iram  .wifi0iram.*)
 
     /* For ESP8266 library function */
     *(.irom0.literal .irom0.text)
@@ -199,7 +220,7 @@ SECTIONS
 
     *(.rodata2 .rodata2.*)                       /* For ESP8266 library function */
 
-    *(EXCLUDE_FILE(*liblog.a *libspi_flash.a:spi_flash_raw.*) .rodata EXCLUDE_FILE(*liblog.a *libspi_flash.a:spi_flash_raw.*) .rodata.*)
+    *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *liblog.a) .rodata EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *liblog.a) .rodata.*)
 
     *(.irom1.text) /* catch stray ICACHE_RODATA_ATTR */
     *(.gnu.linkonce.r.*)

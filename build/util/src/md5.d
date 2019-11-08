@@ -21,7 +21,7 @@ src/md5.o: C:/sysgcc/esp8266/rtos-sdk/master/components/util/src/md5.c \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/ibus_data.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/util_assert.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h:
@@ -68,7 +68,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/util_assert.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 /rtos-sdk/master/components/util/src/md5.c:

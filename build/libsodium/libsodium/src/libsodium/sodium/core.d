@@ -15,6 +15,7 @@ libsodium/src/libsodium/sodium/core.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/types.h \
@@ -73,6 +74,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 

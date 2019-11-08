@@ -22,6 +22,7 @@ source/event_default_handlers.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h \
@@ -33,7 +34,6 @@ source/event_default_handlers.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/projdefs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/portable.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/deprecated_definitions.h \
@@ -62,11 +62,13 @@ source/event_default_handlers.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/ip_addr.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/udp_sync.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/debug.h \
@@ -134,6 +136,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
@@ -155,8 +159,6 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
-
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/projdefs.h:
 
@@ -214,6 +216,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h:
 
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h:
@@ -223,6 +227,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h:
 

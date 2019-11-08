@@ -1,2 +1,3 @@
-folder2/file2.o: C:/Workspace/WiFi_Dongle/components/folder2/file2.c
-/C/Workspace/WiFi_Dongle/components/folder2/file2.c:
+folder2/file2.o: \
+ C:/Workspace/Repos/WiFi_Dongle/components/folder2/file2.c
+/C/Workspace/Repos/WiFi_Dongle/components/folder2/file2.c:

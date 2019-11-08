@@ -32,7 +32,8 @@ mbedtls/port/openssl/source/platform/ssl_pm.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/openssl/include/platform/ssl_port.h \
@@ -44,6 +45,7 @@ mbedtls/port/openssl/source/platform/ssl_pm.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
@@ -141,7 +143,9 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 
@@ -164,6 +168,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
 

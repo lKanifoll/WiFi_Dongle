@@ -1,6 +1,6 @@
 transport_ws.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/tcp_transport/transport_ws.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/ieeefp.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
@@ -52,7 +52,7 @@ transport_ws.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/sha1_alt.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_sha.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 

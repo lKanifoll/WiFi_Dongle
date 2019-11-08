@@ -19,6 +19,7 @@ driver/gpio.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/stdlib.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
@@ -34,7 +35,6 @@ driver/gpio.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/gpio_register.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
@@ -98,6 +98,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h:
@@ -127,8 +129,6 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/gpio_register.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h:
-
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h:
 

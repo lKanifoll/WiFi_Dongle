@@ -1,6 +1,6 @@
 src/crypto/aes-cbc.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/src/crypto/aes-cbc.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -20,7 +20,7 @@ src/crypto/aes-cbc.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 

@@ -4,5 +4,5 @@ COMPONENT_LDFLAGS += -L$(BUILD_DIR_BASE)/freertos -lfreertos
 COMPONENT_LINKER_DEPS += 
 COMPONENT_SUBMODULES += 
 COMPONENT_LIBRARIES += freertos
-COMPONENT_LDFRAGMENTS += 
+COMPONENT_LDFRAGMENTS += $(IDF_PATH)/components/freertos/linker.lf
 component-freertos-build: 

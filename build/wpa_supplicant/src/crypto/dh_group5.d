@@ -7,6 +7,7 @@ src/crypto/dh_group5.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/features.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/common.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/port/include/os.h \
@@ -36,7 +37,6 @@ src/crypto/dh_group5.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/projdefs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/portable.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/deprecated_definitions.h \
@@ -62,7 +62,8 @@ src/crypto/dh_group5.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/endian.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/dh_groups.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/dh_group5.h
+ C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/dh_group5.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/wpabuf.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/includes.h:
 
@@ -77,6 +78,8 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/features.
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
+
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 
@@ -136,8 +139,6 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
-
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/projdefs.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/portable.h:
@@ -189,4 +190,6 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/endia
 C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/dh_groups.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/dh_group5.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/wpabuf.h:
 /rtos-sdk/master/components/wpa_supplicant/src/crypto/dh_group5.c:

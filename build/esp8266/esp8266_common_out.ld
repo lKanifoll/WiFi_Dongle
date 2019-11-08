@@ -66,8 +66,8 @@ SECTIONS
   .rtc.data :
   {
     _rtc_data_start = ABSOLUTE(.);
-    *(.rtc.data .rtc.data.*)
-    *(.rtc.rodata .rtc.rodata.*)
+    *(.rtc.data)
+    *(.rtc.rodata)
     _rtc_data_end = ABSOLUTE(.);
   } > rtc_seg
   .text : ALIGN(4)
@@ -102,9 +102,7 @@ SECTIONS
     *(.init.literal)
     *(.init)
     *(.iram1 .iram1.*)
-    *libspi_flash.a:spi_flash_raw.*(.literal .text .literal.* .text.*)
-    *libpp.a:(.literal .text .literal.* .text.*)
-    *libphy.a:(.literal .text .literal.* .text.*)
+    *libspi_flash.a:spi_flash_raw.o(.literal .text .literal.* .text.*)
     *(.literal .text .stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
     *(.fini.literal)
     *(.fini)
@@ -112,22 +110,25 @@ SECTIONS
     *liblwip.a:(.bss .data .bss.* .data.* COMMON)
     *libtcpip_adapter.a:(.bss .data .bss.* .data.* COMMON)
     *libcore.a:(.bss .data .bss.* .data.* COMMON)
-    *libfreertos.a:tasks.*(.bss .data .bss.* .data.* COMMON)
-    *libfreertos.a:timers.*(.bss .data .bss.* .data.* COMMON)
-    *libfreertos.a:freertos_hooks.*(.bss .data .bss.* .data.* COMMON)
+    *libfreertos.a:tasks.o(.bss .data .bss.* .data.* COMMON)
+    *libfreertos.a:timers.o(.bss .data .bss.* .data.* COMMON)
+    *libfreertos.a:freertos_hooks.o(.bss .data .bss.* .data.* COMMON)
     _text_end = ABSOLUTE(.);
     _etext = .;
   } >iram1_0_seg :iram1_0_phdr
   .data : ALIGN(4)
   {
     _data_start = ABSOLUTE(.);
-    *(.data .data.*)
-    *(.dram0 .dram0.*)
+    *(.data)
+    *(.data.*)
+    *(.dram0)
     *(.gnu.linkonce.d.*)
     *(.data1)
-    *(.sdata .sdata.*)
+    *(.sdata)
+    *(.sdata.*)
     *(.gnu.linkonce.s.*)
-    *(.sdata2 .sdata2.*)
+    *(.sdata2)
+    *(.sdata2.*)
     *(.gnu.linkonce.s2.*)
     *(.jcr)
     _data_end = ABSOLUTE(.);
@@ -148,13 +149,13 @@ SECTIONS
     . = (. + 3) & ~ 3;
     /*  C++ constructor and destructor tables, properly ordered:  */
     __init_array_start = ABSOLUTE(.);
-    KEEP (*crtbegin.*(.ctors))
-    KEEP (*(EXCLUDE_FILE (*crtend.*) .ctors))
+    KEEP (*crtbegin.o(.ctors))
+    KEEP (*(EXCLUDE_FILE (*crtend.o) .ctors))
     KEEP (*(SORT(.ctors.*)))
     KEEP (*(.ctors))
     __init_array_end = ABSOLUTE(.);
-    KEEP (*crtbegin.*(.dtors))
-    KEEP (*(EXCLUDE_FILE (*crtend.*) .dtors))
+    KEEP (*crtbegin.o(.dtors))
+    KEEP (*(EXCLUDE_FILE (*crtend.o) .dtors))
     KEEP (*(SORT(.dtors.*)))
     KEEP (*(.dtors))
     /*  C++ exception handlers table:  */
@@ -183,13 +184,16 @@ SECTIONS
     . = ALIGN (8);
     _bss_start = ABSOLUTE(.);
     *(.dynsbss)
-    *(.sbss .sbss.*)
+    *(.sbss)
+    *(.sbss.*)
     *(.gnu.linkonce.sb.*)
     *(.scommon)
-    *(.sbss2 .sbss2.*)
+    *(.sbss2)
+    *(.sbss2.*)
     *(.gnu.linkonce.sb2.*)
     *(.dynbss)
-    *(.bss .bss.*)
+    *(.bss)
+    *(.bss.*)
     *(.gnu.linkonce.b.*)
     *(COMMON)
     . = ALIGN (8);
@@ -201,10 +205,12 @@ SECTIONS
   .irom0.text : ALIGN(4)
   {
     _irom0_text_start = ABSOLUTE(.);
-    *(.user.data .user.data.*)
     *(.rodata.* .rodata .irom0.literal .irom.literal .irom.text.literal .irom0.text .irom.text)
     *(.literal.* .text.*)
-    *(.rodata2.* .rodata2 .literal2.* .literal2 .text2.* .text2)
+    . = ALIGN(16);
+    __start_ksymatabesp_socket = .;
+    *(ksymatabesp_socket)
+    __stop_ksymatabesp_socket = .;
     _irom0_text_end = ABSOLUTE(.);
   } >irom0_0_seg :irom0_0_phdr
   .lit4 : ALIGN(4)

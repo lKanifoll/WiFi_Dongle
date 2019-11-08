@@ -22,7 +22,17 @@ source/phy_init.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/uart.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_struct.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_register.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/types.h \
@@ -32,14 +42,15 @@ source/phy_init.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_phy_init.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs_flash.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/internal/phy_init_data.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/source/phy.h
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/source/phy.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/rtc.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 
@@ -85,7 +96,27 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/uart.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_struct.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_register.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
 
@@ -105,7 +136,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_phy_init.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h:
 
@@ -120,4 +151,6 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs.h:
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/internal/phy_init_data.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/source/phy.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/rtc.h:
 /rtos-sdk/master/components/esp8266/source/phy_init.c:

@@ -1,6 +1,6 @@
 src/base64.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/src/base64.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_base64.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_default_types.h \
@@ -22,7 +22,7 @@ src/base64.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_types.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_base64.h:
 

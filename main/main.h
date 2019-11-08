@@ -38,10 +38,12 @@ char HOST_ADDR[32];
 char HOST_PORT[6];
 uint8_t first_link;
 uint8_t first_start;
+uint8_t wifi_status;
 EventGroupHandle_t wifi_event_group;
 
 QueueHandle_t uart0_queue;
 bool check_crc8(char *pcBlock, int len);
+bool crc8_add(char *sBlock, int len);
 int sock;
 
 xTaskHandle uart_handle;

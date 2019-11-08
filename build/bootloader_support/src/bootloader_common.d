@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/src/bootloader_common.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_default_types.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/features.h \
@@ -39,7 +39,7 @@ src/bootloader_common.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include/bootloader_common.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_flash_data_types.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
 

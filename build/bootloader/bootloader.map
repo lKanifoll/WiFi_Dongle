@@ -1,191 +1,191 @@
 Archive member included to satisfy reference by file (symbol)
 
-C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                               (call_start_cpu)
-C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o) (bootloader_utility_load_partition_table)
-C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o) (bootloader_init)
-C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (bootloader_mmap)
-C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (esp_image_load)
-C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (esp_partition_table_basic_verify)
-C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (bootloader_common_ota_select_valid)
-C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o) (g_rom_flashchip)
-C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o) (spi_flash_get_id_raw)
-C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o) (esp_log_early_timestamp)
-C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o) (ets_vprintf)
-C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o) (crc32_le)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o) (bootloader_utility_load_partition_table)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o) (bootloader_init)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (bootloader_mmap)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (esp_image_load)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (esp_partition_table_basic_verify)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o) (bootloader_common_ota_select_valid)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o) (g_rom_flashchip)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o) (spi_flash_get_id_raw)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o) (esp_log_early_timestamp)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o) (ets_vprintf)
+C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o) (crc32_le)
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o) (phy_reg_default)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o) (phy_reg_default)
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
-                              C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o) (uart_div_modify)
+                              C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o) (uart_div_modify)
 
 Allocating common symbols
 Common symbol       size              file
 
 esp_image_spi_freq_t
-                    0x4               C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                    0x4               C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
 
 Discarded input sections
 
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .xt.lit        0x00000000       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .xt.prop       0x00000000       0xe4 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- COMMON         0x00000000        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .xt.lit        0x00000000       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .xt.prop       0x00000000      0x504 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .xt.lit        0x00000000       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .xt.prop       0x00000000      0x258 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .xt.lit        0x00000000       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .xt.prop       0x00000000       0xe4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ COMMON         0x00000000        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .xt.lit        0x00000000       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .xt.prop       0x00000000      0x504 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .xt.lit        0x00000000       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .xt.prop       0x00000000      0x258 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
  .literal.bootloader_flash_write
-                0x00000000       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x00000000       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  .literal.bootloader_flash_erase_sector
-                0x00000000        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x00000000        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  .text.bootloader_flash_write
-                0x00000000       0x9d C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x00000000       0x9d C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  .text.bootloader_flash_erase_sector
-                0x00000000       0x15 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .xt.lit        0x00000000       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .xt.prop       0x00000000      0x204 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x00000000       0x15 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .xt.lit        0x00000000       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .xt.prop       0x00000000      0x204 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  .literal.esp_image_verify_bootloader
-                0x00000000        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x00000000        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
  .text.esp_image_verify_bootloader
-                0x00000000       0x41 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .xt.lit        0x00000000       0x40 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .xt.prop       0x00000000      0x474 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .xt.lit        0x00000000        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .xt.prop       0x00000000       0xfc C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                0x00000000       0x41 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .xt.lit        0x00000000       0x40 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .xt.prop       0x00000000      0x474 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .xt.lit        0x00000000        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .xt.prop       0x00000000       0xfc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
  .literal.bootloader_common_check_long_hold_gpio
-                0x00000000       0x58 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x00000000       0x58 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
  .text.bootloader_common_check_long_hold_gpio
-                0x00000000      0x22c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .xt.lit        0x00000000       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .xt.prop       0x00000000      0x420 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x00000000      0x22c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .xt.lit        0x00000000       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .xt.prop       0x00000000      0x420 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
  .literal.spi_flash_program
-                0x00000000       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.__spi_flash_write
-                0x00000000        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.__spi_flash_read
-                0x00000000       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_write_status
-                0x00000000        0xc C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_check_wr_protect
-                0x00000000       0x4c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x4c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_erase_sector
-                0x00000000       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_read
-                0x00000000       0x24 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x24 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_write
-                0x00000000       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_erase_range
-                0x00000000       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_cache2phys
-                0x00000000       0x14 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x14 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_get_chip_size
-                0x00000000        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_program
-                0x00000000       0xcb C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0xcb C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.__spi_flash_write
-                0x00000000       0x23 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x23 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.__spi_flash_read
-                0x00000000       0x31 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x31 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_write_status
-                0x00000000       0x2a C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x2a C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_check_wr_protect
-                0x00000000      0x161 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000      0x161 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_erase_sector
-                0x00000000       0x56 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x56 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_read
-                0x00000000      0x110 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000      0x110 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_write
-                0x00000000      0x170 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000      0x170 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_erase_range
-                0x00000000       0x6d C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x6d C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_cache2phys
-                0x00000000       0x48 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000       0x48 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.spi_flash_get_chip_size
-                0x00000000        0x7 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .xt.lit        0x00000000       0xd0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .xt.prop       0x00000000      0xbdc C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x00000000        0x7 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .xt.lit        0x00000000       0xd0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .xt.prop       0x00000000      0xbdc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .literal.spi_flash_write_status_raw
-                0x00000000       0x1c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000       0x1c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .literal.spi_flash_erase_sector_raw
-                0x00000000       0x14 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000       0x14 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .literal.spi_flash_write_raw
-                0x00000000        0xc C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .literal.spi_flash_read_raw
-                0x00000000        0xc C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_write_status_raw
-                0x00000000       0x5c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000       0x5c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_erase_sector_raw
-                0x00000000       0x54 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000       0x54 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_write_raw
-                0x00000000       0x43 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x00000000       0x43 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .text.spi_flash_read_raw
-                0x00000000       0x43 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .xt.lit        0x00000000       0x58 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .xt.prop       0x00000000      0x360 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .xt.lit        0x00000000       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .xt.prop       0x00000000       0xcc C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .xt.lit        0x00000000       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .xt.prop       0x00000000       0xcc C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x00000000       0x43 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .xt.lit        0x00000000       0x58 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .xt.prop       0x00000000      0x360 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .xt.lit        0x00000000       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .xt.prop       0x00000000       0xcc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .xt.lit        0x00000000       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .xt.prop       0x00000000       0xcc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .literal.crc16_le
-                0x00000000        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000000        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .literal.esp_crc8
-                0x00000000        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .text          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .data          0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .bss           0x00000000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000000        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .text          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .data          0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .bss           0x00000000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .text.crc16_le
-                0x00000000       0x39 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000000       0x39 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .text.esp_crc8
-                0x00000000       0x21 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000000       0x21 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .rodata.crc8_le_table
-                0x00000000      0x100 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000000      0x100 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .rodata.crc16_le_table
-                0x00000000      0x200 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .xt.lit        0x00000000       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .xt.prop       0x00000000       0xfc C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000000      0x200 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .xt.lit        0x00000000       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .xt.prop       0x00000000       0xfc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .literal.phy_reg_default
                 0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
  .text          0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
@@ -220,19 +220,19 @@ iram_seg         0x40100000         0x00008000
 Linker script and memory map
 
 START GROUP
-LOAD C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a
+LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a
 LOAD C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a
-LOAD C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a
-LOAD C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a
-LOAD C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a
-LOAD C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a
-LOAD C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a
+LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a
+LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a
+LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a
+LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a
+LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a
 LOAD C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a
 LOAD c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib\libstdc++.a
 LOAD c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0\libgcov.a
 END GROUP
 
-.text           0x40100000     0x1ca2
+.text           0x40100000     0x1c9a
                 0x40100000                _stext = .
                 0x40100000                _text_start = ABSOLUTE (.)
                 0x40100000                . = ALIGN (0x10)
@@ -241,468 +241,468 @@ END GROUP
  *(.init)
  *(.literal .text .literal.* .text.* .stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
  .literal.selected_boot_partition
-                0x40100000        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x40100000        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                   0x4 (size before relaxing)
  .literal.select_image
-                0x40100000        0xc C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x40100000        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                  0x1c (size before relaxing)
  .literal.call_start_cpu
-                0x4010000c        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x4010000c        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                   0xc (size before relaxing)
  .literal.log_invalid_app_partition
-                0x4010000c       0x14 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x4010000c       0x14 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x20 (size before relaxing)
  .literal.try_load_partition
-                0x40100020        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100020        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x10 (size before relaxing)
  .literal.bootloader_utility_load_partition_table
-                0x40100024       0x4c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100024       0x4c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x74 (size before relaxing)
  .literal.bootloader_utility_get_selected_boot_partition
-                0x40100070       0x1c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100070       0x1c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x5c (size before relaxing)
  .literal.bootloader_utility_load_boot_image
-                0x4010008c        0xc C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x4010008c        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x40 (size before relaxing)
  .literal.bootloader_utility_load_image
-                0x40100098       0x14 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100098       0x14 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x1c (size before relaxing)
  .literal.print_flash_info
-                0x401000ac       0x48 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x401000ac       0x48 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x54 (size before relaxing)
  .literal.uart_console_configure
-                0x401000f4       0x1c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x401000f4       0x1c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x20 (size before relaxing)
  .literal.update_flash_config
-                0x40100110        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x40100110        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                   0x8 (size before relaxing)
  .literal.bootloader_main
-                0x40100114       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x40100114       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x34 (size before relaxing)
  .literal.bootloader_init
-                0x40100124        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x40100124        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x10 (size before relaxing)
  .literal.bootloader_flash_read_no_decrypt
-                0x4010012c        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x4010012c        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  .literal.bootloader_mmap
-                0x40100130       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x40100130       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
                                  0x28 (size before relaxing)
  .literal.bootloader_munmap
-                0x40100140        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x40100140        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
                                   0x8 (size before relaxing)
  .literal.bootloader_flash_read
-                0x40100140        0xc C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x40100140        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
                                  0x20 (size before relaxing)
  .literal.should_map
-                0x4010014c        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x4010014c        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                   0x8 (size before relaxing)
  .literal.should_load
-                0x40100150        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100150        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                   0x4 (size before relaxing)
  .literal.verify_image_header
-                0x40100150       0x14 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100150       0x14 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x20 (size before relaxing)
  .literal.process_segment_data
-                0x40100164        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100164        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x14 (size before relaxing)
  .literal.verify_checksum
-                0x4010016c        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x4010016c        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x1c (size before relaxing)
  .literal.process_segment
-                0x40100174       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100174       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x40 (size before relaxing)
  .literal.esp_image_load
-                0x4010018c       0x14 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x4010018c       0x14 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x44 (size before relaxing)
  .literal.esp_partition_table_basic_verify
-                0x401001a0       0x1c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                0x401001a0       0x1c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
                                  0x2c (size before relaxing)
  .literal.bootloader_common_ota_select_crc
-                0x401001bc        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x401001bc        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
                                   0x4 (size before relaxing)
  .literal.bootloader_common_ota_select_valid
-                0x401001bc        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x401001bc        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
                                   0x4 (size before relaxing)
  .literal.spi_user_cmd
-                0x401001bc        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001bc        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0xc (size before relaxing)
  .literal.special_flash_read_status
-                0x401001c0        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x4 (size before relaxing)
  .literal.flash_gd25q32c_read_status
-                0x401001c0        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x4 (size before relaxing)
  .literal.special_flash_write_status
-                0x401001c0        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x8 (size before relaxing)
  .literal.spi_flash_enable_qio_bit6
-                0x401001c0        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x4 (size before relaxing)
  .literal.flash_gd25q32c_write_status
-                0x401001c0        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x4 (size before relaxing)
  .literal.flash_gd25q32c_enable_QIO_mode
-                0x401001c0        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0xc (size before relaxing)
  .literal.en25q16x_read_sfdp
-                0x401001c0        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c0        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x8 (size before relaxing)
  .literal.spi_flash_get_id
-                0x401001c4        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c4        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0xc (size before relaxing)
  .literal.spi_flash_read_status
-                0x401001c4        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c4        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0xc (size before relaxing)
  .literal.spi_flash_issi_enable_QIO_mode
-                0x401001c4        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c4        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0xc (size before relaxing)
  .literal.special_flash_set_mode
-                0x401001c4        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c4        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                   0x8 (size before relaxing)
  .literal.en25q16x_write_volatile_status
-                0x401001c4        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c4        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x14 (size before relaxing)
  .literal.user_spi_flash_dio_to_qio_pre_init
-                0x401001c4       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001c4       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x34 (size before relaxing)
  .literal.esp_spi_flash_init
-                0x401001d4       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401001d4       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x28 (size before relaxing)
  .literal.Cache_Read_Disable_2
-                0x401001f4        0xc C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x401001f4        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                  0x10 (size before relaxing)
  .literal.Cache_Read_Enable_2
-                0x40100200        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40100200        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                   0xc (size before relaxing)
  .literal.spi_flash_get_id_raw
-                0x40100204       0x10 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40100204       0x10 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                  0x1c (size before relaxing)
  .literal.spi_flash_read_status_raw
-                0x40100214        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40100214        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                   0xc (size before relaxing)
  .literal.spi_flash_enable_qmode_raw
-                0x40100218        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40100218        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                  0x10 (size before relaxing)
  .literal.spi_user_cmd_raw
-                0x4010021c       0x64 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x4010021c       0x64 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                  0x8c (size before relaxing)
  .literal.spi_flash_switch_to_qio_raw
-                0x40100280        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40100280        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                   0xc (size before relaxing)
  .literal.uart_putc
-                0x40100288        0xc C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x40100288        0xc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .literal.ets_putc
-                0x40100294        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x40100294        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
                                   0x8 (size before relaxing)
  .literal.ets_vprintf
-                0x40100294        0x8 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x40100294        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .literal.ets_printf
-                0x4010029c        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x4010029c        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
                                   0x4 (size before relaxing)
  .literal.crc32_le
-                0x4010029c        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x4010029c        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .iram1.0.literal
-                0x401002a0        0xc C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                0x401002a0        0x8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
  .iram1.1.literal
-                0x401002ac       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                0x401002a8       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
                                  0x30 (size before relaxing)
  .text.selected_boot_partition
-                0x401002c4        0xf C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x401002c0        0xf C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                  0x13 (size before relaxing)
- *fill*         0x401002d3        0x1 
+ *fill*         0x401002cf        0x1 
  .text.select_image
-                0x401002d4       0x68 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x401002d0       0x68 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                  0x70 (size before relaxing)
  .text.call_start_cpu
-                0x4010033c       0x26 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x40100338       0x26 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                  0x2e (size before relaxing)
-                0x4010033c                call_start_cpu
- *fill*         0x40100362        0x2 
+                0x40100338                call_start_cpu
+ *fill*         0x4010035e        0x2 
  .text.log_invalid_app_partition
-                0x40100364       0x4b C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100360       0x4b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x53 (size before relaxing)
- *fill*         0x401003af        0x1 
+ *fill*         0x401003ab        0x1 
  .text.try_load_partition
-                0x401003b0       0x3d C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x401003ac       0x3d C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0x41 (size before relaxing)
- *fill*         0x401003ed        0x3 
+ *fill*         0x401003e9        0x3 
  .text.bootloader_utility_load_partition_table
-                0x401003f0      0x171 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x401003ec      0x171 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                 0x185 (size before relaxing)
-                0x401003f0                bootloader_utility_load_partition_table
- *fill*         0x40100561        0x3 
+                0x401003ec                bootloader_utility_load_partition_table
+ *fill*         0x4010055d        0x3 
  .text.bootloader_utility_get_selected_boot_partition
-                0x40100564      0x146 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100560      0x146 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                 0x15e (size before relaxing)
-                0x40100564                bootloader_utility_get_selected_boot_partition
- *fill*         0x401006aa        0x2 
+                0x40100560                bootloader_utility_get_selected_boot_partition
+ *fill*         0x401006a6        0x2 
  .text.bootloader_utility_load_boot_image
-                0x401006ac       0xd6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x401006a8       0xd6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                  0xfa (size before relaxing)
-                0x401006ac                bootloader_utility_load_boot_image
- *fill*         0x40100782        0x2 
+                0x401006a8                bootloader_utility_load_boot_image
+ *fill*         0x4010077e        0x2 
  .text.bootloader_utility_load_image
-                0x40100784       0x69 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
-                0x40100784                bootloader_utility_load_image
- *fill*         0x401007ed        0x3 
+                0x40100780       0x69 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x40100780                bootloader_utility_load_image
+ *fill*         0x401007e9        0x3 
  .text.print_flash_info
-                0x401007f0       0xc6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x401007ec       0xc6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0xca (size before relaxing)
- *fill*         0x401008b6        0x2 
+ *fill*         0x401008b2        0x2 
  .text.uart_console_configure
-                0x401008b8       0x83 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x401008b4       0x83 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x87 (size before relaxing)
- *fill*         0x4010093b        0x1 
+ *fill*         0x40100937        0x1 
  .text.update_flash_config
-                0x4010093c       0x21 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- *fill*         0x4010095d        0x3 
+                0x40100938       0x21 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ *fill*         0x40100959        0x3 
  .text.bootloader_main
-                0x40100960       0x69 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x4010095c       0x69 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x7d (size before relaxing)
- *fill*         0x401009c9        0x3 
+ *fill*         0x401009c5        0x3 
  .text.bootloader_init
-                0x401009cc       0x25 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x401009c8       0x25 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
                                  0x29 (size before relaxing)
-                0x401009cc                bootloader_init
- *fill*         0x401009f1        0x3 
+                0x401009c8                bootloader_init
+ *fill*         0x401009ed        0x3 
  .text.bootloader_flash_read_no_decrypt
-                0x401009f4       0x15 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- *fill*         0x40100a09        0x3 
+                0x401009f0       0x15 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x40100a05        0x3 
  .text.bootloader_mmap
-                0x40100a0c       0x63 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x40100a08       0x63 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
                                  0x67 (size before relaxing)
-                0x40100a0c                bootloader_mmap
- *fill*         0x40100a6f        0x1 
+                0x40100a08                bootloader_mmap
+ *fill*         0x40100a6b        0x1 
  .text.bootloader_munmap
-                0x40100a70       0x23 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
-                0x40100a70                bootloader_munmap
- *fill*         0x40100a93        0x1 
+                0x40100a6c       0x23 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x40100a6c                bootloader_munmap
+ *fill*         0x40100a8f        0x1 
  .text.bootloader_flash_read
-                0x40100a94       0x62 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x40100a90       0x62 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
                                  0x65 (size before relaxing)
-                0x40100a94                bootloader_flash_read
- *fill*         0x40100af6        0x2 
+                0x40100a90                bootloader_flash_read
+ *fill*         0x40100af2        0x2 
  .text.should_map
-                0x40100af8       0x15 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- *fill*         0x40100b0d        0x3 
+                0x40100af4       0x15 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ *fill*         0x40100b09        0x3 
  .text.should_load
-                0x40100b10       0x19 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100b0c       0x19 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x1d (size before relaxing)
- *fill*         0x40100b29        0x3 
+ *fill*         0x40100b25        0x3 
  .text.verify_image_header
-                0x40100b2c       0x7d C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100b28       0x7d C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x85 (size before relaxing)
- *fill*         0x40100ba9        0x3 
+ *fill*         0x40100ba5        0x3 
  .text.process_segment_data
-                0x40100bac       0x87 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100ba8       0x87 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x8f (size before relaxing)
- *fill*         0x40100c33        0x1 
+ *fill*         0x40100c2f        0x1 
  .text.verify_checksum
-                0x40100c34       0x92 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100c30       0x92 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                  0x9a (size before relaxing)
- *fill*         0x40100cc6        0x2 
+ *fill*         0x40100cc2        0x2 
  .text.process_segment
-                0x40100cc8      0x11a C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100cc4      0x11a C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                 0x12a (size before relaxing)
- *fill*         0x40100de2        0x2 
+ *fill*         0x40100dde        0x2 
  .text.esp_image_load
-                0x40100de4      0x193 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40100de0      0x193 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                 0x1ab (size before relaxing)
-                0x40100de4                esp_image_load
- *fill*         0x40100f77        0x1 
+                0x40100de0                esp_image_load
+ *fill*         0x40100f73        0x1 
  .text.esp_partition_table_basic_verify
-                0x40100f78       0xe7 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                0x40100f74       0xe7 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
                                  0xeb (size before relaxing)
-                0x40100f78                esp_partition_table_basic_verify
- *fill*         0x4010105f        0x1 
+                0x40100f74                esp_partition_table_basic_verify
+ *fill*         0x4010105b        0x1 
  .text.bootloader_common_ota_select_crc
-                0x40101060       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
-                0x40101060                bootloader_common_ota_select_crc
+                0x4010105c       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x4010105c                bootloader_common_ota_select_crc
  .text.bootloader_common_ota_select_valid
-                0x40101078       0x2c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
-                0x40101078                bootloader_common_ota_select_valid
+                0x40101074       0x2c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x40101074                bootloader_common_ota_select_valid
  .text.spi_user_cmd
-                0x401010a4       0x4d C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
-                0x401010a4                spi_user_cmd
- *fill*         0x401010f1        0x3 
+                0x401010a0       0x4d C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401010a0                spi_user_cmd
+ *fill*         0x401010ed        0x3 
  .text.special_flash_read_status
-                0x401010f4       0x39 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401010f0       0x39 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x3d (size before relaxing)
-                0x401010f4                special_flash_read_status
- *fill*         0x4010112d        0x3 
+                0x401010f0                special_flash_read_status
+ *fill*         0x40101129        0x3 
  .text.flash_gd25q32c_read_status
-                0x40101130       0x33 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- *fill*         0x40101163        0x1 
+                0x4010112c       0x33 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ *fill*         0x4010115f        0x1 
  .text.special_flash_write_status
-                0x40101164       0x59 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x40101160       0x59 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x61 (size before relaxing)
-                0x40101164                special_flash_write_status
- *fill*         0x401011bd        0x3 
+                0x40101160                special_flash_write_status
+ *fill*         0x401011b9        0x3 
  .text.spi_flash_enable_qio_bit6
-                0x401011c0       0x17 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401011bc       0x17 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x1b (size before relaxing)
- *fill*         0x401011d7        0x1 
+ *fill*         0x401011d3        0x1 
  .text.flash_gd25q32c_write_status
-                0x401011d8       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401011d4       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .text.flash_gd25q32c_enable_QIO_mode
-                0x40101208       0x3e C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x40101204       0x3e C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x46 (size before relaxing)
- *fill*         0x40101246        0x2 
+ *fill*         0x40101242        0x2 
  .text.en25q16x_read_sfdp
-                0x40101248       0x43 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
-                0x40101248                en25q16x_read_sfdp
- *fill*         0x4010128b        0x1 
+                0x40101244       0x43 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x40101244                en25q16x_read_sfdp
+ *fill*         0x40101287        0x1 
  .text.spi_flash_get_id
-                0x4010128c       0x26 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
-                0x4010128c                spi_flash_get_id
- *fill*         0x401012b2        0x2 
+                0x40101288       0x26 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x40101288                spi_flash_get_id
+ *fill*         0x401012ae        0x2 
  .text.spi_flash_read_status
-                0x401012b4       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
-                0x401012b4                spi_flash_read_status
+                0x401012b0       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401012b0                spi_flash_read_status
  .text.spi_flash_issi_enable_QIO_mode
-                0x401012dc       0x43 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401012d8       0x43 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x4b (size before relaxing)
- *fill*         0x4010131f        0x1 
+ *fill*         0x4010131b        0x1 
  .text.special_flash_set_mode
-                0x40101320       0x40 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x4010131c       0x40 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x44 (size before relaxing)
-                0x40101320                special_flash_set_mode
+                0x4010131c                special_flash_set_mode
  .text.en25q16x_write_volatile_status
-                0x40101360       0x4f C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x4010135c       0x4f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0x5b (size before relaxing)
-                0x40101360                en25q16x_write_volatile_status
- *fill*         0x401013af        0x1 
+                0x4010135c                en25q16x_write_volatile_status
+ *fill*         0x401013ab        0x1 
  .text.user_spi_flash_dio_to_qio_pre_init
-                0x401013b0       0xd1 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x401013ac       0xd1 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0xdd (size before relaxing)
-                0x401013b0                user_spi_flash_dio_to_qio_pre_init
- *fill*         0x40101481        0x3 
+                0x401013ac                user_spi_flash_dio_to_qio_pre_init
+ *fill*         0x4010147d        0x3 
  .text.esp_spi_flash_init
-                0x40101484       0xc1 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x40101480       0xc1 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                                  0xc5 (size before relaxing)
-                0x40101484                esp_spi_flash_init
- *fill*         0x40101545        0x3 
+                0x40101480                esp_spi_flash_init
+ *fill*         0x40101541        0x3 
  .text.Cache_Read_Disable_2
-                0x40101548       0x34 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                0x40101548                Cache_Read_Disable_2
+                0x40101544       0x34 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40101544                Cache_Read_Disable_2
  .text.Cache_Read_Enable_2
-                0x4010157c       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                0x4010157c                Cache_Read_Enable_2
-                0x4010157c                Cache_Read_Enable_New
+                0x40101578       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40101578                Cache_Read_Enable_2
+                0x40101578                Cache_Read_Enable_New
  .text.spi_flash_get_id_raw
-                0x401015a4       0x57 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                0x401015a4                spi_flash_get_id_raw
- *fill*         0x401015fb        0x1 
+                0x401015a0       0x57 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x401015a0                spi_flash_get_id_raw
+ *fill*         0x401015f7        0x1 
  .text.spi_flash_read_status_raw
-                0x401015fc       0x2f C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x401015f8       0x2f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                  0x33 (size before relaxing)
-                0x401015fc                spi_flash_read_status_raw
- *fill*         0x4010162b        0x1 
+                0x401015f8                spi_flash_read_status_raw
+ *fill*         0x40101627        0x1 
  .text.spi_flash_enable_qmode_raw
-                0x4010162c       0x33 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40101628       0x33 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                  0x37 (size before relaxing)
-                0x4010162c                spi_flash_enable_qmode_raw
- *fill*         0x4010165f        0x1 
+                0x40101628                spi_flash_enable_qmode_raw
+ *fill*         0x4010165b        0x1 
  .text.spi_user_cmd_raw
-                0x40101660      0x3d7 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                0x40101660                spi_user_cmd_raw
- *fill*         0x40101a37        0x1 
+                0x4010165c      0x3d7 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x4010165c                spi_user_cmd_raw
+ *fill*         0x40101a33        0x1 
  .text.spi_flash_switch_to_qio_raw
-                0x40101a38       0x25 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                0x40101a38                spi_flash_switch_to_qio_raw
- *fill*         0x40101a5d        0x3 
+                0x40101a34       0x25 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x40101a34                spi_flash_switch_to_qio_raw
+ *fill*         0x40101a59        0x3 
  .text.uart_putc
-                0x40101a60       0x21 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- *fill*         0x40101a81        0x3 
+                0x40101a5c       0x21 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ *fill*         0x40101a7d        0x3 
  .text.ets_putc
-                0x40101a84       0x27 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
-                0x40101a84                ets_putc
- *fill*         0x40101aab        0x1 
+                0x40101a80       0x27 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x40101a80                ets_putc
+ *fill*         0x40101aa7        0x1 
  .text.ets_vprintf
-                0x40101aac       0x1f C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
-                0x40101aac                ets_vprintf
- *fill*         0x40101acb        0x1 
+                0x40101aa8       0x1f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x40101aa8                ets_vprintf
+ *fill*         0x40101ac7        0x1 
  .text.ets_printf
-                0x40101acc       0x27 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x40101ac8       0x27 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
                                  0x2b (size before relaxing)
-                0x40101acc                ets_printf
- *fill*         0x40101af3        0x1 
+                0x40101ac8                ets_printf
+ *fill*         0x40101aef        0x1 
  .text.crc32_le
-                0x40101af4       0x2f C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
-                0x40101af4                crc32_le
- *fill*         0x40101b23        0x1 
+                0x40101af0       0x2f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x40101af0                crc32_le
+ *fill*         0x40101b1f        0x1 
  .text.phy_reg_default
-                0x40101b24       0x36 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
-                0x40101b34                phy_reg_default
- *fill*         0x40101b5a        0x2 
+                0x40101b20       0x36 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+                0x40101b30                phy_reg_default
+ *fill*         0x40101b56        0x2 
  .text.uart_div_modify
-                0x40101b5c       0x48 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x40101b58       0x48 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
                                  0x50 (size before relaxing)
-                0x40101b64                uart_div_modify
- *fill*         0x40101ba4        0x0 
- *fill*         0x40101ba4        0x0 
+                0x40101b60                uart_div_modify
+ *fill*         0x40101ba0        0x0 
+ *fill*         0x40101ba0        0x0 
  .text.index_to_partition
-                0x40101ba4       0x4b C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x0 
- *fill*         0x40101bef        0x1 
+                0x40101ba0       0x4b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x0 
+ *fill*         0x40101beb        0x1 
  .text.verify_segment_header
-                0x40101bf0        0x4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
- *fill*         0x40101bf4        0x0 
+                0x40101bec        0x4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
+ *fill*         0x40101bf0        0x0 
  *(.iram1 .iram1.*)
- .iram1.0       0x40101bf4       0x1c C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
-                0x40101bf4                esp_log_early_timestamp
- .iram1.1       0x40101c10       0x92 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .iram1.0       0x40101bf0       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                0x40101bf0                esp_log_early_timestamp
+ .iram1.1       0x40101c08       0x92 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
                                  0x9d (size before relaxing)
-                0x40101c10                esp_early_log_write
+                0x40101c08                esp_early_log_write
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x40101ca2                _text_end = ABSOLUTE (.)
-                0x40101ca2                _etext = .
+                0x40101c9a                _text_end = ABSOLUTE (.)
+                0x40101c9a                _etext = .
 
 .bss            0x3ffe8000      0x408
                 0x3ffe8000                . = ALIGN (0x8)
@@ -718,12 +718,12 @@ END GROUP
  *(.dynbss)
  *(.bss)
  *(.bss.*)
- .bss.mapped    0x3ffe8000        0x1 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .bss.mapped    0x3ffe8000        0x1 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  *fill*         0x3ffe8001        0x3 
- .bss.pbuf$3465
-                0x3ffe8004      0x400 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .bss.pbuf$3464
+                0x3ffe8004      0x400 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
  .bss.FlashIsOnGoing
-                0x3ffe8404        0x1 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x3ffe8404        0x1 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                 0x3ffe8404                FlashIsOnGoing
  *(.gnu.linkonce.b.*)
  *(COMMON)
@@ -736,7 +736,7 @@ END GROUP
  *(.data)
  *(.data.*)
  .data.g_rom_flashchip
-                0x3ffe8408       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x3ffe8408       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
                 0x3ffe8408                g_rom_flashchip
  *(.gnu.linkonce.d.*)
  *(.data1)
@@ -749,79 +749,79 @@ END GROUP
  *(.jcr)
                 0x3ffe8420                _data_end = ABSOLUTE (.)
 
-.rodata         0x3ffe8420      0xddc
+.rodata         0x3ffe8420      0xdd8
                 0x3ffe8420                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  *(.rodata.*)
  .rodata.str1.4
-                0x3ffe8420       0x21 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x3ffe8420       0x21 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
  *fill*         0x3ffe8441        0x3 
  .rodata.str1.4
-                0x3ffe8444      0x38a C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x3ffe8444      0x38a C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
                                 0x392 (size before relaxing)
  *fill*         0x3ffe87ce        0x2 
  .rodata.str1.4
-                0x3ffe87d0       0xfa C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
-                                0x106 (size before relaxing)
- *fill*         0x3ffe88ca        0x2 
+                0x3ffe87d0       0xf6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                                0x102 (size before relaxing)
+ *fill*         0x3ffe88c6        0x2 
  .rodata.print_flash_info
-                0x3ffe88cc       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x3ffe88c8       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
  .rodata.str1.4
-                0x3ffe88f4      0x17b C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- *fill*         0x3ffe8a6f        0x1 
+                0x3ffe88f0      0x17b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x3ffe8a6b        0x1 
  .rodata.str1.4
-                0x3ffe8a70      0x26b C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x3ffe8a6c      0x26b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                 0x26f (size before relaxing)
- *fill*         0x3ffe8cdb        0x1 
+ *fill*         0x3ffe8cd7        0x1 
  .rodata.str1.4
-                0x3ffe8cdc       0xb4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                0x3ffe8cd8       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
  .rodata.str1.4
-                0x3ffe8d90       0x29 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- *fill*         0x3ffe8db9        0x3 
+                0x3ffe8d8c       0x29 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ *fill*         0x3ffe8db5        0x3 
  .rodata.str1.4
-                0x3ffe8dbc       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                0x3ffe8db8       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
                                  0x22 (size before relaxing)
  .rodata.s_log_prefix
-                0x3ffe8ddc        0x6 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- *fill*         0x3ffe8de2        0x2 
+                0x3ffe8dd8        0x6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ *fill*         0x3ffe8dde        0x2 
  .rodata.s_log_color
-                0x3ffe8de4       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                0x3ffe8de0       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
  .rodata.crc32_le_table
-                0x3ffe8dfc      0x400 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x3ffe8df8      0x400 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x3ffe91fc                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x3ffe91f8                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x3ffe91fc                . = ((. + 0x3) & 0xfffffffc)
-                0x3ffe91fc                __init_array_start = ABSOLUTE (.)
+                0x3ffe91f8                . = ((. + 0x3) & 0xfffffffc)
+                0x3ffe91f8                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x3ffe91fc                __init_array_end = ABSOLUTE (.)
+                0x3ffe91f8                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x3ffe91fc                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x3ffe91f8                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x3ffe91fc                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x3ffe91f8                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x3ffe91fc                _rodata_end = ABSOLUTE (.)
-                0x3ffe91fc                _lit4_start = ABSOLUTE (.)
+                0x3ffe91f8                _rodata_end = ABSOLUTE (.)
+                0x3ffe91f8                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x3ffe91fc                _lit4_end = ABSOLUTE (.)
-                0x3ffe91fc                . = ALIGN (0x4)
-                0x3ffe91fc                _heap_start = ABSOLUTE (.)
+                0x3ffe91f8                _lit4_end = ABSOLUTE (.)
+                0x3ffe91f8                . = ALIGN (0x4)
+                0x3ffe91f8                _heap_start = ABSOLUTE (.)
                 0x60001100                PROVIDE (rtc_sys_info, 0x60001100)
                 0x400040c0                PROVIDE (SPI_sector_erase, 0x400040c0)
                 0x40004174                PROVIDE (SPI_page_program, 0x40004174)
@@ -886,177 +886,177 @@ END GROUP
                 0x40004a4c                PROVIDE (SPIWrite, 0x40004a4c)
                 0x40004a00                PROVIDE (SPIEraseSector, 0x40004a00)
                 [!provide]                PROVIDE (gpio_input_get, 0x40004cf0)
-                0x4000dd38                PROVIDE (xthal_get_ccount, 0x4000dd38)
+                [!provide]                PROVIDE (xthal_get_ccount, 0x4000dd38)
                 [!provide]                PROVIDE (uart_div_modify, 0x400039d8)
                 [!provide]                PROVIDE (ets_io_vprintf, 0x40001f00)
-OUTPUT(C:/Workspace/WiFi_Dongle/build/bootloader/bootloader.elf elf32-xtensa-le)
+OUTPUT(C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader.elf elf32-xtensa-le)
 
 .debug_frame    0x00000000      0xab8
- .debug_frame   0x00000000       0x74 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_frame   0x00000074       0xfc C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_frame   0x00000170       0xb4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_frame   0x00000224       0xd8 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_frame   0x000002fc      0x13c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_frame   0x00000438       0x38 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_frame   0x00000470       0x74 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_frame   0x000004e4      0x350 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_frame   0x00000834      0x16c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_frame   0x000009a0       0x58 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .debug_frame   0x000009f8       0x80 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_frame   0x00000a78       0x40 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .debug_frame   0x00000000       0x74 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_frame   0x00000074       0xfc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_frame   0x00000170       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_frame   0x00000224       0xd8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_frame   0x000002fc      0x13c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_frame   0x00000438       0x38 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_frame   0x00000470       0x74 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_frame   0x000004e4      0x350 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_frame   0x00000834      0x16c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_frame   0x000009a0       0x58 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .debug_frame   0x000009f8       0x80 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_frame   0x00000a78       0x40 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
-.debug_info     0x00000000     0x51ac
- .debug_info    0x00000000      0x4b5 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_info    0x000004b5      0xd5a C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_info    0x0000120f      0x4fd C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_info    0x0000170c      0x506 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_info    0x00001c12      0xcf6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_info    0x00002908      0x3d6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_info    0x00002cde      0x341 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_info    0x0000301f     0x134f C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_info    0x0000436e      0x756 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_info    0x00004ac4      0x2c0 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .debug_info    0x00004d84      0x21f C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_info    0x00004fa3      0x209 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+.debug_info     0x00000000     0x51f3
+ .debug_info    0x00000000      0x4b5 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_info    0x000004b5      0xd5a C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_info    0x0000120f      0x4fd C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_info    0x0000170c      0x506 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_info    0x00001c12      0xcf6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_info    0x00002908      0x3d6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_info    0x00002cde      0x341 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_info    0x0000301f     0x134f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_info    0x0000436e      0x756 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_info    0x00004ac4      0x307 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .debug_info    0x00004dcb      0x21f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_info    0x00004fea      0x209 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
-.debug_abbrev   0x00000000     0x141a
- .debug_abbrev  0x00000000      0x18e C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_abbrev  0x0000018e      0x25c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_abbrev  0x000003ea      0x1c1 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_abbrev  0x000005ab      0x173 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_abbrev  0x0000071e      0x1e6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_abbrev  0x00000904      0x16e C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_abbrev  0x00000a72      0x1aa C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_abbrev  0x00000c1c      0x306 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_abbrev  0x00000f22      0x176 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_abbrev  0x00001098      0x17a C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .debug_abbrev  0x00001212      0x159 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_abbrev  0x0000136b       0xaf C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+.debug_abbrev   0x00000000     0x1468
+ .debug_abbrev  0x00000000      0x18e C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_abbrev  0x0000018e      0x25c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_abbrev  0x000003ea      0x1c1 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_abbrev  0x000005ab      0x173 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_abbrev  0x0000071e      0x1e6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_abbrev  0x00000904      0x16e C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_abbrev  0x00000a72      0x1aa C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_abbrev  0x00000c1c      0x306 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_abbrev  0x00000f22      0x176 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_abbrev  0x00001098      0x1c8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .debug_abbrev  0x00001260      0x159 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_abbrev  0x000013b9       0xaf C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
-.debug_loc      0x00000000     0x3134
- .debug_loc     0x00000000       0x76 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_loc     0x00000076      0x5c4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_loc     0x0000063a       0xf6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_loc     0x00000730      0x33b C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_loc     0x00000a6b      0x991 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_loc     0x000013fc      0x108 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_loc     0x00001504      0x2e6 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_loc     0x000017ea     0x10af C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_loc     0x00002899      0x5a0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_loc     0x00002e39       0xce C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .debug_loc     0x00002f07       0x9b C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_loc     0x00002fa2      0x192 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+.debug_loc      0x00000000     0x3147
+ .debug_loc     0x00000000       0x76 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_loc     0x00000076      0x5c4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_loc     0x0000063a       0xf6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_loc     0x00000730      0x33b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_loc     0x00000a6b      0x991 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_loc     0x000013fc      0x108 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_loc     0x00001504      0x2e6 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_loc     0x000017ea     0x10af C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_loc     0x00002899      0x5a0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_loc     0x00002e39       0xe1 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .debug_loc     0x00002f1a       0x9b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_loc     0x00002fb5      0x192 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
 .debug_aranges  0x00000000      0x3a0
  .debug_aranges
-                0x00000000       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                0x00000000       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
  .debug_aranges
-                0x00000030       0x50 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                0x00000030       0x50 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
  .debug_aranges
-                0x00000080       0x40 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                0x00000080       0x40 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
  .debug_aranges
-                0x000000c0       0x48 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                0x000000c0       0x48 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
  .debug_aranges
-                0x00000108       0x60 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x00000108       0x60 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
  .debug_aranges
-                0x00000168       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                0x00000168       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
  .debug_aranges
-                0x00000188       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                0x00000188       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
  .debug_aranges
-                0x000001b8       0xe8 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                0x000001b8       0xe8 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
  .debug_aranges
-                0x000002a0       0x70 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                0x000002a0       0x70 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
  .debug_aranges
-                0x00000310       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                0x00000310       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
  .debug_aranges
-                0x00000338       0x38 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                0x00000338       0x38 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .debug_aranges
-                0x00000370       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+                0x00000370       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
 .debug_ranges   0x00000000      0x3f8
- .debug_ranges  0x00000000       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_ranges  0x00000020       0x40 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_ranges  0x00000060       0x30 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_ranges  0x00000090       0x38 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_ranges  0x000000c8       0x80 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_ranges  0x00000148       0x40 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_ranges  0x00000188       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_ranges  0x000001a8      0x190 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_ranges  0x00000338       0x60 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_ranges  0x00000398       0x18 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .debug_ranges  0x000003b0       0x28 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_ranges  0x000003d8       0x20 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .debug_ranges  0x00000000       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_ranges  0x00000020       0x40 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_ranges  0x00000060       0x30 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_ranges  0x00000090       0x38 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_ranges  0x000000c8       0x80 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_ranges  0x00000148       0x40 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_ranges  0x00000188       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_ranges  0x000001a8      0x190 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_ranges  0x00000338       0x60 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_ranges  0x00000398       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .debug_ranges  0x000003b0       0x28 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_ranges  0x000003d8       0x20 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
-.debug_line     0x00000000     0x3be1
- .debug_line    0x00000000      0x35b C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .debug_line    0x0000035b      0x7f9 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .debug_line    0x00000b54      0x4a2 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .debug_line    0x00000ff6      0x3ad C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x000013a3      0x743 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_line    0x00001ae6      0x344 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .debug_line    0x00001e2a      0x32c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .debug_line    0x00002156      0xcda C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_line    0x00002e30      0x64b C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_line    0x0000347b      0x33a C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .debug_line    0x000037b5      0x261 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .debug_line    0x00003a16      0x1cb C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+.debug_line     0x00000000     0x3beb
+ .debug_line    0x00000000      0x35b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .debug_line    0x0000035b      0x7f9 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .debug_line    0x00000b54      0x4a2 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .debug_line    0x00000ff6      0x3ad C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x000013a3      0x743 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x00001ae6      0x344 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x00001e2a      0x32c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .debug_line    0x00002156      0xcda C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_line    0x00002e30      0x64b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_line    0x0000347b      0x344 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .debug_line    0x000037bf      0x261 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .debug_line    0x00003a20      0x1cb C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
 
-.debug_str      0x00000000     0x173d
- .debug_str     0x00000000      0x451 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
-                                0x4da (size before relaxing)
- .debug_str     0x00000451      0x2ac C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
-                                0x704 (size before relaxing)
- .debug_str     0x000006fd      0x2ba C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
-                                0x592 (size before relaxing)
- .debug_str     0x000009b7      0x114 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
-                                0x387 (size before relaxing)
- .debug_str     0x00000acb      0x1c4 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
-                                0x773 (size before relaxing)
- .debug_str     0x00000c8f       0xe0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
-                                0x3ab (size before relaxing)
- .debug_str     0x00000d6f      0x168 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
-                                0x37d (size before relaxing)
- .debug_str     0x00000ed7      0x529 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
-                                0x915 (size before relaxing)
- .debug_str     0x00001400      0x129 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
-                                0x4be (size before relaxing)
- .debug_str     0x00001529       0xf4 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
-                                0x2af (size before relaxing)
- .debug_str     0x0000161d       0xa6 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
-                                0x212 (size before relaxing)
- .debug_str     0x000016c3       0x7a C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+.debug_str      0x00000000     0x176c
+ .debug_str     0x00000000      0x457 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+                                0x4e0 (size before relaxing)
+ .debug_str     0x00000457      0x2b2 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+                                0x70a (size before relaxing)
+ .debug_str     0x00000709      0x2ba C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+                                0x598 (size before relaxing)
+ .debug_str     0x000009c3      0x114 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+                                0x38d (size before relaxing)
+ .debug_str     0x00000ad7      0x1c4 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                                0x779 (size before relaxing)
+ .debug_str     0x00000c9b       0xe0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+                                0x3b1 (size before relaxing)
+ .debug_str     0x00000d7b      0x168 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+                                0x383 (size before relaxing)
+ .debug_str     0x00000ee3      0x52f C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+                                0x91b (size before relaxing)
+ .debug_str     0x00001412      0x129 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+                                0x4c4 (size before relaxing)
+ .debug_str     0x0000153b      0x10b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+                                0x2c6 (size before relaxing)
+ .debug_str     0x00001646       0xac C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+                                0x218 (size before relaxing)
+ .debug_str     0x000016f2       0x7a C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
                                 0x19e (size before relaxing)
 
 .comment        0x00000000       0x75
- .comment       0x00000000       0x3b C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .comment       0x00000000       0x3b C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
                                  0x3c (size before relaxing)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .comment       0x0000003b       0x3c C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .comment       0x0000003b       0x3a C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
                                  0x3b (size before relaxing)
  .comment       0x00000075       0x3b C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
 
 .xtensa.info    0x00000000       0x38
- .xtensa.info   0x00000000       0x38 C:/Workspace/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
- .xtensa.info   0x00000038        0x0 C:/Workspace/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
+ .xtensa.info   0x00000000       0x38 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_utility.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(flash_partitions.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
+ .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .xtensa.info   0x00000038        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
  .xtensa.info   0x00000038        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)

@@ -27,14 +27,16 @@ port/esp8266/panic.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/backtrace.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
@@ -55,11 +57,7 @@ port/esp8266/panic.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/task.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/portable.h
+ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 
@@ -115,11 +113,11 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
-
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
 
@@ -129,7 +127,11 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
 
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
+
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/backtrace.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
@@ -172,12 +174,4 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freer
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h:
-
-C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/task.h:
-
-C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h:
-
-C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h:
-
-C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/portable.h:
 /rtos-sdk/master/components/freertos/port/esp8266/panic.c:

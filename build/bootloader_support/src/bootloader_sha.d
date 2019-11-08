@@ -1,6 +1,6 @@
 src/bootloader_sha.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/src/bootloader_sha.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_sha.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_default_types.h \
@@ -34,7 +34,7 @@ src/bootloader_sha.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/sha256_alt.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/util/include/esp_sha.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_sha.h:
 

@@ -12,6 +12,9 @@ uint8_t delete_tcp_task;
 wifi_ap_record_t ap_info;
 
 xTaskHandle tcp_client_handle;
+xTaskHandle tcp_server_handle;
+
+xTaskHandle smartconfig_handle;
 
 void smartconfig_example_task(void * parm);
 void tcp_server_task(void *pvParameters);

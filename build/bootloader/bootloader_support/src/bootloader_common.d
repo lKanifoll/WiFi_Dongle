@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/src/bootloader_common.c \
- c:\workspace\wifi_dongle\build\include\sdkconfig.h \
+ c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/hal.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
@@ -18,7 +18,7 @@ src/bootloader_common.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include/bootloader_common.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_flash_data_types.h
 
-c:\workspace\wifi_dongle\build\include\sdkconfig.h:
+c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/hal.h:
 

@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/src/bootloader_utility.c \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/param.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/config.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/ieeefp.h \
@@ -46,9 +46,10 @@ src/bootloader_utility.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_flash_partitions.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/internal/esp_system_internal.h \
- C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/param.h:
 
@@ -141,4 +142,6 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_flas
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/internal/esp_system_internal.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 /rtos-sdk/master/components/bootloader_support/src/bootloader_utility.c:

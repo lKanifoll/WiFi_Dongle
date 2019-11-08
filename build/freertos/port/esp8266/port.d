@@ -13,7 +13,7 @@ port/esp8266/port.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/tie/xt_timer.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/ieeefp.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
@@ -60,6 +60,12 @@ port/esp8266/port.o: \
  C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_task_wdt.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_sleep.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/gpio.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
+ C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/gpio_register.h \
  C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
@@ -88,7 +94,7 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/Workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 
@@ -181,6 +187,18 @@ C:/sysgcc/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freer
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_task_wdt.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp_sleep.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/driver/gpio.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
+
+C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/gpio_register.h:
 
 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h:
 /rtos-sdk/master/components/freertos/port/esp8266/port.c:
