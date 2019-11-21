@@ -140,7 +140,7 @@ void app_main()
 		//strcpy((char*)&HOST_PORT[0], "10001");
 		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
-		strcpy((char*)&HOST_ADDR[0], "192.168.1.72");
+		strcpy((char*)&HOST_ADDR[0], "192.168.88.131");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		strcpy((char*)&HOST_PORT[0], "3333");
@@ -174,8 +174,10 @@ void app_main()
 //	
 //	
 //	
+	
+	
 	uart_config_t uart_config = {
-		.baud_rate = 115200,
+		.baud_rate = 9600,
 		.data_bits = UART_DATA_8_BITS,
 		.parity = UART_PARITY_DISABLE,
 		.stop_bits = UART_STOP_BITS_1,

@@ -1,12 +1,9 @@
 VisualGDB: TemporaryBuildDir=/C/Workspace/Repos/WiFi_Dongle/VisualGDBCache/WiFi_Dongle-Debug-VisualGDB/CodeSenseDir
 VisualGDB: NormalBuildDir=/C/Workspace/Repos/WiFi_Dongle/Debug
 VisualGDB: ESPIDFRoot=/rtos-sdk/master
-Toolchain path: /opt/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
-WARNING: Toolchain version is not supported: crosstool-ng-1.22.0-92-g8facf4c0
-Expected to see version: crosstool-ng-1.22.0-100-ge567ec7
-Please check ESP-IDF setup instructions and update the toolchain, or proceed at your own risk.
-Compiler version: 5.2.0
 Python requirements from C:/sysgcc/esp8266/rtos-sdk/master/requirements.txt are satisfied.
+GENCONFIG
+Building partitions from /rtos-sdk/master/components/partition_table/partitions_two_ota.1MB.csv...
 Partition table binary generated. Contents:
 *******************************************************************************
 # Espressif ESP32 Partition Table
