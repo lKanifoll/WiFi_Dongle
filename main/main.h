@@ -27,10 +27,12 @@
 #include "wifi_tcp.h"
 #include "esp_ping.h"
 #include "OTA.h"
-#include "esp_ping.h"
+//#include "ping/ping.h"
+//#include "esp_ping.h"
 
 
-
+#define SC 1
+#define AP 2
 nvs_handle storage_handle;
 char SSID[32];
 char PASS[32];
@@ -39,12 +41,15 @@ char HOST_PORT[6];
 uint8_t first_link;
 uint8_t first_start;
 uint8_t wifi_status;
+uint8_t connect_type;
 EventGroupHandle_t wifi_event_group;
 
 QueueHandle_t uart0_queue;
 bool check_crc8(char *pcBlock, int len);
 bool crc8_add(char *sBlock, int len);
 int sock;
+
+int err_socket_access;
 
 xTaskHandle uart_handle;
 

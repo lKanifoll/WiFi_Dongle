@@ -1,1 +1,1 @@
-c:\sysgcc\esp8266;/rtos-sdk/master
+C:\SysGCC\esp8266;/rtos-sdk/master

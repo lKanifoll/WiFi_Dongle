@@ -24,9 +24,9 @@ C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.
                               C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o) (ets_vprintf)
 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
                               C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_common.o) (crc32_le)
-C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
                               C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o) (phy_reg_default)
-C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
                               C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a(bootloader_init.o) (uart_div_modify)
 
 Allocating common symbols
@@ -187,27 +187,27 @@ Discarded input sections
  .xt.lit        0x00000000       0x18 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .xt.prop       0x00000000       0xfc C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
  .literal.phy_reg_default
-                0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
- .text          0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
- .data          0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
- .bss           0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
- .xt.lit        0x00000000        0x8 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
- .xt.prop       0x00000000       0x48 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+                0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .text          0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .data          0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .bss           0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .xt.lit        0x00000000        0x8 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .xt.prop       0x00000000       0x48 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
  .literal.uart_buff_switch
-                0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
  .literal.uart_div_modify
-                0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
  .literal.Uart_Init
-                0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
- .text          0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
- .data          0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
- .bss           0x00000000        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .text          0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .data          0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .bss           0x00000000        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
  .text.uart_buff_switch
-                0x00000000        0x2 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x00000000        0x2 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
  .text.Uart_Init
-                0x00000000        0x2 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
- .xt.lit        0x00000000        0x8 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
- .xt.prop       0x00000000       0x78 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x00000000        0x2 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .xt.lit        0x00000000        0x8 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .xt.prop       0x00000000       0x78 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
 
 Memory Configuration
 
@@ -221,13 +221,13 @@ Linker script and memory map
 
 START GROUP
 LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a
-LOAD C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a
+LOAD C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a
 LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader_support\libbootloader_support.a
 LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/spi_flash\libspi_flash.a
 LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a
 LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a
 LOAD C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a
-LOAD C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a
+LOAD C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a
 LOAD c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib\libstdc++.a
 LOAD c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0\libgcov.a
 END GROUP
@@ -632,11 +632,11 @@ END GROUP
                 0x40101af0                crc32_le
  *fill*         0x40101b1f        0x1 
  .text.phy_reg_default
-                0x40101b20       0x36 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+                0x40101b20       0x36 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
                 0x40101b30                phy_reg_default
  *fill*         0x40101b56        0x2 
  .text.uart_div_modify
-                0x40101b58       0x48 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+                0x40101b58       0x48 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
                                  0x50 (size before relaxing)
                 0x40101b60                uart_div_modify
  *fill*         0x40101ba0        0x0 
@@ -1041,9 +1041,9 @@ OUTPUT(C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader.elf elf32-xten
  .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
  .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .comment       0x0000003b       0x3c C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .comment       0x0000003b       0x3a C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .comment       0x0000003b       0x3a C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
                                  0x3b (size before relaxing)
- .comment       0x00000075       0x3b C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .comment       0x00000075       0x3b C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
 
 .xtensa.info    0x00000000       0x38
  .xtensa.info   0x00000000       0x38 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/main\libmain.a(bootloader_start.o)
@@ -1058,5 +1058,5 @@ OUTPUT(C:/Workspace/Repos/WiFi_Dongle/build/bootloader/bootloader.elf elf32-xten
  .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/log\liblog.a(log.o)
  .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/esp8266\libesp8266.a(ets_printf.o)
  .xtensa.info   0x00000038        0x0 C:/Workspace/Repos/WiFi_Dongle/build/bootloader/util\libutil.a(crc.o)
- .xtensa.info   0x00000038        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
- .xtensa.info   0x00000038        0x0 C:/sysgcc/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)
+ .xtensa.info   0x00000038        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(phy.o)
+ .xtensa.info   0x00000038        0x0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(uart.o)

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ImplicitFlagCache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <GCC>c:\sysgcc\esp8266\opt\xtensa-lx106-elf\bin\xtensa-lx106-elf-gcc.exe</GCC>
-  <GXX>c:\sysgcc\esp8266\opt\xtensa-lx106-elf\bin\xtensa-lx106-elf-g++.exe</GXX>
+  <GCC>C:\SysGCC\esp8266\opt\xtensa-lx106-elf\bin\xtensa-lx106-elf-gcc.exe</GCC>
+  <GXX>C:\SysGCC\esp8266\opt\xtensa-lx106-elf\bin\xtensa-lx106-elf-g++.exe</GXX>
   <CachedFlags>
     <Entry>
       <Key>
