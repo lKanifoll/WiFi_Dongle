@@ -48,7 +48,8 @@ void uart_event_task(void *pvParameters)
 			uart_read_bytes(EX_UART_NUM, dtmp, event.size, portMAX_DELAY);
 			//ESP_LOGI(TAG_UART, "[DATA EVT]: ");
 			#ifdef DEBUG
-			printf("Free heap: %d\n", esp_get_free_heap_size());
+			//printf("Free heap: %d\n", esp_get_free_heap_size());
+			printf("event.size: %d\n", event.size);
 			printf("Request: ");
 			for(uint8_t i = 0 ; i < event.size ; i++)
 			{
@@ -58,7 +59,7 @@ void uart_event_task(void *pvParameters)
 			#endif
 			if ((dtmp[0] == 0xAB) && (dtmp[1] == 0xCD))
 			{
-				if (check_crc8((char*)dtmp, 5))
+				if (check_crc8((char*)dtmp, event.size - 1))
 				{
 					if (dtmp[4] == 0xA1)
 					{
@@ -78,6 +79,17 @@ void uart_event_task(void *pvParameters)
 						nvs_close(storage_handle);
 						esp_restart();
 					}
+					else if (dtmp[3] == 0x02)
+					{
+						first_link = false;
+						nvs_open("storage", NVS_READWRITE, &storage_handle);
+						nvs_set_str(storage_handle, "SSID", "");
+						nvs_set_str(storage_handle, "PASS", "");
+						nvs_set_u8(storage_handle, "first_link", first_link);
+						nvs_commit(storage_handle);
+						nvs_close(storage_handle);
+						esp_restart();
+					}					
 					else if (dtmp[3] == 0x03)
 					{
 						dtmp[2] = 0x02;
@@ -211,7 +223,7 @@ void app_main()
 	
 	//xTaskCreate(tcp_client_task, "tcp_client",		4096, NULL, 5, NULL);
 	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, &uart_handle);
-	
+	xTimerUpdateWifi = xTimerCreate("Lcd update conn", 60000, pdFALSE, xTimerUpdateWifi, TimerUpdate_Callback);
 	get_mac_buf();
 	initialise_wifi();
 

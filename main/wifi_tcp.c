@@ -87,7 +87,10 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 }
 
 
-
+void TimerUpdate_Callback(TimerHandle_t xTimer)
+{
+	esp_restart();
+}
 
 void initialise_wifi()
 {
@@ -109,11 +112,19 @@ void initialise_wifi()
 		if (connect_type == SC)
 		{
 			set_wifi_sta();
+			
 		}
-		else
+		else if (connect_type == AP)
 		{
 			set_wifi_ap();
 		}
+		
+		xTimerReset(xTimerUpdateWifi, 10);
+		nvs_open("storage", NVS_READWRITE, &storage_handle);
+		connect_type = pdFALSE;
+		nvs_set_u8(storage_handle, "connect_type", connect_type);
+		nvs_commit(storage_handle);
+		nvs_close(storage_handle);
 	}
 	else
 	{
@@ -135,6 +146,7 @@ void initialise_wifi()
 			ESP_ERROR_CHECK(esp_wifi_start());
 			ESP_ERROR_CHECK(esp_wifi_connect());
 		}
+		/*
 		else
 		{	
 			wifi_config_t wifi_config = {
@@ -154,6 +166,7 @@ void initialise_wifi()
 			ESP_ERROR_CHECK(esp_wifi_start());
 			//ESP_ERROR_CHECK(esp_wifi_connect());
 		}
+		*/
 	}
 }
 
@@ -164,7 +177,7 @@ void set_wifi_sta()
 {
 	ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
 	ESP_ERROR_CHECK(esp_wifi_start());
-	xTaskCreate(smartconfig_example_task, "smartconfig_example_task", 4096, NULL, 10, &smartconfig_handle);
+	xTaskCreate(smartconfig_example_task, "smartconfig_example_task", 4096, NULL, 5, &smartconfig_handle);
 	
 }
 
@@ -511,6 +524,40 @@ void tcp_server_task(void *pvParameters)
 					nvs_close(storage_handle);
 					esp_restart();
 				}
+				if (!(strncmp(rx_buffer, "AT+WIFI+", 8)))
+				{
+					uint8_t y = 0;
+					uint8_t i = 0;
+					//uint8_t j = 0;
+					bzero(SSID, 32);
+					bzero(PASS, 32);
+					for(i = 8 ; i < len ; i++)
+					{
+						if (rx_buffer[i] == 0x3A)
+						{
+							i++;
+							break;
+						}
+						SSID[y] = rx_buffer[i];
+						y++;
+					}
+					y = 0;
+					
+					for (; i < len; i++)
+					{
+						PASS[y] = rx_buffer[i];
+						y++;
+					}
+					
+					first_link = true;
+					nvs_open("storage", NVS_READWRITE, &storage_handle);
+					nvs_set_str(storage_handle, "SSID", (const char *)SSID);
+					nvs_set_str(storage_handle, "PASS", (const char *)PASS);
+					nvs_set_u8(storage_handle, "first_link", first_link);
+					nvs_commit(storage_handle);
+					nvs_close(storage_handle);
+					esp_restart();
+				}				
 				/*
 				int err = send(sock, rx_buffer, len, 0);
 				if (err < 0) 

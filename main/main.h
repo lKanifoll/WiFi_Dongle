@@ -43,7 +43,8 @@ uint8_t first_start;
 uint8_t wifi_status;
 uint8_t connect_type;
 EventGroupHandle_t wifi_event_group;
-
+TimerHandle_t xTimerUpdateWifi;
+void TimerUpdate_Callback(TimerHandle_t xTimer);
 QueueHandle_t uart0_queue;
 bool check_crc8(char *pcBlock, int len);
 bool crc8_add(char *sBlock, int len);
