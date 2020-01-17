@@ -67,7 +67,7 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 			disconnect = true;
 			wifi_status = false;
 		}
-		
+		ESP_LOGW(TAG_WIFI, "wifi_status: %d", wifi_status);
 		if (wifi_status == 3)
 		{
 			xEventGroupSetBits(wifi_event_group, ESPTOUCH_DONE_BIT);
@@ -146,27 +146,6 @@ void initialise_wifi()
 			ESP_ERROR_CHECK(esp_wifi_start());
 			ESP_ERROR_CHECK(esp_wifi_connect());
 		}
-		/*
-		else
-		{	
-			wifi_config_t wifi_config = {
-				.ap = {
-				.ssid = "RK_Dongle",
-				.ssid_len = 9,
-				.password = "",
-				.channel = 6,
-				.authmode = WIFI_AUTH_OPEN,
-				.ssid_hidden = 0,
-				.max_connection = 1,
-				.beacon_interval = 100
-			},
-			};
-			ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
-			ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config));
-			ESP_ERROR_CHECK(esp_wifi_start());
-			//ESP_ERROR_CHECK(esp_wifi_connect());
-		}
-		*/
 	}
 }
 
@@ -184,29 +163,9 @@ void set_wifi_sta()
 
 void set_wifi_ap()
 {
-	/*
-	if (wifi_active_flag)
-	{
-		ESP_LOGI(TAG_WIFI, "AP Disconnect 0");
-		if ((wifi_status == 1) || (wifi_status == 4))
-		{
-			ESP_ERROR_CHECK(esp_wifi_disconnect());
-			ESP_LOGI(TAG_WIFI, "AP Disconnect 1");
-		}		
-		ESP_ERROR_CHECK(esp_wifi_stop());
-		ESP_LOGI(TAG_WIFI, "AP Disconnect 2");
-	}
-	if (wifi_status == 2)
-	{
-		vTaskDelete(smartconfig_handle);
-	}
-	*/
-
-
-
 	 wifi_config_t wifi_config1 = {
 		.ap = {
-		.ssid = "RK_Dongle",
+		.ssid = "Yin-Yang",
 		.ssid_len = 9,
 		.password = "",
 		.channel = 6,
@@ -307,8 +266,8 @@ void tcp_client_task(void *pvParameters)
 			wifi_rssi();
 			int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
 			// Error occured during receiving
-			ESP_LOGI(TAG_TCP, "len: %d", len);
-			if(len <= 0) 
+			//ESP_LOGI(TAG_TCP, "len: %d", len);
+			if (len <= 0) 
 			{
 				ESP_LOGE(TAG_TCP, "recv failed: errno %d", errno);
 				wifi_status = 1;
@@ -317,15 +276,24 @@ void tcp_client_task(void *pvParameters)
 			// Data received
 			else //if(len > 0)
 			{
-				ESP_LOGI(TAG_TCP, "Receiving TCP...");
+				//ESP_LOGI(TAG_TCP, "Receiving TCP...");
 				rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
+				//ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+				
+
+				ESP_LOGW(TAG_TCP, "%s", rx_buffer);
+			    for(uint8_t i = 0 ; i < len ; i++)
+				{
+					printf("%02X ", rx_buffer[i]);
+				}
+				printf("\n");
 			
 				//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
 				            
 				if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
 				{
 					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-					ESP_LOGI(TAG_TCP, "%s", rx_buffer);
+					//ESP_LOGI(TAG_TCP, "%s", rx_buffer);
 					ESP_LOGI(TAG_TCP, "%s", "+ok=ESP-BUIDIN-1.0.0");
 					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
 					int err = send(sock, "+ok=ESP-BUIDIN-1.0.0", 20, 0);
@@ -385,7 +353,7 @@ void tcp_client_task(void *pvParameters)
 				}
 				else
 				{
-					printf("Request: ");
+					printf("-->TCP TO UART: ");
 					for (uint8_t i = 0; i < len; i++)
 					{
 						//ESP_LOGI(TAG_TCP, "[DATA EVT]: %02X ", dtmp[i]);
@@ -432,7 +400,6 @@ void tcp_server_task(void *pvParameters)
 	int listen_sock = socket(addr_family, SOCK_STREAM, ip_protocol);
 	if (listen_sock < 0) {
 		ESP_LOGE(TAG_TCP, "Unable to create socket: errno %d", errno);
-		//break;
 	}
 	else
 	{
@@ -547,6 +514,13 @@ void tcp_server_task(void *pvParameters)
 					{
 						PASS[y] = rx_buffer[i];
 						y++;
+					}
+					//response
+					int err = send(sock, MAC_esp, 17, 0);
+					if (err < 0) 
+					{
+						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
+						break;
 					}
 					
 					first_link = true;

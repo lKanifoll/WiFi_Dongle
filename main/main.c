@@ -49,8 +49,8 @@ void uart_event_task(void *pvParameters)
 			//ESP_LOGI(TAG_UART, "[DATA EVT]: ");
 			#ifdef DEBUG
 			//printf("Free heap: %d\n", esp_get_free_heap_size());
-			printf("event.size: %d\n", event.size);
-			printf("Request: ");
+			//printf("event.size: %d\n", event.size);
+			printf("-->UART INCOMMING: ");
 			for(uint8_t i = 0 ; i < event.size ; i++)
 			{
 				printf("%02X ", dtmp[i]);
@@ -98,7 +98,7 @@ void uart_event_task(void *pvParameters)
 						crc8_add((char*)dtmp, 5);
 						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);
 						
-						printf("Response: ");
+						printf("-->WIFI STATUS: ");
 						for (uint8_t i = 0; i < event.size + 1; i++)
 						{
 							printf("%02X ", dtmp[i]);
@@ -119,7 +119,7 @@ void uart_event_task(void *pvParameters)
 			else
 			{
 				#ifdef DEBUG
-				printf("Response: ");
+				printf("-->UART OUT: ");
 				for (uint8_t i = 0; i < event.size; i++)
 				{
 					printf("%02X ", dtmp[i]);
@@ -129,7 +129,7 @@ void uart_event_task(void *pvParameters)
 				if (!err_socket_access)
 				{
 					
-					printf("SEND TO HOST\n");
+					//printf("SEND TO HOST\n");
 					int err = send(sock, dtmp, event.size, 0);
 					if (err < 0) {
 						ESP_LOGE(TAG_UART, "Error occured during sending: errno %d", errno);
@@ -159,23 +159,26 @@ void app_main()
 		ESP_ERROR_CHECK(nvs_flash_erase());
 		err = nvs_flash_init();
 	}
-	wifi_status = false;
+	
 	nvs_open("storage", NVS_READWRITE, &storage_handle);
 	
 	nvs_get_u8(storage_handle, "first_start", &first_start);
 	if (!first_start)
 	{
-		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
-		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
-		
-		//strcpy((char*)&HOST_PORT[0], "10001");
-		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
-		
-		strcpy((char*)&HOST_ADDR[0], "192.168.1.72");
+		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
-		strcpy((char*)&HOST_PORT[0], "3333");
+		strcpy((char*)&HOST_PORT[0], "10001");
 		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		
+		//strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		
+		//strcpy((char*)&HOST_ADDR[0], "172.200.204.114");
+		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
+		
+		//strcpy((char*)&HOST_PORT[0], "3333");
+		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
 		first_start = true;
 		nvs_set_u8(storage_handle, "first_start", first_start);
@@ -202,16 +205,11 @@ void app_main()
 	nvs_commit(storage_handle);
 	nvs_close(storage_handle);
 	
-	err_socket_access = true;
-//	
-//	printf("ssid_len: %d\n", ssid_len);
-//	printf("pass_len: %d\n", pass_len);
-//	
-//	
-//	
+
 	
 	
 	uart_config_t uart_config = {
+		//.baud_rate = 115200,
 		.baud_rate = 9600,
 		.data_bits = UART_DATA_8_BITS,
 		.parity =	 UART_PARITY_DISABLE,
@@ -224,6 +222,8 @@ void app_main()
 	//xTaskCreate(tcp_client_task, "tcp_client",		4096, NULL, 5, NULL);
 	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, &uart_handle);
 	xTimerUpdateWifi = xTimerCreate("Lcd update conn", 60000, pdFALSE, xTimerUpdateWifi, TimerUpdate_Callback);
+	err_socket_access = true;
+	wifi_status = false;
 	get_mac_buf();
 	initialise_wifi();
 
