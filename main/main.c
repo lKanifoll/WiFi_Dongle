@@ -161,24 +161,24 @@ void app_main()
 	}
 	
 	nvs_open("storage", NVS_READWRITE, &storage_handle);
-	
+		
 	nvs_get_u8(storage_handle, "first_start", &first_start);
 	if (!first_start)
 	{
-		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
-		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
-		
-		strcpy((char*)&HOST_PORT[0], "10001");
-		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
-		
-		//strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		
+		//strcpy((char*)&HOST_PORT[0], "10001");
+		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		
+		strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		//strcpy((char*)&HOST_ADDR[0], "172.200.204.114");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
 		
-		//strcpy((char*)&HOST_PORT[0], "3333");
-		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		strcpy((char*)&HOST_PORT[0], "3333");
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
 		first_start = true;
 		nvs_set_u8(storage_handle, "first_start", first_start);
@@ -204,9 +204,7 @@ void app_main()
 	
 	nvs_commit(storage_handle);
 	nvs_close(storage_handle);
-	
-
-	
+		
 	
 	uart_config_t uart_config = {
 		//.baud_rate = 115200,
@@ -218,13 +216,13 @@ void app_main()
 	};
 	uart_param_config(EX_UART_NUM, &uart_config);
 	uart_driver_install(EX_UART_NUM, BUF_SIZE * 2, BUF_SIZE * 2, 3, &uart0_queue, 0);
-	
+	err_socket_access = true;
+	wifi_status = false;	
 	//xTaskCreate(tcp_client_task, "tcp_client",		4096, NULL, 5, NULL);
 	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, &uart_handle);
 	xTimerUpdateWifi = xTimerCreate("Lcd update conn", 60000, pdFALSE, xTimerUpdateWifi, TimerUpdate_Callback);
-	err_socket_access = true;
-	wifi_status = false;
+
 	get_mac_buf();
 	initialise_wifi();
-
+	
 }

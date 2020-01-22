@@ -31,8 +31,10 @@
 //#include "esp_ping.h"
 
 
+#define VERSION "1.1.1"
 #define SC 1
 #define AP 2
+
 nvs_handle storage_handle;
 char SSID[32];
 char PASS[32];

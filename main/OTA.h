@@ -2,9 +2,9 @@
 #define _OTA_H_
 
 
-//#define EXAMPLE_SERVER_IP   "esp.dude.moscow"
-#define EXAMPLE_SERVER_IP   "kochnev.asuscomm.com"
-#define EXAMPLE_SERVER_PORT "80"
+#define EXAMPLE_SERVER_IP   "iztt.dude.moscow"
+//#define EXAMPLE_SERVER_IP   "kochnev.asuscomm.com"
+#define EXAMPLE_SERVER_PORT "2228"
 #define EXAMPLE_FILENAME "/WiFi_Dongle.ota.bin"
 #define BUFFSIZE 1500
 #define TEXT_BUFFSIZE 1024
