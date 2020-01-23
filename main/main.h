@@ -36,6 +36,8 @@
 nvs_handle storage_handle;
 char SSID[32];
 char PASS[32];
+char FOTA_ADDR[32];
+char FOTA_PORT[6];
 char HOST_ADDR[32];
 char HOST_PORT[6];
 uint8_t first_link;
