@@ -25,13 +25,13 @@ static bool connect_to_http_server()
 	struct addrinfo *res;
 	const struct addrinfo hints =
 	{ .ai_family = AF_INET, .ai_socktype = SOCK_STREAM, };
-	int result = getaddrinfo(EXAMPLE_SERVER_IP, EXAMPLE_SERVER_PORT, &hints, &res);
+	int result = getaddrinfo(FOTA_ADDR, FOTA_PORT, &hints, &res);
 	if ((result != 0) || (res == NULL))
 	{
 		return pdFALSE;
 	}
 	
-	ESP_LOGI(TAG_OTA, "Server IP: %s Server Port:%s", EXAMPLE_SERVER_IP, EXAMPLE_SERVER_PORT);
+	ESP_LOGI(TAG_OTA, "Server IP: %s Server Port:%s", FOTA_ADDR, FOTA_PORT);
 
 	int  http_connect_flag = -1;
 	//struct sockaddr_in sock_info;
@@ -45,8 +45,8 @@ static bool connect_to_http_server()
 	// set connect info
 	//    memset(&sock_info, 0, sizeof(struct sockaddr_in));
 	//    sock_info.sin_family = AF_INET;
-	//    sock_info.sin_addr.s_addr = inet_addr(EXAMPLE_SERVER_IP);
-	//    sock_info.sin_port = htons(atoi(EXAMPLE_SERVER_PORT));
+	//    sock_info.sin_addr.s_addr = inet_addr(FOTA_ADDR);
+	//    sock_info.sin_port = htons(atoi(FOTA_PORT));
 
 	    // connect to http server
 	    http_connect_flag = connect(socket_id, res->ai_addr, res->ai_addrlen);
@@ -262,7 +262,7 @@ void ota_example_task(void *pvParameter)
 	    "User-Agent: esp-idf/1.0 esp32\r\n\r\n";
 
 	char *http_request = NULL;
-	int get_len = asprintf(&http_request, GET_FORMAT, EXAMPLE_FILENAME, EXAMPLE_SERVER_IP, EXAMPLE_SERVER_PORT);
+	int get_len = asprintf(&http_request, GET_FORMAT, EXAMPLE_FILENAME, FOTA_ADDR, FOTA_PORT);
 	if (get_len < 0) {
 		ESP_LOGE(TAG_OTA, "Failed to allocate memory for GET request buffer");
 		task_fatal_error();
