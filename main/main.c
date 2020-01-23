@@ -165,24 +165,36 @@ void app_main()
 	nvs_get_u8(storage_handle, "first_start", &first_start);
 	if (!first_start)
 	{
-		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
-		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		strcpy((char*)&HOST_ADDR[0], "iztt.dude.moscow");
+		nvs_set_str(storage_handle, "FOTA_ADDR", FOTA_ADDR);
 		
-		strcpy((char*)&HOST_PORT[0], "10001");
-		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
-		
-		//strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		strcpy((char*)&HOST_PORT[0], "2228");
+		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);		
+		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		
+		//strcpy((char*)&HOST_PORT[0], "10001");
+		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		
+		strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		//strcpy((char*)&HOST_ADDR[0], "172.200.204.114");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
 		
-		//strcpy((char*)&HOST_PORT[0], "3333");
-		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		strcpy((char*)&HOST_PORT[0], "3333");
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
 		first_start = true;
 		nvs_set_u8(storage_handle, "first_start", first_start);
 	}
+	size_t fota_host_len = 0;
+	nvs_get_str(storage_handle, "FOTA_ADDR", NULL, &fota_host_len);
+	nvs_get_str(storage_handle, "FOTA_ADDR", (char *)&FOTA_ADDR[0], &fota_host_len);
+	
+	size_t fota_port_len = 0;
+	nvs_get_str(storage_handle, "FOTA_PORT", NULL, &fota_port_len);
+	nvs_get_str(storage_handle, "FOTA_PORT", (char *)&FOTA_PORT[0], &fota_port_len);
 	
 	size_t host_len = 0;
 	nvs_get_str(storage_handle, "HOST_ADDR", NULL, &host_len);
