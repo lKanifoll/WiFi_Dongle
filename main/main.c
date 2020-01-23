@@ -61,7 +61,7 @@ void uart_event_task(void *pvParameters)
 			{
 				if (check_crc8((char*)dtmp, event.size - 1))
 				{
-					if (dtmp[4] == 0xA1)
+					if ((dtmp[2] == 0x02) && (dtmp[3] == 0x88) && (dtmp[4] == 0xA1))
 					{
 						nvs_open("storage", NVS_READWRITE, &storage_handle);
 						connect_type = SC;
@@ -70,7 +70,7 @@ void uart_event_task(void *pvParameters)
 						nvs_close(storage_handle);
 						esp_restart();
 					}
-					else if (dtmp[4] == 0xB1)
+					else if ((dtmp[2] == 0x02) && (dtmp[3] == 0x88) && (dtmp[4] == 0xB1))
 					{
 						nvs_open("storage", NVS_READWRITE, &storage_handle);
 						connect_type = AP;
@@ -79,7 +79,7 @@ void uart_event_task(void *pvParameters)
 						nvs_close(storage_handle);
 						esp_restart();
 					}
-					else if (dtmp[3] == 0x02)
+					else if ((dtmp[2] == 0x02) && (dtmp[3] == 0x02))
 					{
 						first_link = false;
 						nvs_open("storage", NVS_READWRITE, &storage_handle);
@@ -90,7 +90,7 @@ void uart_event_task(void *pvParameters)
 						nvs_close(storage_handle);
 						esp_restart();
 					}					
-					else if (dtmp[3] == 0x03)
+					else if ((dtmp[2] == 0x01) && (dtmp[3] == 0x03))
 					{
 						dtmp[2] = 0x02;
 						dtmp[3] = 0x83;
@@ -105,6 +105,30 @@ void uart_event_task(void *pvParameters)
 						}
 						printf("\n");
 					}
+					else
+					{
+						#ifdef DEBUG
+						printf("-->UART OUT: ");
+						for (uint8_t i = 0; i < event.size; i++)
+						{
+							printf("%02X ", dtmp[i]);
+						}
+						printf("\n");
+						#endif
+						if (!err_socket_access)
+						{
+					
+							//printf("SEND TO HOST\n");
+							int err = send(sock, dtmp, event.size, 0);
+							if (err < 0) {
+								ESP_LOGE(TAG_UART, "Error occured during sending: errno %d", errno);
+							}					
+						}
+						else
+						{
+							ESP_LOGE(TAG_UART, "...HOST NOT CONNECTED...");	
+						}
+					}
 					//dtmp[2] = 0x01;
 					//dtmp[3] = 0x01;
 					//uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
@@ -117,7 +141,7 @@ void uart_event_task(void *pvParameters)
 				}
 			}
 			else
-			{
+			{/*
 				#ifdef DEBUG
 				printf("-->UART OUT: ");
 				for (uint8_t i = 0; i < event.size; i++)
@@ -138,8 +162,7 @@ void uart_event_task(void *pvParameters)
 				else
 				{
 					ESP_LOGE(TAG_UART, "...HOST NOT CONNECTED...");	
-				}
-				
+				}*/			
 			}
 		}
 	}
@@ -171,11 +194,11 @@ void app_main()
 		//strcpy((char*)&HOST_PORT[0], "10001");
 		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
-		strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
-		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		//strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
-		//strcpy((char*)&HOST_ADDR[0], "172.200.204.114");
-		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
+		strcpy((char*)&HOST_ADDR[0], "172.200.204.114");
+		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
 		
 		strcpy((char*)&HOST_PORT[0], "3333");
 		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);

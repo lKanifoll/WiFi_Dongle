@@ -129,17 +129,17 @@ void initialise_wifi()
 	}
 	else
 	{
-		//if (first_link)
+		if (first_link)
 		{
 			wifi_config_t wifi_config =
 			{
-				.sta = { .ssid = "esp_test_wifi", .password = "12345678", },
+				.sta = { .ssid = "", .password = "", },
 			};
 			printf("SSID: %s\n", SSID);
 			printf("PASS: %s\n", PASS);
 		
-			//strcpy((char*) &wifi_config.sta.ssid[0], (const char*) &SSID[0]);
-			//strcpy((char*) &wifi_config.sta.password[0], (const char*) &PASS[0]);
+			strcpy((char*) &wifi_config.sta.ssid[0], (const char*) &SSID[0]);
+			strcpy((char*) &wifi_config.sta.password[0], (const char*) &PASS[0]);
 
 			ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
 			ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
