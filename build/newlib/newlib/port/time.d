@@ -15,15 +15,18 @@ newlib/port/time.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/types.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/times.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/times.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
@@ -54,6 +57,7 @@ newlib/port/time.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
@@ -92,13 +96,21 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/types.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/times.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/types.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/times.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/time.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h:
 
@@ -107,8 +119,6 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h:
-
-C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h:
 
@@ -169,6 +179,8 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/syste
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
 

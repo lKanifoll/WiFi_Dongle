@@ -68,33 +68,44 @@ esp_tls.o: C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/esp_tls.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/fcntl.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_default_fcntl.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stat.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform_time.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/net_sockets.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ssl.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/bignum.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ecp.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/pk.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/md.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/rsa.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/cipher.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/x509.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/asn1.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/dhm.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_debug.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ssl.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/entropy.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/sha512.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/aes.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/error.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/certs.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/platform.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/esp_mem.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/pk.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/x509.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/dhm.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_debug.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/sha512_alt.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/aes.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/aes_alt.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_aes.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/error.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/certs.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/private_include/esp_tls_error_capture_internal.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/posix/errno.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/private_include/esp_tls_mbedtls.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/esp_tls.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h
@@ -237,59 +248,81 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_default_
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stat.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/platform.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/net_sockets.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/esp_mem.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ssl.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/bignum.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ecp.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/pk.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/bignum.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/md.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ecp.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/rsa.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/cipher.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/pk.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/md.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/x509.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/rsa.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/asn1.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/cipher.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/x509_crl.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/platform_util.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/dhm.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_debug.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/x509.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ssl.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/asn1.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/entropy.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/sha512.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/dhm.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_debug.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/aes.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ssl.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/error.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/entropy.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/certs.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/sha512_alt.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/aes.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/aes_alt.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_aes.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/error.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/certs.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/private_include/esp_tls_error_capture_internal.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/posix/errno.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/private_include/esp_tls_mbedtls.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/esp_tls.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h:
 

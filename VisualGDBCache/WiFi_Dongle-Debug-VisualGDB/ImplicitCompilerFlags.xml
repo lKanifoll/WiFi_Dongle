@@ -18,7 +18,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -854,7 +853,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -1690,7 +1688,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -2526,7 +2523,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -3362,7 +3358,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -4198,7 +4193,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -5034,7 +5028,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -5870,7 +5863,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -6709,7 +6701,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>
@@ -7649,7 +7640,7 @@
     <Entry>
       <Key>
         <IsCXX>false</IsCXX>
-        <Arguments>-std=gnu99 -Wno-frame-address -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -Wno-strict-aliasing</Arguments>
+        <Arguments>-std=gnu99 -Wno-frame-address -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -Wno-unused-but-set-variable -Wno-empty-body</Arguments>
       </Key>
       <Specs>
         <RawIncludeDirs>
@@ -7661,7 +7652,6 @@
         <RawLibraryPaths>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/</string>
-          <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/5.2.0/../../../../xtensa-lx106-elf/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib/</string>
           <string>c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/usr/lib/</string>
         </RawLibraryPaths>

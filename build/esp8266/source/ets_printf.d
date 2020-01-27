@@ -20,6 +20,8 @@ source/ets_printf.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
@@ -66,6 +68,10 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/types
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h:
 
 C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 

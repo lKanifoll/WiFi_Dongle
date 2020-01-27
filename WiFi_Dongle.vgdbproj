@@ -19,7 +19,7 @@
       <Version>
         <GCC>5.2.0</GCC>
         <GDB>7.10</GDB>
-        <Revision>17</Revision>
+        <Revision>18</Revision>
       </Version>
     </ToolchainID>
     <IDFCheckout>

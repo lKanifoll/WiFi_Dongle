@@ -52,6 +52,7 @@ src/fast_crypto_ops.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
@@ -79,8 +80,19 @@ src/fast_crypto_ops.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps_attr_parse.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi_crypto_types.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/eap/eap_defs.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/eap/eap_common.h
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/defs.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_defs.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/tls/tls.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_methods.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_defs.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_i.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_common.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wpa2.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi_crypto_types.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_common.h
 
 C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
@@ -186,6 +198,8 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
@@ -240,7 +254,29 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps_attr
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi_crypto_types.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/eap/eap_defs.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/eap/eap_common.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/defs.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_defs.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/tls/tls.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_methods.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_defs.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_config.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_i.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_common.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wpa2.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi_crypto_types.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_common.h:
 /rtos-sdk/master/components/wpa_supplicant/src/fast_crypto_ops.c:
