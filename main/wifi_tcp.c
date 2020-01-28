@@ -234,7 +234,7 @@ void tcp_client_task(void *pvParameters)
 		{
 			printf("Unable to resolve IP for target website %s\n", HOST_ADDR);
 			freeaddrinfo(res);
-			//return pdFALSE;
+			break;
 		}
 		//printf("%s", (char *) hints.ai_addr);
 
@@ -339,10 +339,8 @@ void tcp_client_task(void *pvParameters)
 						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 						break;
 					}
-
 				}
-			
-				
+							
 				if (!(strncmp(rx_buffer, "AT+UPDATE", 9)))
 				{
 					xTaskCreate(&ota_example_task, "ota_example_task", 8192, NULL, 5, NULL);
