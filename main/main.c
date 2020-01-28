@@ -165,10 +165,10 @@ void app_main()
 	nvs_get_u8(storage_handle, "first_start", &first_start);
 	if (!first_start)
 	{
-		strcpy((char*)&HOST_ADDR[0], "iztt.dude.moscow");
+		strcpy((char*)&FOTA_ADDR[0], "iztt.dude.moscow");
 		nvs_set_str(storage_handle, "FOTA_ADDR", FOTA_ADDR);
 		
-		strcpy((char*)&HOST_PORT[0], "2228");
+		strcpy((char*)&FOTA_PORT[0], "2228");
 		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);		
 		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);

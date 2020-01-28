@@ -319,6 +319,36 @@ void tcp_client_task(void *pvParameters)
 				{
 					xTaskCreate(&ota_example_task, "ota_example_task", 8192, NULL, 5, NULL);
 				}
+				else if(!(strncmp(rx_buffer, "AT+FOTA", 7)))
+				{
+					uint8_t y = 0;
+					uint8_t i = 0;
+					//uint8_t j = 0;
+					for(i = 8 ; i < len ; i++)
+					{
+						if (rx_buffer[i] == 0x3A)
+						{
+							i++;
+							break;
+						}
+						FOTA_ADDR[y] = rx_buffer[i];
+						y++;
+					}
+					y = 0;
+					
+					for (; i < len; i++)
+					{
+						FOTA_PORT[y] = rx_buffer[i];
+						y++;
+					}
+					bzero(FOTA_ADDR, sizeof(FOTA_ADDR));
+					bzero(FOTA_PORT, sizeof(FOTA_PORT));
+					nvs_open("storage", NVS_READWRITE, &storage_handle);
+					nvs_set_str(storage_handle, "HOST_ADDR", FOTA_ADDR);
+					nvs_set_str(storage_handle, "HOST_PORT", FOTA_PORT);
+					nvs_commit(storage_handle);
+					nvs_close(storage_handle);					
+				}				
 				else if(!(strncmp(rx_buffer, "AT+HOST+", 8)))
 				{
 					uint8_t y = 0;
