@@ -61,6 +61,7 @@ source/esp_sleep.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
@@ -68,7 +69,9 @@ source/esp_sleep.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/task.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/gpio.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/timer_struct.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/gpio_struct.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/rtc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/uart.h \
@@ -201,6 +204,8 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
@@ -215,7 +220,11 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/task.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/list.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/gpio.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/timer_struct.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/gpio_struct.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h:
 

@@ -53,6 +53,7 @@ src/wps/wps_registrar.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
@@ -68,9 +69,9 @@ src/wps/wps_registrar.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/wpa_debug.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/utils/uuid.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/list.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/ieee802_11_defs.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/utils/uuid.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps_i.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps_defs.h \
@@ -194,6 +195,8 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
@@ -224,11 +227,11 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/utils/uuid.h:
-
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/list.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa/ieee802_11_defs.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/utils/uuid.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wps/wps_i.h:
 

@@ -20,11 +20,16 @@ port/crypto_hash_mbedtls/crypto_hash_sha512_mbedtls.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/sha512.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h \
  C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/esp_mem.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/sha512_alt.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h
 
@@ -68,15 +73,25 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/libsodium/libsodium/src/libsodium/include/sodium/export.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/sha512.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha512.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h:
 
 C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/esp_mem.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/sha512_alt.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 

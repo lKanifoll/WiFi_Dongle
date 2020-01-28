@@ -379,7 +379,7 @@ void tcp_client_task(void *pvParameters)
 					nvs_commit(storage_handle);
 					nvs_close(storage_handle);
 					
-					esp_restart();
+					//esp_restart();
 				}
 				else
 				{

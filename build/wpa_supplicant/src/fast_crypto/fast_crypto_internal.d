@@ -53,6 +53,7 @@ src/fast_crypto/fast_crypto_internal.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
@@ -65,10 +66,15 @@ src/fast_crypto/fast_crypto_internal.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/common.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/sha1_i.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/md5_i.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/sha256.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/esp_mem.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/sha256_alt.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h
 
 C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
@@ -176,6 +182,8 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
@@ -200,11 +208,21 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/sha1_
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/md5_i.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/sha256.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/port/esp8266/include/mbedtls/esp_config.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/SysGCC/esp8266/rtos-sdk/master/components/ssl/mbedtls/mbedtls/include/mbedtls/check_config.h:
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/esp_mem.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp8266/include/sha256_alt.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h:
 /rtos-sdk/master/components/wpa_supplicant/src/fast_crypto/fast_crypto_internal.c:

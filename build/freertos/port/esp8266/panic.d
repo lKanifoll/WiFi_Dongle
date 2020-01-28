@@ -35,9 +35,18 @@ port/esp8266/panic.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_task_wdt.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/internal/esp_system_internal.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/backtrace.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/uart.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_struct.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_register.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/projdefs.h \
@@ -55,9 +64,11 @@ port/esp8266/panic.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h
+ C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h \
+ C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 
@@ -129,11 +140,29 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_task_wdt.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/internal/esp_system_internal.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/backtrace.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/uart.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_struct.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_register.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -169,9 +198,13 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/simcall.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
 
+C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/xtruntime-frames.h:
+
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_timer.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/private/mpu_wrappers.h:
+
+C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/xtensa_context.h:
 /rtos-sdk/master/components/freertos/port/esp8266/panic.c:
