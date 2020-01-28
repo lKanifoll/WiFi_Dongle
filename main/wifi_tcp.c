@@ -53,6 +53,9 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 		}
 		break;
 		
+    case SYSTEM_EVENT_AP_STADISCONNECTED:
+		esp_restart();
+		break;
 
 		
 	case SYSTEM_EVENT_STA_DISCONNECTED:
@@ -119,7 +122,7 @@ void initialise_wifi()
 			set_wifi_ap();
 		}
 		
-		xTimerReset(xTimerUpdateWifi, 10);
+		//xTimerReset(xTimerUpdateWifi, 10);
 		nvs_open("storage", NVS_READWRITE, &storage_handle);
 		connect_type = pdFALSE;
 		nvs_set_u8(storage_handle, "connect_type", connect_type);
