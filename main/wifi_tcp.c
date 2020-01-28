@@ -266,7 +266,7 @@ void tcp_client_task(void *pvParameters)
 			wifi_rssi();
 			int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
 			// Error occured during receiving
-			//ESP_LOGI(TAG_TCP, "len: %d", len);
+			ESP_LOGI(TAG_TCP, "len: %d", len);
 			if (len <= 0) 
 			{
 				ESP_LOGE(TAG_TCP, "recv failed: errno %d", errno);
@@ -276,50 +276,114 @@ void tcp_client_task(void *pvParameters)
 			// Data received
 			else //if(len > 0)
 			{
-				//ESP_LOGI(TAG_TCP, "Receiving TCP...");
-				rx_buffer[len] = 0;   // Null-terminate whatever we received and treat like a string
-				//ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-				
+				bool tcp_cmd = 0;
+				rx_buffer[len] = 0;    // Null-terminate whatever we received and treat like a string
 
 				ESP_LOGW(TAG_TCP, "%s", rx_buffer);
-			    for(uint8_t i = 0 ; i < len ; i++)
+				for (uint8_t i = 0; i < len; i++)
 				{
 					printf("%02X ", rx_buffer[i]);
 				}
 				printf("\n");
-			
-				//uart_write_bytes(UART_NUM_0, (const char *) rx_buffer, len);
-				            
-				if (!(strncmp(rx_buffer, "AT+APPVER", 9)))
+				
+				
+				if (strstr(rx_buffer, "AT+RSSI") && (strspn(strstr(rx_buffer, "AT+RSSI"), "AT+RSSI") == 7))				
 				{
-					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-					//ESP_LOGI(TAG_TCP, "%s", rx_buffer);
-					ESP_LOGI(TAG_TCP, "%s", "+ok=ESP-BUIDIN-1.0.0");
-					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-					int err = send(sock, "+ok=ESP-BUIDIN-1.0.0", 20, 0);
-					if (err < 0) {
-						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
-					break;
-					}
-				}
-				else if (!(strncmp(rx_buffer, "AT+WSMAC", 8)))
-				{
-					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-					ESP_LOGI(TAG_TCP, "%s", rx_buffer);
-					ESP_LOGI(TAG_TCP, "%s", MAC_esp);
-					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
-					int err = send(sock, MAC_esp, 17, 0);
+					esp_wifi_sta_get_ap_info(&ap_info);
+					
+					char rssi[12] = "+ok=RSSI:";  //{ ap_info.rssi };
+					//memcpy(rssi + 9, (const void *)ap_info.rssi, 1);
+					sprintf(rssi + 9, "%d", ap_info.rssi);
+					ESP_LOGI(TAG_TCP, "%s", rssi);
+					int err = send(sock, rssi, 12, 0);
+					tcp_cmd = true;
 					if (err < 0) 
 					{
 						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
 						break;
 					}
+					
+				}				
+
+				if(strstr(rx_buffer, "AT+APPVER") && (strspn(strstr(rx_buffer, "AT+APPVER"), "AT+APPVER") == 9))
+				{
+					
+					char appver[17] = "+ok=ESP8266-";
+					memcpy(appver + 12, VERSION, sizeof(VERSION));
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+					//ESP_LOGI(TAG_TCP, "%s", rx_buffer);
+					ESP_LOGI(TAG_TCP, "%s", appver);
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+					int err = send(sock, appver, 17, 0);
+					tcp_cmd = true;
+					if (err < 0) {
+						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
+						break;
+					}
+
 				}
-				else if(!(strncmp(rx_buffer, "AT+UPDATE", 9)))
+				//else if (!(strncmp(rx_buffer, "AT+WSMAC", 8)))
+				if(strstr(rx_buffer, "AT+WSMAC") && (strspn(strstr(rx_buffer, "AT+WSMAC"), "AT+WSMAC") == 8))
+				{
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+					//ESP_LOGI(TAG_TCP, "%s", rx_buffer);
+					ESP_LOGI(TAG_TCP, "%s", MAC_esp);
+					ESP_LOGI(TAG_TCP, "-----------------------------------------------------");
+					int err = send(sock, MAC_esp, 17, 0);
+					tcp_cmd = true;
+					if (err < 0) 
+					{
+						ESP_LOGE(TAG_TCP, "Error occured during sending: errno %d", errno);
+						break;
+					}
+
+				}
+			
+				
+				if (!(strncmp(rx_buffer, "AT+UPDATE", 9)))
 				{
 					xTaskCreate(&ota_example_task, "ota_example_task", 8192, NULL, 5, NULL);
+					tcp_cmd = true;
 				}
-				else if(!(strncmp(rx_buffer, "AT+FOTA", 7)))
+				else if (!(strncmp(rx_buffer, "AT+HOST+", 8)))
+				{
+					ESP_LOGE(TAG_TCP, "HOST FOUND");
+					bzero(HOST_ADDR, sizeof(HOST_ADDR));
+					bzero(HOST_PORT, sizeof(HOST_PORT));
+					uint8_t y = 0;
+					uint8_t i = 0;
+					//uint8_t j = 0;
+					for(i = 8 ; i < len ; i++)
+					{
+						if (rx_buffer[i] == 0x3A)
+						{
+							i++;
+							break;
+						}
+						HOST_ADDR[y] = rx_buffer[i];
+						y++;
+					}
+					y = 0;
+					
+					for (; i < len; i++)
+					{
+						HOST_PORT[y] = rx_buffer[i];
+						y++;
+					}
+					
+					ESP_LOGW(TAG_TCP, "HOST: %s:%s", HOST_ADDR, HOST_PORT);
+					nvs_open("storage", NVS_READWRITE, &storage_handle);
+					nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+					nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+					nvs_commit(storage_handle);
+					nvs_close(storage_handle);
+					//esp_restart();
+					shutdown(sock, 0);
+					close(sock);
+					bzero(rx_buffer, sizeof(rx_buffer));
+					break;
+				}
+				else if (!(strncmp(rx_buffer, "AT+FOTA", 7)))
 				{
 					uint8_t y = 0;
 					uint8_t i = 0;
@@ -349,39 +413,7 @@ void tcp_client_task(void *pvParameters)
 					nvs_commit(storage_handle);
 					nvs_close(storage_handle);					
 				}				
-				else if(!(strncmp(rx_buffer, "AT+HOST+", 8)))
-				{
-					uint8_t y = 0;
-					uint8_t i = 0;
-					//uint8_t j = 0;
-					for (i = 8; i < len; i++)
-					{
-						if (rx_buffer[i] == 0x3A)
-						{
-							i++;
-							break;
-						}
-						HOST_ADDR[y] = rx_buffer[i];
-						y++;
-					}
-					y = 0;
-					
-					for (; i < len; i++)
-					{
-						HOST_PORT[y] = rx_buffer[i];
-						y++;
-					}
-					bzero(HOST_ADDR, sizeof(HOST_ADDR));
-					bzero(HOST_PORT, sizeof(HOST_PORT));
-					nvs_open("storage", NVS_READWRITE, &storage_handle);
-					nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
-					nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
-					nvs_commit(storage_handle);
-					nvs_close(storage_handle);
-					
-					//esp_restart();
-				}
-				else
+				else if (!tcp_cmd)
 				{
 					printf("-->TCP TO UART: ");
 					for (uint8_t i = 0; i < len; i++)
@@ -392,8 +424,8 @@ void tcp_client_task(void *pvParameters)
 					printf("\n");
 					uart_write_bytes(EX_UART_NUM, (const char *) rx_buffer, len);
 				}
+				tcp_cmd = false;
 			}
-
 			//ESP_LOGE(TAG_TCP, "Send");
 			//vTaskDelay(1000 / portTICK_PERIOD_MS);
 		}
