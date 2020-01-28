@@ -179,7 +179,7 @@ void app_main()
 		//strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
-		strcpy((char*)&HOST_ADDR[0], "dongletest.ipol.tech:10001");
+		strcpy((char*)&HOST_ADDR[0], "dongletest.ipol.tech");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
 		
 		//strcpy((char*)&HOST_PORT[0], "3333");
