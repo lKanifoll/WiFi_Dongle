@@ -118,8 +118,28 @@ void uart_event_task(void *pvParameters)
 						dtmp[4] = false;
 						crc8_add((char*)dtmp, 5);
 						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);
+					}	
+					else if ((dtmp[2] == 0x04) && (dtmp[3] == 0x0B))
+					{
+						dtmp[2] = 0x04;
+						dtmp[3] = 0x8B;
+						dtmp[4] = true;
+						dtmp[5] = false;
+						dtmp[6] = false;
+						crc8_add((char*)dtmp, 7);
+						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 8);
+					}
+					else if ((dtmp[2] == 0x04) && (dtmp[3] == 0x0C))
+					{
+						dtmp[2] = 0x04;
+						dtmp[3] = 0x8B;
+						dtmp[4] = true;
+						dtmp[5] = false;
+						dtmp[6] = false;
+						crc8_add((char*)dtmp, 7);
+						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 8);
 					}					
-					else if ((dtmp[3] == 0x81) || (dtmp[3] == 0x86) || (dtmp[3] == 0x87) || (dtmp[3] == 0x09) || (dtmp[3] == 0x8A) || (dtmp[3] == 0x0B))
+					else if ((dtmp[3] == 0x81) || (dtmp[3] == 0x86) || (dtmp[3] == 0x87) || (dtmp[3] == 0x09) || (dtmp[3] == 0x8A) /*|| (dtmp[3] == 0x0B)*/)
 					{
 						#ifdef DEBUG
 						printf("-->UART OUT: ");
@@ -171,7 +191,7 @@ void uart_event_task(void *pvParameters)
 						dtmp[4] = 0x02;
 						crc8_add((char*)dtmp, 5);
 						#ifdef DEBUG
-						printf("-->CRC ERROR: ");
+						printf("-->CMD ERROR: ");
 						for (uint8_t i = 0; i < 6; i++)
 						{
 							printf("%02X ", dtmp[i]);
@@ -183,6 +203,8 @@ void uart_event_task(void *pvParameters)
 				}
 				else // CRC error
 				{
+					dtmp[0] = 0xAB;
+					dtmp[1] = 0xCD;
 					dtmp[2] = 0x02;
 					dtmp[3] = 0x85;	
 					dtmp[4] = 0x01;
@@ -200,12 +222,14 @@ void uart_event_task(void *pvParameters)
 			}
 			else //Other error
 			{
+				dtmp[0] = 0xAB;
+				dtmp[1] = 0xCD;
 				dtmp[2] = 0x02;
 				dtmp[3] = 0x85;	
 				dtmp[4] = 0x03;
 				crc8_add((char*)dtmp, 5);
 				#ifdef DEBUG
-				printf("-->CRC ERROR: ");
+				printf("-->OTHER ERROR: ");
 				for (uint8_t i = 0; i < 6; i++)
 				{
 					printf("%02X ", dtmp[i]);
