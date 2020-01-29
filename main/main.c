@@ -79,8 +79,14 @@ void uart_event_task(void *pvParameters)
 						nvs_close(storage_handle);
 						esp_restart();
 					}
-					else if ((dtmp[2] == 0x02) && (dtmp[3] == 0x02))
+					else if ((dtmp[2] == 0x01) && (dtmp[3] == 0x02))
 					{
+						dtmp[2] = 0x02;
+						dtmp[3] = 0x82;
+						dtmp[4] = false;
+						crc8_add((char*)dtmp, 5);
+						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);
+						
 						first_link = false;
 						nvs_open("storage", NVS_READWRITE, &storage_handle);
 						nvs_set_str(storage_handle, "SSID", "");
@@ -105,7 +111,15 @@ void uart_event_task(void *pvParameters)
 						}
 						printf("\n");
 					}
-					else
+					else if ((dtmp[2] == 0x01) && (dtmp[3] == 0x04))
+					{
+						dtmp[2] = 0x02;
+						dtmp[3] = 0x84;
+						dtmp[4] = false;
+						crc8_add((char*)dtmp, 5);
+						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);
+					}					
+					else if ((dtmp[3] == 0x81) || (dtmp[3] == 0x86) || (dtmp[3] == 0x87) || (dtmp[3] == 0x09) || (dtmp[3] == 0x8A) || (dtmp[3] == 0x0B))
 					{
 						#ifdef DEBUG
 						printf("-->UART OUT: ");
@@ -122,47 +136,83 @@ void uart_event_task(void *pvParameters)
 							int err = send(sock, dtmp, event.size, 0);
 							if (err < 0) {
 								ESP_LOGE(TAG_UART, "Error occured during sending: errno %d", errno);
-							}					
+							}
+							else if (dtmp[3] == 0x09) // success
+							{
+								dtmp[2] = 0x02;
+								dtmp[3] = 0x89;
+								dtmp[4] = false;
+								crc8_add((char*)dtmp, 5);
+								uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);
+							}
+							else // error sending
+							{
+								dtmp[2] = 0x02;
+								dtmp[3] = 0x89;
+								dtmp[4] = true;
+								crc8_add((char*)dtmp, 5);
+								uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);								
+							}
 						}
-						else
+						else if (dtmp[3] == 0x09)// error, no tcp connection
 						{
-							ESP_LOGE(TAG_UART, "...HOST NOT CONNECTED...");	
+							ESP_LOGE(TAG_UART, "...HOST NOT CONNECTED...");
+							dtmp[2] = 0x02;
+							dtmp[3] = 0x89;
+							dtmp[4] = true;
+							crc8_add((char*)dtmp, 5);
+							uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);							
 						}
 					}
-					//dtmp[2] = 0x01;
-					//dtmp[3] = 0x01;
-					//uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
+					else // CMD error
+					{
+						dtmp[2] = 0x02;
+						dtmp[3] = 0x85;	
+						dtmp[4] = 0x02;
+						crc8_add((char*)dtmp, 5);
+						#ifdef DEBUG
+						printf("-->CRC ERROR: ");
+						for (uint8_t i = 0; i < 6; i++)
+						{
+							printf("%02X ", dtmp[i]);
+						}
+						printf("\n");
+						#endif
+						uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);			
+					}
 				}
-				else
+				else // CRC error
 				{
-					//dtmp[2] = 0x01;
-					//dtmp[3] = 0x00;
-					//uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 4);
+					dtmp[2] = 0x02;
+					dtmp[3] = 0x85;	
+					dtmp[4] = 0x01;
+					crc8_add((char*)dtmp, 5);
+					#ifdef DEBUG
+					printf("-->CRC ERROR: ");
+					for (uint8_t i = 0; i < 6; i++)
+					{
+						printf("%02X ", dtmp[i]);
+					}
+					printf("\n");
+					#endif
+					uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);			
 				}
 			}
-			else
-			{/*
+			else //Other error
+			{
+				dtmp[2] = 0x02;
+				dtmp[3] = 0x85;	
+				dtmp[4] = 0x03;
+				crc8_add((char*)dtmp, 5);
 				#ifdef DEBUG
-				printf("-->UART OUT: ");
-				for (uint8_t i = 0; i < event.size; i++)
+				printf("-->CRC ERROR: ");
+				for (uint8_t i = 0; i < 6; i++)
 				{
 					printf("%02X ", dtmp[i]);
 				}
 				printf("\n");
 				#endif
-				if (!err_socket_access)
-				{
-					
-					//printf("SEND TO HOST\n");
-					int err = send(sock, dtmp, event.size, 0);
-					if (err < 0) {
-						ESP_LOGE(TAG_UART, "Error occured during sending: errno %d", errno);
-					}					
-				}
-				else
-				{
-					ESP_LOGE(TAG_UART, "...HOST NOT CONNECTED...");	
-				}*/			
+				uart_write_bytes(EX_UART_NUM, (const char *) dtmp, 6);	
 			}
 		}
 	}
@@ -192,7 +242,8 @@ void app_main()
 		nvs_set_str(storage_handle, "FOTA_ADDR", FOTA_ADDR);
 		
 		strcpy((char*)&FOTA_PORT[0], "2228");
-		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);		
+		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);
+		
 		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
