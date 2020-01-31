@@ -26,6 +26,7 @@
 #include "defines.h"
 #include "wifi_tcp.h"
 #include "esp_ping.h"
+#include "yoga_update.h"
 #include "OTA.h"
 //#include "ping/ping.h"
 //#include "esp_ping.h"

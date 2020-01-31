@@ -120,6 +120,7 @@ wifi_tcp.o: C:/Workspace/Repos/WiFi_Dongle/main/wifi_tcp.c \
  C:/Workspace/Repos/WiFi_Dongle/main/defines.h \
  C:/Workspace/Repos/WiFi_Dongle/main/wifi_tcp.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/include/lwip/apps/esp_ping.h \
+ C:/Workspace/Repos/WiFi_Dongle/main/yoga_update.h \
  C:/Workspace/Repos/WiFi_Dongle/main/OTA.h
 
 C:/Workspace/Repos/WiFi_Dongle/main/main.h:
@@ -363,6 +364,8 @@ C:/Workspace/Repos/WiFi_Dongle/main/defines.h:
 C:/Workspace/Repos/WiFi_Dongle/main/wifi_tcp.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/include/lwip/apps/esp_ping.h:
+
+C:/Workspace/Repos/WiFi_Dongle/main/yoga_update.h:
 
 C:/Workspace/Repos/WiFi_Dongle/main/OTA.h:
 /C/Workspace/Repos/WiFi_Dongle/main/./wifi_tcp.c:
