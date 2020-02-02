@@ -22,7 +22,7 @@ source/phy_init.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/uart.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h \
@@ -96,7 +96,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 

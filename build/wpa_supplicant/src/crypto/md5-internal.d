@@ -1,6 +1,6 @@
 src/crypto/md5-internal.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/src/crypto/md5-internal.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/includes.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
@@ -67,7 +67,7 @@ src/crypto/md5-internal.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/crypto.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/common.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/includes.h:
 

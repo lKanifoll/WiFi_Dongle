@@ -19,7 +19,7 @@ esp-mqtt/lib/mqtt_msg.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/include/mqtt_config.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/lib/include/platform.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/lib/include/platform_esp32_idf.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
@@ -140,7 +140,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/lib/include/mqtt_msg.
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/include/mqtt_config.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mqtt/esp-mqtt/lib/include/platform.h:
 

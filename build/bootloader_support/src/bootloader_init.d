@@ -1,6 +1,6 @@
 src/bootloader_init.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/src/bootloader_init.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -43,7 +43,7 @@ src/bootloader_init.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 

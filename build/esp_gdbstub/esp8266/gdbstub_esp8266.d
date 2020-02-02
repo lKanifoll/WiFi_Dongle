@@ -2,7 +2,7 @@ esp8266/gdbstub_esp8266.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp_gdbstub/esp8266/gdbstub_esp8266.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_register.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_default_types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/features.h \
@@ -32,7 +32,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_regist
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
 

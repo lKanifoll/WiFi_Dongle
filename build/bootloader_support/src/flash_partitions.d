@@ -1,6 +1,6 @@
 src/flash_partitions.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/src/flash_partitions.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -36,7 +36,7 @@ src/flash_partitions.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/rom_functions.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 

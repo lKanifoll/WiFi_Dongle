@@ -1,6 +1,6 @@
 source/esp_wifi.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/source/esp_wifi.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_default_types.h \
@@ -90,7 +90,7 @@ source/esp_wifi.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/source/phy.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_phy_init.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_libc.h:
 

@@ -317,7 +317,7 @@ void app_main()
 	nvs_commit(storage_handle);
 	nvs_close(storage_handle);
 		
-	
+/*	
 	uart_config_t uart_config = {
 		.baud_rate = 115200,
 		//.baud_rate = 9600,
@@ -328,13 +328,18 @@ void app_main()
 	};
 	uart_param_config(EX_UART_NUM, &uart_config);
 	uart_driver_install(EX_UART_NUM, BUF_SIZE * 2, BUF_SIZE * 2, 3, &uart0_queue, 0);
+*/
+
 	err_socket_access = true;
+	
 	wifi_status = false;	
 	//xTaskCreate(tcp_client_task, "tcp_client",		4096, NULL, 5, NULL);
-	xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, &uart_handle);
-	xTimerUpdateWifi = xTimerCreate("Lcd update conn", 60000, pdFALSE, xTimerUpdateWifi, TimerUpdate_Callback);
+	//xTaskCreate(uart_event_task, "uart_event_task", 2048, NULL, 5, &uart_handle);
+	//xTimerUpdateWifi = xTimerCreate("Lcd update conn", 60000, pdFALSE, xTimerUpdateWifi, TimerUpdate_Callback);
 
 	get_mac_buf();
 	initialise_wifi();
+	vTaskDelay(3000 / portTICK_PERIOD_MS);
+	http_get_task();
 	
 }

@@ -12,7 +12,7 @@ library/ssl_lib.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/internal/ssl_cert.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/internal/ssl_dbg.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/platform/ssl_opt.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/platform/ssl_port.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h \
@@ -65,7 +65,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/internal/ssl_dbg.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/platform/ssl_opt.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/openssl/include/platform/ssl_port.h:
 

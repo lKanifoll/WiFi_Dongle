@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/src/bootloader_utility.c \
- c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h \
+ c:\workspace\wifi_dongle\build\include\sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_flash_data_types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_utility.h \
@@ -22,7 +22,7 @@ src/bootloader_utility.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h
 
-c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h:
+c:\workspace\wifi_dongle\build\include\sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_config.h:
 
