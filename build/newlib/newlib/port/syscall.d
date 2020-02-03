@@ -1,6 +1,6 @@
 newlib/port/syscall.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/syscall.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -65,7 +65,7 @@ newlib/port/syscall.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log_internal.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdio.h:
 

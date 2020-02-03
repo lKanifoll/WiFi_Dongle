@@ -17,7 +17,7 @@ port/esp8266/sha512.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
@@ -65,7 +65,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h:
 

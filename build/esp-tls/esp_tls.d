@@ -25,7 +25,7 @@ esp_tls.o: C:/SysGCC/esp8266/rtos-sdk/master/components/esp-tls/esp_tls.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/unistd.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/unistd.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/posix/sys/socket.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/sockets.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
@@ -162,7 +162,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/unistd.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/posix/sys/socket.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/sockets.h:
 

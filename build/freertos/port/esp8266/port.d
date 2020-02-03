@@ -13,7 +13,7 @@ port/esp8266/port.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/tie/xt_timer.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/ieeefp.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
@@ -95,7 +95,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 

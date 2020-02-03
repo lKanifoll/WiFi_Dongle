@@ -4,7 +4,7 @@ libsodium/src/libsodium/crypto_pwhash/scryptsalsa208sha256/pwhash_scryptsalsa208
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/errno.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
@@ -66,7 +66,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 

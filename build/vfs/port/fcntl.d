@@ -1,6 +1,6 @@
 port/fcntl.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/vfs/port/fcntl.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/fcntl.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/fcntl.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_default_fcntl.h \
@@ -58,7 +58,7 @@ port/fcntl.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/errno.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/fcntl.h:
 

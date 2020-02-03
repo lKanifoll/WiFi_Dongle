@@ -1,7 +1,7 @@
 port/esp8266/esp_heap_init.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/port/esp8266/esp_heap_init.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/_default_types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/features.h \
@@ -29,7 +29,7 @@ port/esp8266/esp_heap_init.o: \
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
 

@@ -29,7 +29,7 @@ xtensa/gdbstub_xtensa.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/xtensa/config/core-matmap.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp_gdbstub/esp8266/gdbstub_target_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp_gdbstub/private_include/esp_gdbstub_common.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h
 
@@ -91,7 +91,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp_gdbstub/esp8266/gdbstub_target_
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp_gdbstub/private_include/esp_gdbstub_common.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 

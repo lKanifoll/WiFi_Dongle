@@ -16,7 +16,7 @@ src/stack_check.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
@@ -61,7 +61,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/stdli
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_system.h:
 

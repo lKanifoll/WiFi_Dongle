@@ -1,6 +1,6 @@
 port/ioctl.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/vfs/port/ioctl.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/sockets.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
@@ -55,7 +55,7 @@ port/ioctl.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/vfs/include/sys/ioctl.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/sockets.h:
 

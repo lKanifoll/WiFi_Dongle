@@ -1,6 +1,6 @@
 src/crypto/aes-wrap.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/src/crypto/aes-wrap.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/includes.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
@@ -65,7 +65,7 @@ src/crypto/aes-wrap.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/aes.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/aes_wrap.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/includes.h:
 

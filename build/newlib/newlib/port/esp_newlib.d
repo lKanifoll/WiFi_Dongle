@@ -1,6 +1,6 @@
 newlib/port/esp_newlib.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/esp_newlib.c \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/reent.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/reent.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
@@ -28,7 +28,7 @@ newlib/port/esp_newlib.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/unistd.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/unistd.h
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/reent.h:
 

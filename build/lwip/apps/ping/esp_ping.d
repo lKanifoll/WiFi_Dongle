@@ -28,7 +28,7 @@ apps/ping/esp_ping.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/ip_addr.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/time.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/time.h \
@@ -108,7 +108,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/port/include/time.h:
 

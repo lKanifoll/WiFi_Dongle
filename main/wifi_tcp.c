@@ -19,22 +19,24 @@ esp_err_t event_handler(void *ctx, system_event_t *event)
 		xEventGroupSetBits(wifi_event_group, IPV4_GOTIP_BIT);
 		wifi_active_flag = true;
 		wifi_status = 1;
+		
 		if (disconnect)
 		{
-			vTaskResume(tcp_client_handle);	
+			//vTaskResume(tcp_client_handle);	
 			disconnect = false;
 		}
 		else
 		{
 			//delete_tcp_task = false;
-			xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, &tcp_client_handle);
+			//xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, &tcp_client_handle);
 		}
 		break;
 		
 	case SYSTEM_EVENT_AP_STACONNECTED:
 		ESP_LOGI(TAG_WIFI, "station:"MACSTR" join, AID=%d", MAC2STR(event->event_info.sta_connected.mac), event->event_info.sta_connected.aid);
 		wifi_status = 4;
-		wifi_active_flag = true;		
+		wifi_active_flag = true;
+		
 		break;
 		
 	case SYSTEM_EVENT_AP_START:
@@ -129,17 +131,17 @@ void initialise_wifi()
 	}
 	else
 	{
-		if (first_link)
+		//if (first_link)
 		{
 			wifi_config_t wifi_config =
 			{
-				.sta = { .ssid = "", .password = "", },
+				.sta = { .ssid = "ASUS", .password = "1123581321", },
 			};
 			printf("SSID: %s\n", SSID);
 			printf("PASS: %s\n", PASS);
 		
-			strcpy((char*) &wifi_config.sta.ssid[0], (const char*) &SSID[0]);
-			strcpy((char*) &wifi_config.sta.password[0], (const char*) &PASS[0]);
+			//strcpy((char*) &wifi_config.sta.ssid[0], (const char*) &SSID[0]);
+			//strcpy((char*) &wifi_config.sta.password[0], (const char*) &PASS[0]);
 
 			ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
 			ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));

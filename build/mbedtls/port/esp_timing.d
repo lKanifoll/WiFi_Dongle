@@ -1,7 +1,7 @@
 port/esp_timing.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/esp_timing.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
@@ -33,7 +33,7 @@ port/esp_timing.o: \
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
+C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h:
 
