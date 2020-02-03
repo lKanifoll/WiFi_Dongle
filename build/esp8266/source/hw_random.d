@@ -29,7 +29,7 @@ source/hw_random.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/sched.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
@@ -90,7 +90,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/stdio.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_idf_version.h:
 /rtos-sdk/master/components/esp8266/source/hw_random.c:

@@ -27,7 +27,7 @@ source/esp_err_to_name.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp_http_client/include/esp_http_client.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h \
@@ -160,7 +160,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/include/freertos/FreeRTOS.
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 

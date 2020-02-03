@@ -1,5 +1,5 @@
-yoga_update.o: C:/workspace/WiFi_Dongle/main/yoga_update.c \
- C:/workspace/WiFi_Dongle/main/main.h \
+yoga_update.o: C:/Workspace/Repos/WiFi_Dongle/main/yoga_update.c \
+ C:/Workspace/Repos/WiFi_Dongle/main/main.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -23,7 +23,7 @@ yoga_update.o: C:/workspace/WiFi_Dongle/main/yoga_update.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/alloca.h \
@@ -117,13 +117,13 @@ yoga_update.o: C:/workspace/WiFi_Dongle/main/yoga_update.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/spi_flash/include/spi_flash.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/spi_flash/include/esp_spi_flash.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/smartconfig_ack/include/smartconfig_ack.h \
- C:/workspace/WiFi_Dongle/main/defines.h \
- C:/workspace/WiFi_Dongle/main/wifi_tcp.h \
+ C:/Workspace/Repos/WiFi_Dongle/main/defines.h \
+ C:/Workspace/Repos/WiFi_Dongle/main/wifi_tcp.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/include/lwip/apps/esp_ping.h \
- C:/workspace/WiFi_Dongle/main/yoga_update.h \
- C:/workspace/WiFi_Dongle/main/OTA.h
+ C:/Workspace/Repos/WiFi_Dongle/main/yoga_update.h \
+ C:/Workspace/Repos/WiFi_Dongle/main/OTA.h
 
-C:/workspace/WiFi_Dongle/main/main.h:
+C:/Workspace/Repos/WiFi_Dongle/main/main.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 
@@ -171,7 +171,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 
@@ -359,13 +359,13 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/spi_flash/include/esp_spi_flash.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/smartconfig_ack/include/smartconfig_ack.h:
 
-C:/workspace/WiFi_Dongle/main/defines.h:
+C:/Workspace/Repos/WiFi_Dongle/main/defines.h:
 
-C:/workspace/WiFi_Dongle/main/wifi_tcp.h:
+C:/Workspace/Repos/WiFi_Dongle/main/wifi_tcp.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/include/lwip/apps/esp_ping.h:
 
-C:/workspace/WiFi_Dongle/main/yoga_update.h:
+C:/Workspace/Repos/WiFi_Dongle/main/yoga_update.h:
 
-C:/workspace/WiFi_Dongle/main/OTA.h:
-/C/workspace/WiFi_Dongle/main/./yoga_update.c:
+C:/Workspace/Repos/WiFi_Dongle/main/OTA.h:
+/C/Workspace/Repos/WiFi_Dongle/main/./yoga_update.c:

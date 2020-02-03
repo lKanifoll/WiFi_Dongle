@@ -1,6 +1,6 @@
 src/fast_crypto_ops.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/src/fast_crypto_ops.c \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/common.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/port/include/os.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_types.h \
@@ -94,7 +94,7 @@ src/fast_crypto_ops.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_wifi_crypto_types.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/wpa2/eap_peer/eap_common.h
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/wpa_supplicant/include/crypto/common.h:
 

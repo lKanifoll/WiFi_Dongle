@@ -3,7 +3,7 @@ libcoap/src/debug.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/coap/port/include/coap_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/coap/port/include/coap_config_posix.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/posix/sys/socket.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/sockets.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/opt.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/port/esp8266/include/lwipopts.h \
@@ -88,7 +88,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/coap/port/include/coap_config_posix
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/posix/sys/socket.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/lwip/lwip/src/include/lwip/sockets.h:
 

@@ -22,7 +22,7 @@ port/crypto_hash_mbedtls/crypto_hash_sha512_mbedtls.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/limits.h \
@@ -77,7 +77,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/sha
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/mbedtls/mbedtls/include/mbedtls/config.h:
 

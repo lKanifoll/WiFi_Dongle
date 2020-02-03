@@ -10,7 +10,7 @@ source/rom.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_struct.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/uart_register.h \
@@ -38,7 +38,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 

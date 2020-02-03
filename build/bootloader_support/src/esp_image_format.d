@@ -1,6 +1,6 @@
 src/esp_image_format.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/src/esp_image_format.c \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/newlib.h \
@@ -47,7 +47,7 @@ src/esp_image_format.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_random.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_sha.h
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/string.h:
 

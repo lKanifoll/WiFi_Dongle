@@ -135,7 +135,7 @@ void initialise_wifi()
 		{
 			wifi_config_t wifi_config =
 			{
-				.sta = { .ssid = "ASUS", .password = "1123581321", },
+				.sta = { .ssid = "esp_test_wifi", .password = "12345678", },
 			};
 			printf("SSID: %s\n", SSID);
 			printf("PASS: %s\n", PASS);

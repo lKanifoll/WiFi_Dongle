@@ -1,6 +1,6 @@
 src/sha1.o: C:/SysGCC/esp8266/rtos-sdk/master/components/util/src/sha1.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/util_assert.h \
- c:\workspace\wifi_dongle\build\include\sdkconfig.h \
+ c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
@@ -10,7 +10,7 @@ src/sha1.o: C:/SysGCC/esp8266/rtos-sdk/master/components/util/src/sha1.c \
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/util_assert.h:
 
-c:\workspace\wifi_dongle\build\include\sdkconfig.h:
+c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/esp_sha.h:
 

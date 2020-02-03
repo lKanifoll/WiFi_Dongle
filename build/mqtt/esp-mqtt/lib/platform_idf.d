@@ -8,7 +8,7 @@ esp-mqtt/lib/platform_idf.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/features.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/ieeefp.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/_ansi.h \
@@ -114,7 +114,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdlib.h:
 

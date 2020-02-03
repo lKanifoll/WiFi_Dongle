@@ -17,7 +17,7 @@ source/startup.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/lock.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs_flash.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
@@ -131,7 +131,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/cdefs.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/string.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/nvs_flash/include/nvs_flash.h:
 

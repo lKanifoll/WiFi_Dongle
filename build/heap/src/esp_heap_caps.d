@@ -21,7 +21,7 @@ src/esp_heap_caps.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/endian.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/param.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/_intsup.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
@@ -83,7 +83,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/machine/param
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/stdint.h:
 

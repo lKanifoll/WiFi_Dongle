@@ -27,7 +27,7 @@ src/spi_flash.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/spi_register.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/pin_mux_register.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h \
@@ -98,7 +98,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/spi_registe
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp8266/eagle_soc.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/driver/soc.h:
 

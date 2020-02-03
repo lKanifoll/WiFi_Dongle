@@ -1,6 +1,6 @@
 src/esp_image_format.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/src/esp_image_format.c \
- c:\workspace\wifi_dongle\build\include\sdkconfig.h \
+ c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_image_format.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_flash_partitions.h \
@@ -17,7 +17,7 @@ src/esp_image_format.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_random.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include_priv/bootloader_sha.h
 
-c:\workspace\wifi_dongle\build\include\sdkconfig.h:
+c:\workspace\repos\wifi_dongle\build\include\sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/bootloader_support/include/esp_image_format.h:
 

@@ -24,7 +24,7 @@ source/esp_timer.o: \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_err.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/log/include/esp_log.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/rom/ets_sys.h \
@@ -109,7 +109,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/heap/include/esp_heap_caps.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/heap/port/esp8266/include/esp_heap_config.h:
 

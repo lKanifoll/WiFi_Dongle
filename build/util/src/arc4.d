@@ -21,7 +21,7 @@ src/arc4.o: C:/SysGCC/esp8266/rtos-sdk/master/components/util/src/arc4.c \
  C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/ibus_data.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/util_assert.h \
- C:/workspace/WiFi_Dongle/build/include/sdkconfig.h \
+ C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h \
  C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/sys/errno.h:
@@ -68,7 +68,7 @@ C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/include/esp_attr.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/util/include/util_assert.h:
 
-C:/workspace/WiFi_Dongle/build/include/sdkconfig.h:
+C:/Workspace/Repos/WiFi_Dongle/build/include/sdkconfig.h:
 
 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/include/assert.h:
 /rtos-sdk/master/components/util/src/arc4.c:

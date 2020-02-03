@@ -103,33 +103,35 @@ void http_get_task()
 		}        
 
 		printf("\n=========== %d ==========\n", q);
-		//q = 0;
-		//bzero(versions_info, sizeof(versions_info));
 
-		char *soft_v_ptr = NULL;
-		char *_v_ptr = NULL;
+
+		char *version_ptr = NULL;
+
 		char soft_version[3];
 		uint8_t SoftwareV = 0;
-		soft_v_ptr = strstr(versions_info, "SoftwareV");
-		printf("%p\n", soft_v_ptr);
-		_v_ptr = strchr(soft_v_ptr+10, ' ');
-		printf("%p\n", _v_ptr);
-		printf("%d\n", (int)(_v_ptr - soft_v_ptr));
-		//strchr(strstr(versions_info, "SoftwareV") + 1, ' ') - strstr(versions_info, "SoftwareV") + 1
-		SoftwareV = atoi(memcpy(soft_version, soft_v_ptr + 10, _v_ptr - (soft_v_ptr + 10)));
+		uint8_t ResourcesV = 0;
+		uint8_t LocalizationV = 0;
+		
+		version_ptr = strstr(versions_info, "SoftwareV");
+		SoftwareV = atoi(memcpy(soft_version, (version_ptr + 10), strchr(version_ptr + 10, ' ') - (version_ptr + 10)));
 		printf("SoftwareV: %d\n", SoftwareV);
-		//memcpy(soft_version, soft_v_ptr, 5);
-		//for (int i = 0; i < 20; i++) 
-		{
-			//printf("%s", soft_v_ptr);
-			//putchar(recv_buf[i]);
-		}
-		printf("\n");
 
+		version_ptr = strstr(versions_info, "ResourcesV");
+		ResourcesV = atoi(memcpy(soft_version, (version_ptr + 11), strchr(version_ptr + 11, ' ') - (version_ptr + 11)));
+		printf("ResourcesV: %d\n", ResourcesV);
+		
+		version_ptr = strstr(versions_info, "LocalizationV");
+		LocalizationV = atoi(memcpy(soft_version, (version_ptr + 14), strchr(version_ptr + 14, ' ') - (version_ptr + 14)));
+		printf("LocalizationV: %d\n", LocalizationV); 
+		
 		ESP_LOGI(TAG_UPD, "... done reading from socket. Last read return=%d errno=%d\r\n", r, errno);
 		close(s);
 		
 		free(http_request);
+		free(version_ptr);
+		bzero(soft_version, sizeof(soft_version));
+		bzero(versions_info, sizeof(versions_info));
+		q = 0;
 /*		
 		for (int countdown = 10; countdown >= 0; countdown--) {
 			ESP_LOGI(TAG_UPD, "%d... ", countdown);
@@ -138,6 +140,6 @@ void http_get_task()
 		ESP_LOGI(TAG_UPD, "Starting again!");
 */		
 		printf("Free HEAP: %d\n", esp_get_free_heap_size());
-		vTaskDelay(100000 / portTICK_PERIOD_MS);
+		vTaskDelay(10000 / portTICK_PERIOD_MS);
 	}
 }
