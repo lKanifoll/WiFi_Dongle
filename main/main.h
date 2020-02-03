@@ -54,9 +54,10 @@ QueueHandle_t uart0_queue;
 bool check_crc8(char *pcBlock, int len);
 bool crc8_add(char *sBlock, int len);
 int sock;
-
 int err_socket_access;
-
 xTaskHandle uart_handle;
+
+
+
 
 #endif

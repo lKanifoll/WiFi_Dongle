@@ -106,16 +106,20 @@ void http_get_task()
 
 
 		char *version_ptr = NULL;
-
+		char *address_ptr = NULL;
 		char soft_version[3];
-		uint8_t SoftwareV = 0;
-		uint8_t ResourcesV = 0;
-		uint8_t LocalizationV = 0;
+		//char soft_version[4];
 		
 		version_ptr = strstr(versions_info, "SoftwareV");
 		SoftwareV = atoi(memcpy(soft_version, (version_ptr + 10), strchr(version_ptr + 10, ' ') - (version_ptr + 10)));
+		address_ptr = strstr(version_ptr + 10, "Address");
+		Soft_slot1_addr = strtol(address_ptr + 8, NULL, 0); 
+		address_ptr = strstr(address_ptr + 10, "Address");
+		Soft_slot2_addr = strtol(address_ptr + 8, NULL, 0); 
 		printf("SoftwareV: %d\n", SoftwareV);
-
+		printf("Soft_slot1_addr: %ld\n", Soft_slot1_addr);
+		printf("Soft_slot2_addr: %ld\n", Soft_slot2_addr);
+		
 		version_ptr = strstr(versions_info, "ResourcesV");
 		ResourcesV = atoi(memcpy(soft_version, (version_ptr + 11), strchr(version_ptr + 11, ' ') - (version_ptr + 11)));
 		printf("ResourcesV: %d\n", ResourcesV);
@@ -123,12 +127,18 @@ void http_get_task()
 		version_ptr = strstr(versions_info, "LocalizationV");
 		LocalizationV = atoi(memcpy(soft_version, (version_ptr + 14), strchr(version_ptr + 14, ' ') - (version_ptr + 14)));
 		printf("LocalizationV: %d\n", LocalizationV); 
+		printf("Soft_slot1_addr: %ld\n", Local_slot1_addr);
+		printf("Soft_slot2_addr: %ld\n", Soft_slot2_addr);
+		
+
+		
 		
 		ESP_LOGI(TAG_UPD, "... done reading from socket. Last read return=%d errno=%d\r\n", r, errno);
 		close(s);
 		
 		free(http_request);
 		free(version_ptr);
+		//free(address_ptr);
 		bzero(soft_version, sizeof(soft_version));
 		bzero(versions_info, sizeof(versions_info));
 		q = 0;
