@@ -124,11 +124,17 @@ void http_get_task()
 		ResourcesV = atoi(memcpy(soft_version, (version_ptr + 11), strchr(version_ptr + 11, ' ') - (version_ptr + 11)));
 		printf("ResourcesV: %d\n", ResourcesV);
 		
+		
+		
 		version_ptr = strstr(versions_info, "LocalizationV");
 		LocalizationV = atoi(memcpy(soft_version, (version_ptr + 14), strchr(version_ptr + 14, ' ') - (version_ptr + 14)));
+		address_ptr = strstr(version_ptr + 14, "Address");
+		Local_slot1_addr = strtol(address_ptr + 8, NULL, 0); 
+		address_ptr = strstr(address_ptr + 14, "Address");
+		Local_slot2_addr = strtol(address_ptr + 8, NULL, 0); 
 		printf("LocalizationV: %d\n", LocalizationV); 
-		printf("Soft_slot1_addr: %ld\n", Local_slot1_addr);
-		printf("Soft_slot2_addr: %ld\n", Soft_slot2_addr);
+		printf("Local_slot1_addr: %ld\n", Local_slot1_addr);
+		printf("Local_slot2_addr: %ld\n", Local_slot2_addr);
 		
 
 		
