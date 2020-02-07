@@ -526,6 +526,9 @@ void tcp_server_task(void *pvParameters)
 				
 				if(!(strncmp(rx_buffer, "AT+HOST+", 8)))
 				{
+					ESP_LOGE(TAG_TCP, "HOST FOUND");
+					bzero(HOST_ADDR, sizeof(HOST_ADDR));
+					bzero(HOST_PORT, sizeof(HOST_PORT));
 					uint8_t y = 0;
 					uint8_t i = 0;
 					//uint8_t j = 0;
