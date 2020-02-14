@@ -4,6 +4,8 @@
 const char *TAG_UART = "UART";
 #define DEBUG
 
+
+
 bool check_crc8(char *pcBlock, int len)
 {
 	int i;
@@ -169,7 +171,8 @@ void app_main()
 		nvs_set_str(storage_handle, "FOTA_ADDR", FOTA_ADDR);
 		
 		strcpy((char*)&FOTA_PORT[0], "2228");
-		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);		
+		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);	
+		
 		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		

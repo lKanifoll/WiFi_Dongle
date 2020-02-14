@@ -5,6 +5,8 @@ Toolchain path: /opt/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
 Toolchain version: crosstool-ng-1.22.0-100-ge567ec7b
 Compiler version: 5.2.0
 Python requirements from C:/SysGCC/esp8266/rtos-sdk/master/requirements.txt are satisfied.
+GENCONFIG
+Building partitions from /rtos-sdk/master/components/partition_table/partitions_two_ota.1MB.csv...
 Partition table binary generated. Contents:
 *******************************************************************************
 # Espressif ESP32 Partition Table
