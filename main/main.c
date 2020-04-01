@@ -173,20 +173,20 @@ void app_main()
 		strcpy((char*)&FOTA_PORT[0], "2228");
 		nvs_set_str(storage_handle, "FOTA_PORT", FOTA_PORT);	
 		
-		//strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
-		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
-		
-		//strcpy((char*)&HOST_PORT[0], "10001");
-		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
-		
-		strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		strcpy((char*)&HOST_ADDR[0], "dongle.rusklimat.ru");
 		nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
+		
+		strcpy((char*)&HOST_PORT[0], "10001");
+		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		
+		//strcpy((char*)&HOST_ADDR[0], "192.168.88.228");
+		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);
 		
 		//strcpy((char*)&HOST_ADDR[0], "dongletest.ipol.tech");
 		//nvs_set_str(storage_handle, "HOST_ADDR", HOST_ADDR);		
 		
-		strcpy((char*)&HOST_PORT[0], "3333");
-		nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
+		//strcpy((char*)&HOST_PORT[0], "3333");
+		//nvs_set_str(storage_handle, "HOST_PORT", HOST_PORT);
 		
 		first_start = true;
 		nvs_set_u8(storage_handle, "first_start", first_start);

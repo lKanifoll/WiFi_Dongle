@@ -12762,7 +12762,7 @@ END GROUP
  *fill*         0x4022d154        0x0 
  .text.app_main
                 0x4022d154      0x222 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
-                                0x296 (size before relaxing)
+                                0x292 (size before relaxing)
                 0x4022d154                app_main
  *fill*         0x4022d376        0x2 
  .text.event_handler
@@ -17627,7 +17627,7 @@ END GROUP
                 0x40252e6c                _etext = .
                 0x00000000                _flash_cache_start = 0x0
 
-.flash.rodata   0x40252e6c     0x7468
+.flash.rodata   0x40252e6c     0x746c
                 0x40252e6c                _rodata_start = ABSOLUTE (.)
                 0x00000008                . = 0x8
  *fill*         0x40252e6c        0x8 
@@ -17956,368 +17956,368 @@ END GROUP
  .rodata.tcp_process
                 0x40255814       0x28 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(tcp_in.o)
  .rodata.str1.4
-                0x4025583c      0x16d C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
-                                0x179 (size before relaxing)
- *fill*         0x402559a9        0x3 
+                0x4025583c      0x171 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
+                                0x17d (size before relaxing)
+ *fill*         0x402559ad        0x3 
  .rodata.__func__$6309
-                0x402559ac        0x9 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
- *fill*         0x402559b5        0x3 
+                0x402559b0        0x9 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
+ *fill*         0x402559b9        0x3 
  .rodata.str1.4
-                0x402559b8      0x695 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+                0x402559bc      0x695 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
                                 0x725 (size before relaxing)
- *fill*         0x4025604d        0x3 
+ *fill*         0x40256051        0x3 
  .rodata.event_handler
-                0x40256050       0x34 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+                0x40256054       0x34 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
  .rodata.sc_callback
-                0x40256084       0x14 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
- .rodata        0x40256098       0xc1 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
- *fill*         0x40256159        0x3 
+                0x40256088       0x14 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+ .rodata        0x4025609c       0xc1 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+ *fill*         0x4025615d        0x3 
  .rodata.__func__$6425
-                0x4025615c       0x19 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
- *fill*         0x40256175        0x3 
+                0x40256160       0x19 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+ *fill*         0x40256179        0x3 
  .rodata.__func__$6410
-                0x40256178        0xc C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+                0x4025617c        0xc C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
  .rodata.__func__$6309
-                0x40256184        0xc C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+                0x40256188        0xc C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
  .rodata.__func__$6303
-                0x40256190        0xd C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
- *fill*         0x4025619d        0x3 
+                0x40256194        0xd C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+ *fill*         0x402561a1        0x3 
  .rodata.__func__$6292
-                0x402561a0       0x10 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+                0x402561a4       0x10 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
  .rodata.__func__$6284
-                0x402561b0        0xe C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
- *fill*         0x402561be        0x2 
+                0x402561b4        0xe C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+ *fill*         0x402561c2        0x2 
  .rodata.str1.4
-                0x402561c0      0x513 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(OTA.o)
+                0x402561c4      0x513 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(OTA.o)
                                 0x51b (size before relaxing)
- *fill*         0x402566d3        0x1 
+ *fill*         0x402566d7        0x1 
  .rodata.__func__$6354
-                0x402566d4       0x11 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(OTA.o)
+                0x402566d8       0x11 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(OTA.o)
  .rodata.str1.1
-                0x402566e5       0x3c C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-assert.o)
+                0x402566e9       0x3c C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-assert.o)
                                  0x3d (size before relaxing)
  .rodata.str1.1
-                0x40256721       0x11 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x40256725       0x11 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata.str1.1
-                0x40256732       0x29 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x40256736       0x29 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata.str1.1
-                0x4025675b       0x11 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- *fill*         0x4025675b        0x1 
+                0x4025675f       0x11 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ *fill*         0x4025675f        0x1 
  .rodata.__ctype_ptr__
-                0x4025675c        0x4 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-ctype_.o)
-                0x4025675c                __ctype_ptr__
+                0x40256760        0x4 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-ctype_.o)
+                0x40256760                __ctype_ptr__
  .rodata._ctype_
-                0x40256760      0x101 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-ctype_.o)
-                0x40256760                _ctype_
- *fill*         0x40256861        0x3 
+                0x40256764      0x101 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-ctype_.o)
+                0x40256764                _ctype_
+ *fill*         0x40256865        0x3 
  .rodata.__sf_fake_stderr
-                0x40256864       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
-                0x40256864                __sf_fake_stderr
+                0x40256868       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
+                0x40256868                __sf_fake_stderr
  .rodata.__sf_fake_stdout
-                0x40256884       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
-                0x40256884                __sf_fake_stdout
+                0x40256888       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
+                0x40256888                __sf_fake_stdout
  .rodata.__sf_fake_stdin
-                0x402568a4       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
-                0x402568a4                __sf_fake_stdin
+                0x402568a8       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
+                0x402568a8                __sf_fake_stdin
  .rodata.lc_ctype_charset
-                0x402568c4       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-locale.o)
+                0x402568c8       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-locale.o)
  .rodata.__wctomb
-                0x402568e4        0x4 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wctomb_r.o)
-                0x402568e4                __wctomb
+                0x402568e8        0x4 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wctomb_r.o)
+                0x402568e8                __wctomb
  .rodata.str1.4
-                0x402568e8       0x14 C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(esp_newlib.o)
+                0x402568ec       0x14 C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(esp_newlib.o)
                                  0x16 (size before relaxing)
  .rodata.str1.4
-                0x402568fc       0x29 C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(syscall.o)
- *fill*         0x40256925        0x3 
+                0x40256900       0x29 C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(syscall.o)
+ *fill*         0x40256929        0x3 
  .rodata.str1.4
-                0x40256928        0x4 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_api.o)
+                0x4025692c        0x4 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_api.o)
  .rodata.str1.4
-                0x4025692c       0x7d C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
- *fill*         0x402569a9        0x3 
+                0x40256930       0x7d C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
+ *fill*         0x402569ad        0x3 
  .rodata._ZZN3nvs7Storage9writeItemEhNS_8ItemTypeEPKcPKvjE19__PRETTY_FUNCTION__
-                0x402569ac       0x5c C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
+                0x402569b0       0x5c C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
  .rodata._ZZN3nvs4Item8getValueIhEEvRT_E19__PRETTY_FUNCTION__
-                0x40256a08       0x36 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
- *fill*         0x40256a3e        0x2 
+                0x40256a0c       0x36 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
+ *fill*         0x40256a42        0x2 
  .rodata.str1.4
-                0x40256a40       0x69 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
- *fill*         0x40256aa9        0x3 
+                0x40256a44       0x69 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
+ *fill*         0x40256aad        0x3 
  .rodata._ZZN3nvs11PageManager14requestNewPageEvE19__PRETTY_FUNCTION__
-                0x40256aac       0x2d C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
- *fill*         0x40256ad9        0x3 
+                0x40256ab0       0x2d C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
+ *fill*         0x40256add        0x3 
  .rodata._ZZN3nvs11PageManager4loadEjjE19__PRETTY_FUNCTION__
-                0x40256adc       0x35 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
- *fill*         0x40256b11        0x3 
+                0x40256ae0       0x35 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
+ *fill*         0x40256b15        0x3 
  .rodata.str1.4
-                0x40256b14       0x4b C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
- *fill*         0x40256b5f        0x1 
+                0x40256b18       0x4b C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
+ *fill*         0x40256b63        0x1 
  .rodata._ZZN3nvs8HashList5eraseEjbE19__PRETTY_FUNCTION__
-                0x40256b60       0x28 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
+                0x40256b64       0x28 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
  .rodata.str1.4
-                0x40256b88      0x284 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+                0x40256b8c      0x284 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
                                 0x2b6 (size before relaxing)
  .rodata._ZZN3nvs4Page20alterEntryRangeStateEjjNS0_10EntryStateEE19__PRETTY_FUNCTION__
-                0x40256e0c       0x51 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x40256e5d        0x3 
+                0x40256e10       0x51 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x40256e61        0x3 
  .rodata._ZZN19CompressedEnumTableIN3nvs4Page10EntryStateELj2ELj126EE3setEjS2_E19__PRETTY_FUNCTION__
-                0x40256e60       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+                0x40256e64       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
  .rodata._ZZN3nvs4Page15alterEntryStateEjNS0_10EntryStateEE19__PRETTY_FUNCTION__
-                0x40256f14       0x44 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+                0x40256f18       0x44 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
  .rodata._ZZN3nvs4Page10initializeEvE19__PRETTY_FUNCTION__
-                0x40256f58       0x22 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x40256f7a        0x2 
+                0x40256f5c       0x22 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x40256f7e        0x2 
  .rodata._ZZN3nvs4Page15mLoadEntryTableEvE19__PRETTY_FUNCTION__
-                0x40256f7c       0x27 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x40256fa3        0x1 
+                0x40256f80       0x27 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x40256fa7        0x1 
  .rodata._ZZN3nvs4Page9copyItemsERS0_E19__PRETTY_FUNCTION__
-                0x40256fa4       0x2b C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x40256fcf        0x1 
+                0x40256fa8       0x2b C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x40256fd3        0x1 
  .rodata._ZZN3nvs4Page20updateFirstUsedEntryEjjE19__PRETTY_FUNCTION__
-                0x40256fd0       0x35 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x40257005        0x3 
+                0x40256fd4       0x35 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x40257009        0x3 
  .rodata._ZZNK19CompressedEnumTableIN3nvs4Page10EntryStateELj2ELj126EE3getEjE19__PRETTY_FUNCTION__
-                0x40257008       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+                0x4025700c       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
  .rodata._ZZN3nvs4Page17eraseEntryAndSpanEjE19__PRETTY_FUNCTION__
-                0x402570bc       0x2f C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x402570eb        0x1 
+                0x402570c0       0x2f C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x402570ef        0x1 
  .rodata._ZZN3nvs4Page9writeItemEhNS_8ItemTypeEPKcPKvjE19__PRETTY_FUNCTION__
-                0x402570ec       0x59 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x40257145        0x3 
+                0x402570f0       0x59 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x40257149        0x3 
  .rodata._ZZN3nvs4Page14writeEntryDataEPKhjE19__PRETTY_FUNCTION__
-                0x40257148       0x3c C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+                0x4025714c       0x3c C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
  .rodata._ZZNK3nvs4Page15getEntryAddressEjE19__PRETTY_FUNCTION__
-                0x40257184       0x32 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- *fill*         0x402571b6        0x2 
+                0x40257188       0x32 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ *fill*         0x402571ba        0x2 
  .rodata.str1.4
-                0x402571b8       0x36 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
- *fill*         0x402571ee        0x2 
+                0x402571bc       0x36 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+ *fill*         0x402571f2        0x2 
  .rodata.__func__$3458
-                0x402571f0       0x1a C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
- *fill*         0x4025720a        0x2 
+                0x402571f4       0x1a C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+ *fill*         0x4025720e        0x2 
  .rodata.__func__$3452
-                0x4025720c       0x14 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+                0x40257210       0x14 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
  .rodata.__func__$3432
-                0x40257220       0x15 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
- *fill*         0x40257235        0x3 
+                0x40257224       0x15 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+ *fill*         0x40257239        0x3 
  .rodata.__func__$3428
-                0x40257238       0x12 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
- *fill*         0x4025724a        0x2 
+                0x4025723c       0x12 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+ *fill*         0x4025724e        0x2 
  .rodata.__func__$3391
-                0x4025724c       0x13 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
- *fill*         0x4025725f        0x1 
+                0x40257250       0x13 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+ *fill*         0x40257263        0x1 
  .rodata.str1.4
-                0x40257260       0xc5 C:/Workspace/Repos/WiFi_Dongle/build/tcpip_adapter\libtcpip_adapter.a(tcpip_adapter_lwip.o)
- *fill*         0x40257325        0x3 
+                0x40257264       0xc5 C:/Workspace/Repos/WiFi_Dongle/build/tcpip_adapter\libtcpip_adapter.a(tcpip_adapter_lwip.o)
+ *fill*         0x40257329        0x3 
  .rodata.crc8_le_table
-                0x40257328      0x100 C:/Workspace/Repos/WiFi_Dongle/build/util\libutil.a(crc.o)
+                0x4025732c      0x100 C:/Workspace/Repos/WiFi_Dongle/build/util\libutil.a(crc.o)
  .rodata.crc32_le_table
-                0x40257428      0x400 C:/Workspace/Repos/WiFi_Dongle/build/util\libutil.a(crc.o)
+                0x4025742c      0x400 C:/Workspace/Repos/WiFi_Dongle/build/util\libutil.a(crc.o)
  .rodata.str1.4
-                0x40257828       0x13 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-dec.o)
- *fill*         0x4025783b        0x1 
- .rodata.rcons  0x4025783c        0xa C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
-                0x4025783c                rcons
- *fill*         0x40257846        0x2 
- .rodata.Td4s   0x40257848      0x100 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
-                0x40257848                Td4s
- .rodata.Td0    0x40257948      0x400 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
-                0x40257948                Td0
- .rodata.Te0    0x40257d48      0x400 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
-                0x40257d48                Te0
+                0x4025782c       0x13 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-dec.o)
+ *fill*         0x4025783f        0x1 
+ .rodata.rcons  0x40257840        0xa C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
+                0x40257840                rcons
+ *fill*         0x4025784a        0x2 
+ .rodata.Td4s   0x4025784c      0x100 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
+                0x4025784c                Td4s
+ .rodata.Td0    0x4025794c      0x400 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
+                0x4025794c                Td0
+ .rodata.Te0    0x40257d4c      0x400 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
+                0x40257d4c                Te0
  .rodata.str1.4
-                0x40258148       0x13 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-enc.o)
- *fill*         0x4025815b        0x1 
+                0x4025814c       0x13 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-enc.o)
+ *fill*         0x4025815f        0x1 
  .rodata.str1.4
-                0x4025815c      0x283 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
- *fill*         0x402583df        0x1 
+                0x40258160      0x283 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
+ *fill*         0x402583e3        0x1 
  .rodata.__func__$4517
-                0x402583e0       0x22 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
- *fill*         0x40258402        0x2 
+                0x402583e4       0x22 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
+ *fill*         0x40258406        0x2 
  .rodata.__func__$4506
-                0x40258404       0x1e C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
- *fill*         0x40258422        0x2 
+                0x40258408       0x1e C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
+ *fill*         0x40258426        0x2 
  .rodata.__func__$4461
-                0x40258424       0x18 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
+                0x40258428       0x18 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
  .rodata.__func__$4430
-                0x4025843c        0xe C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
- *fill*         0x4025844a        0x2 
+                0x40258440        0xe C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
+ *fill*         0x4025844e        0x2 
  .rodata.str1.4
-                0x4025844c      0x26b C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(esp_image_format.o)
+                0x40258450      0x26b C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(esp_image_format.o)
                                 0x26f (size before relaxing)
- *fill*         0x402586b7        0x1 
+ *fill*         0x402586bb        0x1 
  .rodata.str1.4
-                0x402586b8      0x17b C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- *fill*         0x40258833        0x1 
+                0x402586bc      0x17b C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x40258837        0x1 
  .rodata.str1.4
-                0x40258834      0x1f5 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258a29        0x3 
- .rodata        0x40258a2c        0x8 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+                0x40258838      0x1f5 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258a2d        0x3 
+ .rodata        0x40258a30        0x8 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
  .rodata.__FUNCTION__$5064
-                0x40258a34       0x13 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258a47        0x1 
+                0x40258a38       0x13 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258a4b        0x1 
  .rodata.__FUNCTION__$5058
-                0x40258a48       0x14 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+                0x40258a4c       0x14 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
  .rodata.__FUNCTION__$5023
-                0x40258a5c       0x10 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+                0x40258a60       0x10 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
  .rodata.__FUNCTION__$5016
-                0x40258a6c       0x11 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258a7d        0x3 
+                0x40258a70       0x11 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258a81        0x3 
  .rodata.__FUNCTION__$4946
-                0x40258a80       0x11 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258a91        0x3 
+                0x40258a84       0x11 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258a95        0x3 
  .rodata.__FUNCTION__$4892
-                0x40258a94       0x13 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258aa7        0x1 
+                0x40258a98       0x13 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258aab        0x1 
  .rodata.__FUNCTION__$4941
-                0x40258aa8       0x12 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258aba        0x2 
+                0x40258aac       0x12 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258abe        0x2 
  .rodata.__FUNCTION__$4936
-                0x40258abc       0x12 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258ace        0x2 
+                0x40258ac0       0x12 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258ad2        0x2 
  .rodata.__FUNCTION__$4922
-                0x40258ad0       0x14 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+                0x40258ad4       0x14 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
  .rodata.__FUNCTION__$4907
-                0x40258ae4       0x17 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258afb        0x1 
+                0x40258ae8       0x17 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258aff        0x1 
  .rodata.__FUNCTION__$4902
-                0x40258afc       0x16 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258b12        0x2 
+                0x40258b00       0x16 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258b16        0x2 
  .rodata.__FUNCTION__$4897
-                0x40258b14       0x17 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258b2b        0x1 
+                0x40258b18       0x17 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258b2f        0x1 
  .rodata.__FUNCTION__$4865
-                0x40258b2c       0x16 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258b42        0x2 
+                0x40258b30       0x16 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258b46        0x2 
  .rodata.__FUNCTION__$4849
-                0x40258b44       0x12 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258b56        0x2 
+                0x40258b48       0x12 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258b5a        0x2 
  .rodata.__FUNCTION__$4839
-                0x40258b58       0x10 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+                0x40258b5c       0x10 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
  .rodata.__FUNCTION__$4829
-                0x40258b68       0x13 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258b7b        0x1 
+                0x40258b6c       0x13 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258b7f        0x1 
  .rodata.__FUNCTION__$4819
-                0x40258b7c       0x15 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- *fill*         0x40258b91        0x3 
- .rodata        0x40258b94        0x8 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_sleep.o)
+                0x40258b80       0x15 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ *fill*         0x40258b95        0x3 
+ .rodata        0x40258b98        0x8 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_sleep.o)
  .rodata.str1.4
-                0x40258b9c      0x9a1 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
- *fill*         0x4025953d        0x3 
+                0x40258ba0      0x9a1 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
+ *fill*         0x40259541        0x3 
  .rodata.esp_unknown_msg
-                0x40259540        0x6 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
- *fill*         0x40259546        0x2 
+                0x40259544        0x6 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
+ *fill*         0x4025954a        0x2 
  .rodata.esp_err_msg_table
-                0x40259548      0x310 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
+                0x4025954c      0x310 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
  .rodata.str1.4
-                0x40259858       0xb8 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_loop.o)
+                0x4025985c       0xb8 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_loop.o)
  .rodata.str1.4
-                0x40259910        0xb C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(ets_printf.o)
- *fill*         0x4025991b        0x1 
+                0x40259914        0xb C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(ets_printf.o)
+ *fill*         0x4025991f        0x1 
  .rodata.ets_vprintf
-                0x4025991c       0x5c C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(ets_printf.o)
+                0x40259920       0x5c C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(ets_printf.o)
  .rodata._g_esp_wifi_connect_open_router_when_pwd_is_set
-                0x40259978        0x1 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_wifi.o)
-                0x40259978                _g_esp_wifi_connect_open_router_when_pwd_is_set
- *fill*         0x40259979        0x3 
+                0x4025997c        0x1 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_wifi.o)
+                0x4025997c                _g_esp_wifi_connect_open_router_when_pwd_is_set
+ *fill*         0x4025997d        0x3 
  .rodata._g_esp_wifi_ppt_task_stk_size
-                0x4025997c        0x4 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_wifi.o)
-                0x4025997c                _g_esp_wifi_ppt_task_stk_size
+                0x40259980        0x4 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_wifi.o)
+                0x40259980                _g_esp_wifi_ppt_task_stk_size
  .rodata.str1.4
-                0x40259980       0xe9 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
+                0x40259984       0xe9 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
                                  0xf1 (size before relaxing)
- *fill*         0x40259a69        0x3 
+ *fill*         0x40259a6d        0x3 
  .rodata.__FUNCTION__$5379
-                0x40259a6c       0x26 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
- *fill*         0x40259a92        0x2 
+                0x40259a70       0x26 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
+ *fill*         0x40259a96        0x2 
  .rodata.__FUNCTION__$5369
-                0x40259a94       0x25 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
+                0x40259a98       0x25 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
  .rodata.str1.1
-                0x40259ab9       0x10 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(misc_nvs.o)
- *fill*         0x40259ac9        0x3 
+                0x40259abd       0x10 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libcore.a(misc_nvs.o)
+ *fill*         0x40259acd        0x3 
  .rodata.str1.4
-                0x40259acc       0xe9 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_sniffer.o)
- *fill*         0x40259bb5        0x3 
+                0x40259ad0       0xe9 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_sniffer.o)
+ *fill*         0x40259bb9        0x3 
  .rodata.SC_VERSION
-                0x40259bb8        0x7 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_sniffer.o)
-                0x40259bb8                SC_VERSION
- *fill*         0x40259bbf        0x1 
+                0x40259bbc        0x7 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_sniffer.o)
+                0x40259bbc                SC_VERSION
+ *fill*         0x40259bc3        0x1 
  .rodata.str1.4
-                0x40259bc0      0x2f8 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_esptouch.o)
+                0x40259bc4      0x2f8 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_esptouch.o)
  .rodata.str1.4
-                0x40259eb8      0x23b C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_airkiss.o)
+                0x40259ebc      0x23b C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_airkiss.o)
                                 0x2c7 (size before relaxing)
- *fill*         0x4025a0f3        0x1 
+ *fill*         0x4025a0f7        0x1 
  .rodata.KISS_Deal_with_ht20
-                0x4025a0f4       0x18 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_airkiss.o)
+                0x4025a0f8       0x18 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_airkiss.o)
  .rodata.str1.4
-                0x4025a10c        0xf C:/Workspace/Repos/WiFi_Dongle/build/freertos\libfreertos.a(event_groups.o)
- *fill*         0x4025a11b        0x1 
+                0x4025a110        0xf C:/Workspace/Repos/WiFi_Dongle/build/freertos\libfreertos.a(event_groups.o)
+ *fill*         0x4025a11f        0x1 
  .rodata.str1.4
-                0x4025a11c       0x50 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(dhcpserver.o)
+                0x4025a120       0x50 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(dhcpserver.o)
  .rodata.magic_cookie
-                0x4025a16c        0x4 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(dhcpserver.o)
+                0x4025a170        0x4 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(dhcpserver.o)
  .rodata.lwip_setsockopt_impl
-                0x4025a170       0x18 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
+                0x4025a174       0x18 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
  .rodata.lwip_getsockopt_impl
-                0x4025a188       0x18 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
+                0x4025a18c       0x18 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
  .rodata.event_callback
-                0x4025a1a0       0x14 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
+                0x4025a1a4       0x14 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
  .rodata.err_to_errno_table
-                0x4025a1b4       0x44 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(err.o)
+                0x4025a1b8       0x44 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(err.o)
  .rodata.str1.4
-                0x4025a1f8        0x5 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(ethernetif.o)
+                0x4025a1fc        0x5 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(ethernetif.o)
  .rodata.str1.1
-                0x4025a1fd        0x2 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-puts.o)
- *fill*         0x4025a1fd        0x3 
+                0x4025a201        0x2 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-puts.o)
+ *fill*         0x4025a201        0x3 
  .rodata.str1.4
-                0x4025a200       0xc8 C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
+                0x4025a204       0xc8 C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
                                  0xc5 (size before relaxing)
- .rodata        0x4025a2c8        0x8 C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
+ .rodata        0x4025a2cc        0x8 C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
  *(.irom1.text)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x4025a2d0                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x4025a2d4                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table .gcc_except_table.*)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
-                0x4025a2d0                . = ((. + 0x3) & 0xfffffffc)
-                0x4025a2d0                __eh_frame = ABSOLUTE (.)
+                0x4025a2d4                . = ((. + 0x3) & 0xfffffffc)
+                0x4025a2d4                __eh_frame = ABSOLUTE (.)
  *(.eh_frame)
-                0x4025a2d4                . = ((. + 0x7) & 0xfffffffc)
- *fill*         0x4025a2d0        0x4 
-                0x4025a2d4                __init_array_start = ABSOLUTE (.)
+                0x4025a2d8                . = ((. + 0x7) & 0xfffffffc)
+ *fill*         0x4025a2d4        0x4 
+                0x4025a2d8                __init_array_start = ABSOLUTE (.)
  *(EXCLUDE_FILE(*crtbegin.* *crtend.*) .ctors .ctors.*)
-                0x4025a2d4                __init_array_end = ABSOLUTE (.)
+                0x4025a2d8                __init_array_end = ABSOLUTE (.)
  *crtbegin.*(.dtors)
  *(EXCLUDE_FILE(*crtend.*) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x4025a2d4                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x4025a2d8                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x4025a2d4                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x4025a2d8                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x4025a2d4                soc_reserved_memory_region_start = ABSOLUTE (.)
+                0x4025a2d8                soc_reserved_memory_region_start = ABSOLUTE (.)
  *(.reserved_memory_address)
-                0x4025a2d4                soc_reserved_memory_region_end = ABSOLUTE (.)
-                0x4025a2d4                _rodata_end = ABSOLUTE (.)
-                0x4025a2d4                _lit4_start = ABSOLUTE (.)
+                0x4025a2d8                soc_reserved_memory_region_end = ABSOLUTE (.)
+                0x4025a2d8                _rodata_end = ABSOLUTE (.)
+                0x4025a2d8                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x4025a2d4                _lit4_end = ABSOLUTE (.)
-                0x4025a2d4                . = ALIGN (0x4)
-                0x4025a2d4                _thread_local_start = ABSOLUTE (.)
+                0x4025a2d8                _lit4_end = ABSOLUTE (.)
+                0x4025a2d8                . = ALIGN (0x4)
+                0x4025a2d8                _thread_local_start = ABSOLUTE (.)
  *(.tdata)
  *(.tdata.*)
  *(.tbss)
  *(.tbss.*)
-                0x4025a2d4                _thread_local_end = ABSOLUTE (.)
-                0x4025a2d4                . = ALIGN (0x4)
+                0x4025a2d8                _thread_local_end = ABSOLUTE (.)
+                0x4025a2d8                . = ALIGN (0x4)
                 0x400040c0                PROVIDE (SPI_sector_erase, 0x400040c0)
                 0x40004174                PROVIDE (SPI_page_program, 0x40004174)
                 0x400042ac                PROVIDE (SPI_read_data, 0x400042ac)
@@ -18532,7 +18532,7 @@ OUTPUT(C:/Workspace/Repos/WiFi_Dongle/build/WiFi_Dongle.elf elf32-xtensa-le)
  .debug_frame   0x0000ab5c       0x20 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-u_strerr.o)
  .debug_frame   0x0000ab7c       0xb4 C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
 
-.debug_info     0x00000000    0x8d851
+.debug_info     0x00000000    0x8d84f
  .debug_info    0x00000000      0x68f C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(startup.o)
  .debug_info    0x0000068f      0xe30 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(phy_init.o)
  .debug_info    0x000014bf      0xb16 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(system_api.o)
@@ -18575,117 +18575,117 @@ OUTPUT(C:/Workspace/Repos/WiFi_Dongle/build/WiFi_Dongle.elf elf32-xtensa-le)
  .debug_info    0x0001f4b2      0x153 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(init.o)
  .debug_info    0x0001f605      0x752 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(inet_chksum.o)
  .debug_info    0x0001fd57      0xa63 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(icmp.o)
- .debug_info    0x000207ba     0x1261 C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
- .debug_info    0x00021a1b     0x315d C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
- .debug_info    0x00024b78     0x168d C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(OTA.o)
- .debug_info    0x00026205      0x982 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-asprintf.o)
- .debug_info    0x00026b87      0x91e C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-assert.o)
- .debug_info    0x000274a5      0x8c2 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-atoi.o)
- .debug_info    0x00027d67      0x818 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-errno.o)
- .debug_info    0x0002857f      0x95e C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fprintf.o)
- .debug_info    0x00028edd      0xed5 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_info    0x00029db2      0xc3b C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_info    0x0002a9ed     0x1081 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_info    0x0002ba6e      0x981 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-printf.o)
- .debug_info    0x0002c3ef      0x8f5 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-putchar.o)
- .debug_info    0x0002cce4      0x9fb C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-putc.o)
- .debug_info    0x0002d6df      0x987 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-sprintf.o)
- .debug_info    0x0002e066      0x101 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strrchr.o)
- .debug_info    0x0002e167       0xda C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strspn.o)
- .debug_info    0x0002e241      0x935 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strtol.o)
- .debug_info    0x0002eb76      0x964 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-vasprintf.o)
- .debug_info    0x0002f4da      0x9f6 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wbuf.o)
- .debug_info    0x0002fed0      0x964 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wsetup.o)
- .debug_info    0x00030834       0x74 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-ctype_.o)
- .debug_info    0x000308a8      0xb40 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fflush.o)
- .debug_info    0x000313e8      0xf1e C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
- .debug_info    0x00032306      0xb31 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fputwc.o)
- .debug_info    0x00032e37      0xba6 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fvwrite.o)
- .debug_info    0x000339dd      0x919 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fwalk.o)
- .debug_info    0x000342f6      0xb58 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-locale.o)
- .debug_info    0x00034e4e      0xa67 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-makebuf.o)
- .debug_info    0x000358b5       0xf8 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-memchr.o)
- .debug_info    0x000359ad      0xb0a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-stdio.o)
- .debug_info    0x000364b7       0xe3 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strchr.o)
- .debug_info    0x0003659a      0x964 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wcrtomb.o)
- .debug_info    0x00036efe      0x99a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wctomb_r.o)
- .debug_info    0x00037898      0x9ce C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(isatty.o)
- .debug_info    0x00038266      0xa99 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fclose.o)
- .debug_info    0x00038cff      0x70d C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(locks.o)
- .debug_info    0x0003940c      0x27d C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(esp_malloc.o)
- .debug_info    0x00039689      0x96f C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(esp_newlib.o)
- .debug_info    0x00039ff8      0xe9e C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(syscall.o)
- .debug_info    0x0003ae96     0xb1c7 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_api.o)
- .debug_info    0x0004605d     0x69db C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
- .debug_info    0x0004ca38     0x5b6d C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
- .debug_info    0x000525a5     0x2ea2 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
- .debug_info    0x00055447     0x6a39 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
- .debug_info    0x0005be80     0x2090 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_types.o)
- .debug_info    0x0005df10      0x756 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(spi_flash_raw.o)
- .debug_info    0x0005e666     0x13f9 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(spi_flash.o)
- .debug_info    0x0005fa5f      0xc3b C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
- .debug_info    0x0006069a     0x2b42 C:/Workspace/Repos/WiFi_Dongle/build/tcpip_adapter\libtcpip_adapter.a(tcpip_adapter_lwip.o)
- .debug_info    0x000631dc      0x3d3 C:/Workspace/Repos/WiFi_Dongle/build/util\libutil.a(crc.o)
- .debug_info    0x000635af      0x3dd C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(sha1-pbkdf2.o)
- .debug_info    0x0006398c      0x357 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(md5.o)
- .debug_info    0x00063ce3      0x1ec C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(rc4.o)
- .debug_info    0x00063ecf      0x2b6 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-wrap.o)
- .debug_info    0x00064185      0x27c C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-unwrap.o)
- .debug_info    0x00064401      0x85f C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-dec.o)
- .debug_info    0x00064c60      0x533 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(sha1.o)
- .debug_info    0x00065193      0x1c6 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
- .debug_info    0x00065359      0x4df C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(md5-internal.o)
- .debug_info    0x00065838      0x724 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-enc.o)
- .debug_info    0x00065f5c      0x4f9 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(sha1-internal.o)
- .debug_info    0x00066455       0xf3 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_modsi3.o)
- .debug_info    0x00066548       0xf3 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_ashrdi3.o)
- .debug_info    0x0006663b       0xf4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_mulsf3.o)
- .debug_info    0x0006672f       0xf4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_divsf3.o)
- .debug_info    0x00066823       0xf4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_fixsfsi.o)
- .debug_info    0x00066917      0x4f2 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(new_op.o)
- .debug_info    0x00066e09      0x463 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(del_op.o)
- .debug_info    0x0006726c       0xba c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(new_opv.o)
- .debug_info    0x00067326      0x462 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(new_handler.o)
- .debug_info    0x00067788       0xa5 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(del_opv.o)
- .debug_info    0x0006782d     0x13e1 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
- .debug_info    0x00068c0e      0xd1b C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(esp_image_format.o)
- .debug_info    0x00069929      0x505 C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(bootloader_flash.o)
- .debug_info    0x00069e2e     0x35ea C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
- .debug_info    0x0006d418      0xf5e C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_sleep.o)
- .debug_info    0x0006e376      0xa80 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_timer.o)
- .debug_info    0x0006edf6      0x2d1 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
- .debug_info    0x0006f0c7      0x99e C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_loop.o)
- .debug_info    0x0006fa65      0x6aa C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(ets_printf.o)
- .debug_info    0x0007010f      0x8e6 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_wifi.o)
- .debug_info    0x000709f5      0x319 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(backtrace.o)
- .debug_info    0x00070d0e      0xd32 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
- .debug_info    0x00071a40     0x1ab0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_sniffer.o)
- .debug_info    0x000734f0     0x1ed4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_esptouch.o)
- .debug_info    0x000753c4     0x1aa6 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_airkiss.o)
- .debug_info    0x00076e6a     0x1ab3 C:/Workspace/Repos/WiFi_Dongle/build/esp_ringbuf\libesp_ringbuf.a(ringbuf.o)
- .debug_info    0x0007891d      0x821 C:/Workspace/Repos/WiFi_Dongle/build/freertos\libfreertos.a(impure.o)
- .debug_info    0x0007913e      0x8bb C:/Workspace/Repos/WiFi_Dongle/build/freertos\libfreertos.a(event_groups.o)
- .debug_info    0x000799f9     0x1ce3 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(dhcpserver.o)
- .debug_info    0x0007b6dc     0x5d84 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
- .debug_info    0x00081460       0xfc C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(err.o)
- .debug_info    0x0008155c      0x5f1 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(netbuf.o)
- .debug_info    0x00081b4d     0x1972 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(api_lib.o)
- .debug_info    0x000834bf      0x931 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(netdb.o)
- .debug_info    0x00083df0      0x88b C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(ethernetif.o)
- .debug_info    0x0008467b     0x2a0e C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(api_msg.o)
- .debug_info    0x00087089       0x42 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-environ.o)
- .debug_info    0x000870cb      0xa6a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fopen.o)
- .debug_info    0x00087b35      0x963 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fseek.o)
- .debug_info    0x00088498      0xe06 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fseeko.o)
- .debug_info    0x0008929e      0xa1c C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-puts.o)
- .debug_info    0x00089cba      0xa81 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-refill.o)
- .debug_info    0x0008a73b      0x9b1 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-snprintf.o)
- .debug_info    0x0008b0ec      0x8f4 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strerror_r.o)
- .debug_info    0x0008b9e0       0xfe C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strlcpy.o)
- .debug_info    0x0008bade      0x857 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-flags.o)
- .debug_info    0x0008c335      0x90a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strerror.o)
- .debug_info    0x0008cc3f       0x83 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-u_strerr.o)
- .debug_info    0x0008ccc2      0xb8f C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
+ .debug_info    0x000207ba     0x125f C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(main.o)
+ .debug_info    0x00021a19     0x315d C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(wifi_tcp.o)
+ .debug_info    0x00024b76     0x168d C:/Workspace/Repos/WiFi_Dongle/build/main\libmain.a(OTA.o)
+ .debug_info    0x00026203      0x982 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-asprintf.o)
+ .debug_info    0x00026b85      0x91e C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-assert.o)
+ .debug_info    0x000274a3      0x8c2 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-atoi.o)
+ .debug_info    0x00027d65      0x818 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-errno.o)
+ .debug_info    0x0002857d      0x95e C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fprintf.o)
+ .debug_info    0x00028edb      0xed5 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_info    0x00029db0      0xc3b C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_info    0x0002a9eb     0x1081 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_info    0x0002ba6c      0x981 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-printf.o)
+ .debug_info    0x0002c3ed      0x8f5 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-putchar.o)
+ .debug_info    0x0002cce2      0x9fb C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-putc.o)
+ .debug_info    0x0002d6dd      0x987 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-sprintf.o)
+ .debug_info    0x0002e064      0x101 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strrchr.o)
+ .debug_info    0x0002e165       0xda C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strspn.o)
+ .debug_info    0x0002e23f      0x935 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strtol.o)
+ .debug_info    0x0002eb74      0x964 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-vasprintf.o)
+ .debug_info    0x0002f4d8      0x9f6 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wbuf.o)
+ .debug_info    0x0002fece      0x964 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wsetup.o)
+ .debug_info    0x00030832       0x74 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-ctype_.o)
+ .debug_info    0x000308a6      0xb40 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fflush.o)
+ .debug_info    0x000313e6      0xf1e C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-findfp.o)
+ .debug_info    0x00032304      0xb31 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fputwc.o)
+ .debug_info    0x00032e35      0xba6 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fvwrite.o)
+ .debug_info    0x000339db      0x919 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fwalk.o)
+ .debug_info    0x000342f4      0xb58 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-locale.o)
+ .debug_info    0x00034e4c      0xa67 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-makebuf.o)
+ .debug_info    0x000358b3       0xf8 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-memchr.o)
+ .debug_info    0x000359ab      0xb0a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-stdio.o)
+ .debug_info    0x000364b5       0xe3 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strchr.o)
+ .debug_info    0x00036598      0x964 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wcrtomb.o)
+ .debug_info    0x00036efc      0x99a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-wctomb_r.o)
+ .debug_info    0x00037896      0x9ce C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(isatty.o)
+ .debug_info    0x00038264      0xa99 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fclose.o)
+ .debug_info    0x00038cfd      0x70d C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(locks.o)
+ .debug_info    0x0003940a      0x27d C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(esp_malloc.o)
+ .debug_info    0x00039687      0x96f C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(esp_newlib.o)
+ .debug_info    0x00039ff6      0xe9e C:/Workspace/Repos/WiFi_Dongle/build/newlib\libnewlib.a(syscall.o)
+ .debug_info    0x0003ae94     0xb1c7 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_api.o)
+ .debug_info    0x0004605b     0x69db C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
+ .debug_info    0x0004ca36     0x5b6d C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
+ .debug_info    0x000525a3     0x2ea2 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
+ .debug_info    0x00055445     0x6a39 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ .debug_info    0x0005be7e     0x2090 C:/Workspace/Repos/WiFi_Dongle/build/nvs_flash\libnvs_flash.a(nvs_types.o)
+ .debug_info    0x0005df0e      0x756 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_info    0x0005e664     0x13f9 C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_info    0x0005fa5d      0xc3b C:/Workspace/Repos/WiFi_Dongle/build/spi_flash\libspi_flash.a(partition.o)
+ .debug_info    0x00060698     0x2b42 C:/Workspace/Repos/WiFi_Dongle/build/tcpip_adapter\libtcpip_adapter.a(tcpip_adapter_lwip.o)
+ .debug_info    0x000631da      0x3d3 C:/Workspace/Repos/WiFi_Dongle/build/util\libutil.a(crc.o)
+ .debug_info    0x000635ad      0x3dd C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(sha1-pbkdf2.o)
+ .debug_info    0x0006398a      0x357 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(md5.o)
+ .debug_info    0x00063ce1      0x1ec C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(rc4.o)
+ .debug_info    0x00063ecd      0x2b6 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-wrap.o)
+ .debug_info    0x00064183      0x27c C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-unwrap.o)
+ .debug_info    0x000643ff      0x85f C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-dec.o)
+ .debug_info    0x00064c5e      0x533 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(sha1.o)
+ .debug_info    0x00065191      0x1c6 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
+ .debug_info    0x00065357      0x4df C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(md5-internal.o)
+ .debug_info    0x00065836      0x724 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-enc.o)
+ .debug_info    0x00065f5a      0x4f9 C:/Workspace/Repos/WiFi_Dongle/build/wpa_supplicant\libwpa_supplicant.a(sha1-internal.o)
+ .debug_info    0x00066453       0xf3 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_modsi3.o)
+ .debug_info    0x00066546       0xf3 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_ashrdi3.o)
+ .debug_info    0x00066639       0xf4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_mulsf3.o)
+ .debug_info    0x0006672d       0xf4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_divsf3.o)
+ .debug_info    0x00066821       0xf4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libgcc.a(_fixsfsi.o)
+ .debug_info    0x00066915      0x4f2 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(new_op.o)
+ .debug_info    0x00066e07      0x463 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(del_op.o)
+ .debug_info    0x0006726a       0xba c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(new_opv.o)
+ .debug_info    0x00067324      0x462 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(new_handler.o)
+ .debug_info    0x00067786       0xa5 c:/sysgcc/esp8266/opt/xtensa-lx106-elf/bin/../xtensa-lx106-elf/sysroot/lib\libstdc++.a(del_opv.o)
+ .debug_info    0x0006782b     0x13e1 C:/Workspace/Repos/WiFi_Dongle/build/app_update\libapp_update.a(esp_ota_ops.o)
+ .debug_info    0x00068c0c      0xd1b C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(esp_image_format.o)
+ .debug_info    0x00069927      0x505 C:/Workspace/Repos/WiFi_Dongle/build/bootloader_support\libbootloader_support.a(bootloader_flash.o)
+ .debug_info    0x00069e2c     0x35ea C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(uart.o)
+ .debug_info    0x0006d416      0xf5e C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_sleep.o)
+ .debug_info    0x0006e374      0xa80 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_timer.o)
+ .debug_info    0x0006edf4      0x2d1 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_err_to_name.o)
+ .debug_info    0x0006f0c5      0x99e C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_loop.o)
+ .debug_info    0x0006fa63      0x6aa C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(ets_printf.o)
+ .debug_info    0x0007010d      0x8e6 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(esp_wifi.o)
+ .debug_info    0x000709f3      0x319 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(backtrace.o)
+ .debug_info    0x00070d0c      0xd32 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(event_default_handlers.o)
+ .debug_info    0x00071a3e     0x1ab0 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_sniffer.o)
+ .debug_info    0x000734ee     0x1ed4 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_esptouch.o)
+ .debug_info    0x000753c2     0x1aa6 C:/SysGCC/esp8266/rtos-sdk/master/components/esp8266/lib\libsmartconfig.a(sc_airkiss.o)
+ .debug_info    0x00076e68     0x1ab3 C:/Workspace/Repos/WiFi_Dongle/build/esp_ringbuf\libesp_ringbuf.a(ringbuf.o)
+ .debug_info    0x0007891b      0x821 C:/Workspace/Repos/WiFi_Dongle/build/freertos\libfreertos.a(impure.o)
+ .debug_info    0x0007913c      0x8bb C:/Workspace/Repos/WiFi_Dongle/build/freertos\libfreertos.a(event_groups.o)
+ .debug_info    0x000799f7     0x1ce3 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(dhcpserver.o)
+ .debug_info    0x0007b6da     0x5d84 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(sockets_mt.o)
+ .debug_info    0x0008145e       0xfc C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(err.o)
+ .debug_info    0x0008155a      0x5f1 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(netbuf.o)
+ .debug_info    0x00081b4b     0x1972 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(api_lib.o)
+ .debug_info    0x000834bd      0x931 C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(netdb.o)
+ .debug_info    0x00083dee      0x88b C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(ethernetif.o)
+ .debug_info    0x00084679     0x2a0e C:/Workspace/Repos/WiFi_Dongle/build/lwip\liblwip.a(api_msg.o)
+ .debug_info    0x00087087       0x42 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-environ.o)
+ .debug_info    0x000870c9      0xa6a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fopen.o)
+ .debug_info    0x00087b33      0x963 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fseek.o)
+ .debug_info    0x00088496      0xe06 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-fseeko.o)
+ .debug_info    0x0008929c      0xa1c C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-puts.o)
+ .debug_info    0x00089cb8      0xa81 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-refill.o)
+ .debug_info    0x0008a739      0x9b1 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-snprintf.o)
+ .debug_info    0x0008b0ea      0x8f4 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strerror_r.o)
+ .debug_info    0x0008b9de       0xfe C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strlcpy.o)
+ .debug_info    0x0008badc      0x857 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-flags.o)
+ .debug_info    0x0008c333      0x90a C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-strerror.o)
+ .debug_info    0x0008cc3d       0x83 C:/SysGCC/esp8266/rtos-sdk/master/components/newlib/newlib/lib/libc_nano.a(lib_a-u_strerr.o)
+ .debug_info    0x0008ccc0      0xb8f C:/Workspace/Repos/WiFi_Dongle/build/smartconfig_ack\libsmartconfig_ack.a(smartconfig_ack.o)
 
 .debug_abbrev   0x00000000    0x14d6c
  .debug_abbrev  0x00000000      0x1e3 C:/Workspace/Repos/WiFi_Dongle/build/esp8266\libesp8266.a(startup.o)

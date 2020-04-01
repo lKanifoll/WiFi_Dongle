@@ -30,7 +30,7 @@
 //#include "ping/ping.h"
 //#include "esp_ping.h"
 
-#define VERSION "1.1.1"
+#define VERSION "1.2.0"
 #define SC 1
 #define AP 2
 nvs_handle storage_handle;
